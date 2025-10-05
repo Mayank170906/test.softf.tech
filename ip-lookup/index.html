@@ -571,15 +571,16 @@
         const errorMessage = document.getElementById("error-message");
 
         // --- API Endpoint ---
-        const API_ENDPOINT = "https://ip-api.com/json/";
+        const API_ENDPOINT = "https://api.ipify.org?format=json";
 
         // --- Function to fetch and display the user's own IP on page load ---
         const fetchUserIP = async () => {
           try {
             const response = await fetch(API_ENDPOINT);
             const data = await response.json();
-            if (data.status === "success") {
-              userIpDisplay.textContent = data.query;
+            // ipify returns { "ip": "YOUR_IP_HERE" }
+            if (data.ip) {
+              userIpDisplay.textContent = data.ip;
             } else {
               userIpDisplay.textContent = "Could not fetch IP";
             }
