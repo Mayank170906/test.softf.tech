@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <!-- ======================================================================= -->
-  <!-- ============== HEAD FOR KEYBOARD TEST PAGE (SEO OPTIMIZED) ============== -->
-  <!-- ======================================================================= -->
+  <head>
+    <!-- ======================================================================= -->
+    <!-- ============== HEAD FOR KEYBOARD TEST PAGE (SEO OPTIMIZED) ============== -->
+    <!-- ======================================================================= -->
 
-  <!-- Required Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Online Keyboard Test - Diagnose Stuck Keys, Chatter & NKRO | test.softf.tech</title>
-  <meta
-    name="description"
-    content="A free, private online keyboard tester to diagnose hardware faults. Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
-  />
-  <meta name="robots" content="index, follow" />
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Keyboard Test - Diagnose Stuck Keys, Chatter & NKRO |
+      test.softf.tech
+    </title>
+    <meta
+      name="description"
+      content="A free, private online keyboard tester to diagnose hardware faults. Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+    />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Keywords -->
-  <meta
-    name="keywords"
-    content="keyboard test, keyboard tester, online keyboard test, key rollover test, NKRO test, keyboard ghosting test, keyboard chatter test, diagnose keyboard, stuck key test, mechanical keyboard test"
-  />
-  <meta name="author" content="Mayank" />
-  <meta name="theme-color" content="#1f2937" />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="keyboard test, keyboard tester, online keyboard test, key rollover test, NKRO test, keyboard ghosting test, keyboard chatter test, diagnose keyboard, stuck key test, mechanical keyboard test"
+    />
+    <meta name="author" content="Mayank" />
+    <meta name="theme-color" content="#1f2937" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://test.softf.tech/keyboard-test/" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://test.softf.tech/keyboard-test/" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech" />
-  <meta
-    property="og:description"
-    content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://test.softf.tech/keyboard-test/" />
-  <meta property="og:image" content="https://test.softf.tech/assets/images/logo.jpg" />
-  <meta property="og:image:width" content="610" />
-  <meta property="og:image:height" content="658" />
-  <meta property="og:image:alt" content="test.softf.tech Logo" />
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
+    />
+    <meta
+      property="og:description"
+      content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://test.softf.tech/keyboard-test/" />
+    <meta
+      property="og:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta property="og:image:width" content="610" />
+    <meta property="og:image:height" content="658" />
+    <meta property="og:image:alt" content="test.softf.tech Logo" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech" />
-  <meta
-    name="twitter:description"
-    content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
-  />
-  <meta name="twitter:image" content="https://test.softf.tech/assets/images/logo.jpg" />
-  <meta name="twitter:image:alt" content="test.softf.tech Logo" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
+    />
+    <meta
+      name="twitter:description"
+      content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+    />
+    <meta
+      name="twitter:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta name="twitter:image:alt" content="test.softf.tech Logo" />
 
-  <!-- Tailwind CSS (relative path for subfolder) -->
-  <link href="../assets/css/output.css" rel="stylesheet" />
+    <!-- Tailwind CSS (relative path for subfolder) -->
+    <link href="../assets/css/output.css" rel="stylesheet" />
 
-  <!-- Schema.org JSON-LD Structured Data for this specific tool -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+    <!-- Schema.org JSON-LD Structured Data for this specific tool -->
+    <script type="application/ld+json">
       {
-        "@type": "SoftwareApplication",
-        "name": "Online Keyboard Tester",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Any (Web Browser)",
-        "url": "https://test.softf.tech/keyboard-test/",
-        "description": "A free, client-side web application to test keyboard functionality, including diagnostics for n-key rollover (NKRO), ghosting, and key chatter.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "test.softf.tech"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@context": "https://schema.org",
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Why is my keyboard typing double letters?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This is a symptom of 'keyboard chatter,' a hardware fault our tool can detect. It's often caused by a failing mechanical switch that needs cleaning or replacement."
+            "@type": "SoftwareApplication",
+            "name": "Online Keyboard Tester",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any (Web Browser)",
+            "url": "https://test.softf.tech/keyboard-test/",
+            "description": "A free, client-side web application to test keyboard functionality, including diagnostics for n-key rollover (NKRO), ghosting, and key chatter.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "test.softf.tech"
             }
           },
           {
-            "@type": "Question",
-            "name": "What is N-Key Rollover (NKRO)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "N-Key Rollover is the ability of a keyboard to register multiple key presses at the same time. This is a crucial feature for gaming. Our 'Max Keys Held' stat lets you test your keyboard's NKRO capability."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this keyboard test safe and private?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, absolutely. The tool runs entirely in your web browser. No key presses or any other data is sent to a server."
-            }
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is my keyboard typing double letters?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This is a symptom of 'keyboard chatter,' a hardware fault our tool can detect. It's often caused by a failing mechanical switch that needs cleaning or replacement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is N-Key Rollover (NKRO)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "N-Key Rollover is the ability of a keyboard to register multiple key presses at the same time. This is a crucial feature for gaming. Our 'Max Keys Held' stat lets you test your keyboard's NKRO capability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this keyboard test safe and private?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, absolutely. The tool runs entirely in your web browser. No key presses or any other data is sent to a server."
+                }
+              }
+            ]
           }
         ]
       }
-    ]
-  }
-  </script>
-</head>
+    </script>
+  </head>
   <body class="bg-gray-400">
     <header>
       <nav
@@ -161,7 +176,7 @@
 
               <li>
                 <a
-                  href="../keyboard-test/index.html"
+                  href="../keyboard-test/"
                   class="hover:text-yellow-400 transition-colors"
                   >Keyboard Test</a
                 >
@@ -169,7 +184,7 @@
 
               <li>
                 <a
-                  href="../mouse-test/index.html"
+                  href="../mouse-test/"
                   class="hover:text-yellow-400 transition-colors"
                   >Mouse Test</a
                 >
@@ -177,7 +192,7 @@
 
               <li>
                 <a
-                  href="../display-test/index.html"
+                  href="../display-test/"
                   class="hover:text-yellow-400 transition-colors"
                   >Display Test</a
                 >
@@ -185,7 +200,7 @@
 
               <li>
                 <a
-                  href="../speaker-test/index.html"
+                  href="../speaker-test/"
                   class="hover:text-yellow-400 transition-colors"
                   >Speaker Test</a
                 >
@@ -193,7 +208,7 @@
 
               <li>
                 <a
-                  href="../ip-lookup/index.html"
+                  href="../ip-lookup/"
                   class="hover:text-yellow-400 transition-colors"
                   >IP Lookup Tool</a
                 >
@@ -201,7 +216,7 @@
 
               <li>
                 <a
-                  href="../speed-test/index.html"
+                  href="../speed-test/"
                   class="hover:text-yellow-400 transition-colors"
                   >Network Speed Test</a
                 >
@@ -246,19 +261,19 @@
                   class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
                 >
                   <li>
-                    <a href="../keyboard-test/index.html">Keyboard Test</a>
+                    <a href="../keyboard-test/">Keyboard Test</a>
                   </li>
 
-                  <li><a href="../mouse-test/index.html">Mouse Test</a></li>
+                  <li><a href="../mouse-test/">Mouse Test</a></li>
 
-                  <li><a href="../display-test/index.html">Display Test</a></li>
+                  <li><a href="../display-test/">Display Test</a></li>
 
-                  <li><a href="../speaker-test/index.html">Speaker Test</a></li>
+                  <li><a href="../speaker-test/">Speaker Test</a></li>
 
-                  <li><a href="../ip-lookup/index.html">IP Lookup Tool</a></li>
+                  <li><a href="../ip-lookup/">IP Lookup Tool</a></li>
 
                   <li>
-                    <a href="../speed-test/index.html">Network Speed Test</a>
+                    <a href="../speed-test/">Network Speed Test</a>
                   </li>
                 </ul>
               </details>
