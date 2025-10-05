@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Lookup - What Is My IP? | test.softf.tech</title>
+    <meta
+      name="description"
+      content="Free IP lookup tool to find your public IP address. Get detailed geolocation, ISP, and ASN information for any IP or domain instantly."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="keywords"
+      content="IP lookup, what is my IP, IP address, geolocation, find IP address, ISP lookup, reverse IP lookup, domain IP lookup"
+    />
+    <meta name="author" content="Mayank" />
+    <meta name="theme-color" content="#1f2937" />
+
+    <link rel="canonical" href="https://test.softf.tech/ip-lookup/" />
+
+    <meta
+      property="og:title"
+      content="Find Your IP Address & Geolocation | test.softf.tech"
+    />
+    <meta
+      property="og:description"
+      content="Free IP lookup tool to find your public IP address. Get detailed geolocation, ISP, and ASN information for any IP or domain instantly."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://test.softf.tech/ip-lookup/" />
+    <meta
+      property="og:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta property="og:image:width" content="610" />
+    <meta property="og:image:height" content="658" />
+    <meta property="og:image:alt" content="test.softf.tech Logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Find Your IP Address & Geolocation | test.softf.tech"
+    />
+    <meta
+      name="twitter:description"
+      content="Free IP lookup tool to find your public IP address. Get detailed geolocation, ISP, and ASN information for any IP or domain instantly."
+    />
+    <meta
+      name="twitter:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta name="twitter:image:alt" content="test.softf.tech Logo" />
+
+    <link href="../assets/css/output.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "IP Address Lookup Tool",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any (Web Browser)",
+            "url": "https://test.softf.tech/ip-lookup/",
+            "description": "A free, client-side web application to find a user's public IP address and look up detailed information for any IP or domain, including geolocation, ISP, and ASN data.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "test.softf.tech"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is an IP address?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An IP (Internet Protocol) address is a unique numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. It serves to identify the host and provide its location in the network."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between IPv4 and IPv6?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "IPv4 uses a 32-bit address, allowing for about 4.3 billion addresses. IPv6 is the newer version which uses a 128-bit address, providing a vastly larger address space for the growing number of internet-connected devices."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this IP lookup tool accurate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This tool provides highly accurate data from industry-leading databases. However, IP-based geolocation is not 100% precise and typically points to the location of the ISP's servers, not a specific personal address."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://test.softf.tech/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "IP Lookup",
+                "item": "https://test.softf.tech/ip-lookup/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-gray-400">
+    <header>
+      <nav
+        class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
+        aria-label="Main Navigation"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <button
+              tabindex="0"
+              class="btn btn-ghost lg:hidden"
+              aria-label="Open navigation menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </button>
+
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a
+                  href="../about.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../contact.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+
+              <li class="menu-title">
+                <span class="text-yellow-400">Web Tools & Tests</span>
+              </li>
+
+              <li>
+                <a
+                  href="../keyboard-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Keyboard Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../mouse-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Mouse Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../display-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Display Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speaker-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Speaker Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../ip-lookup/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >IP Lookup Tool</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speed-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Network Speed Test</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="../"
+            class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+            aria-label="Home - test.softf.tech"
+          >
+            test.softf.tech
+          </a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                href="../about.html"
+                class="hover:text-yellow-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../contact.html"
+                class="hover:text-yellow-400 transition-colors"
+                >Contact Us</a
+              >
+            </li>
+
+            <li>
+              <details>
+                <summary class="hover:text-yellow-400 transition-colors">
+                  Web Tools & Tests
+                </summary>
+
+                <ul
+                  class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
+                >
+                  <li>
+                    <a href="../keyboard-test/index.html">Keyboard Test</a>
+                  </li>
+
+                  <li><a href="../mouse-test/index.html">Mouse Test</a></li>
+
+                  <li><a href="../display-test/index.html">Display Test</a></li>
+
+                  <li><a href="../speaker-test/index.html">Speaker Test</a></li>
+
+                  <li><a href="../ip-lookup/index.html">IP Lookup Tool</a></li>
+
+                  <li>
+                    <a href="../speed-test/index.html">Network Speed Test</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <button
+              tabindex="0"
+              class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+              aria-label="Our tools network"
+            >
+              Tools
+            </button>
+
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
+            >
+              <li>
+                <a
+                  href="https://softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit softf.tech - Core Content Hub"
+                  >softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://tools.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit tools.softf.tech - Utility Engine"
+                  >tools.softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://test.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit test.softf.tech - Lightweight Test Bench"
+                  >test.softf.tech</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-base-200">
+        <div class="container mx-auto px-4 py-20 text-center">
+          <h1
+            class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+          >
+            What Is My IP Address?
+          </h1>
+          <p class="mt-6 max-w-2xl mx-auto text-lg text-base-content/80">
+            Instantly find your public IP address, location, and ISP. Enter any
+            IP or domain below for a detailed lookup.
+          </p>
+
+          <div class="mt-12 max-w-2xl mx-auto">
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title text-lg font-semibold mx-auto">
+                  Your Public IP Address Is:
+                </h2>
+                <p
+                  id="user-ip-display"
+                  class="text-3xl font-mono font-bold my-4 text-primary"
+                >
+                  <span class="loading loading-dots loading-md"></span>
+                </p>
+                <div class="form-control mt-4">
+                  <div class="join w-full">
+                    <input
+                      id="lookup-input"
+                      type="text"
+                      placeholder="Enter IP Address or Domain"
+                      class="input input-bordered join-item w-full"
+                      aria-label="IP Address or Domain to look up"
+                    />
+                    <button
+                      id="lookup-button"
+                      class="btn btn-primary join-item"
+                    >
+                      Lookup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results-section" class="container mx-auto px-4 py-16 hidden">
+        <div id="results-container" class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">Lookup Results</h2>
+          <div id="loader" class="text-center hidden">
+            <span
+              class="loading loading-spinner loading-lg text-primary"
+            ></span>
+          </div>
+          <div id="error-message" class="alert alert-error hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span
+              >Error! Could not fetch details for the requested IP/domain.</span
+            >
+          </div>
+          <div
+            id="results-table"
+            class="overflow-x-auto bg-base-100 rounded-lg shadow-lg hidden"
+          >
+            <table class="table table-zebra w-full text-base">
+              <tbody>
+                <tr>
+                  <th class="w-1/3">IP Address</th>
+                  <td id="result-ip" class="font-mono"></td>
+                </tr>
+                <tr>
+                  <th>Hostname</th>
+                  <td id="result-hostname"></td>
+                </tr>
+                <tr>
+                  <th>Location</th>
+                  <td id="result-location"></td>
+                </tr>
+                <tr>
+                  <th>Region</th>
+                  <td id="result-region"></td>
+                </tr>
+                <tr>
+                  <th>Country</th>
+                  <td id="result-country"></td>
+                </tr>
+                <tr>
+                  <th>ISP</th>
+                  <td id="result-isp"></td>
+                </tr>
+                <tr>
+                  <th>ASN</th>
+                  <td id="result-asn"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-base-200 py-20" aria-labelledby="features-heading">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <div class="text-center">
+            <h2 id="features-heading" class="text-3xl font-bold sm:text-4xl">
+              A Comprehensive IP Information Tool
+            </h2>
+            <p class="mt-4 text-lg text-base-content/80">
+              Our tool provides more than just your IP. Get detailed insights
+              for any address.
+            </p>
+          </div>
+          <div
+            class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center"
+          >
+            <div class="card bg-base-100 shadow-md">
+              <div class="card-body items-center">
+                <h3 class="card-title text-xl font-bold">Geolocation Data</h3>
+                <p class="mt-2">
+                  Instantly discover the city, region, and country associated
+                  with an IP address, helping you understand the geographical
+                  origin of web traffic.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-md">
+              <div class="card-body items-center">
+                <h3 class="card-title text-xl font-bold">ISP & ASN Details</h3>
+                <p class="mt-2">
+                  Identify the Internet Service Provider (ISP) and Autonomous
+                  System Number (ASN) to trace the network provider managing the
+                  IP address.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-md">
+              <div class="card-body items-center">
+                <h3 class="card-title text-xl font-bold">Safe & Private</h3>
+                <p class="mt-2">
+                  Your privacy is important. All lookups are performed securely,
+                  and we do not store or share your IP address or search
+                  history.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20" aria-labelledby="faq-heading">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="text-center mb-12">
+            <h2 id="faq-heading" class="text-3xl font-bold sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div class="space-y-4">
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What is an IP address?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  An IP (Internet Protocol) address is a unique numerical label
+                  assigned to every device connected to a computer network that
+                  uses the Internet Protocol for communication. It serves two
+                  main functions: identifying the host or network interface and
+                  providing the location of the host in the network.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What is the difference between IPv4 and IPv6?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  IPv4 is the fourth version of the Internet Protocol and uses a
+                  32-bit address, allowing for about 4.3 billion unique
+                  addresses. IPv6 is the newer version, which uses a 128-bit
+                  address, providing a vastly larger number of unique addresses
+                  to accommodate the growing number of devices on the internet.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                Is this IP lookup tool accurate?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Our tool uses industry-leading databases to provide highly
+                  accurate geolocation data. However, no IP lookup is 100%
+                  perfect. The location shown is typically the location of the
+                  Internet Service Provider's central office, not your precise
+                  physical address.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- Get DOM Elements ---
+        const userIpDisplay = document.getElementById("user-ip-display");
+        const lookupInput = document.getElementById("lookup-input");
+        const lookupButton = document.getElementById("lookup-button");
+        const resultsSection = document.getElementById("results-section");
+        const resultsTable = document.getElementById("results-table");
+        const loader = document.getElementById("loader");
+        const errorMessage = document.getElementById("error-message");
+
+        // --- API Endpoint ---
+        const API_ENDPOINT = "http://ip-api.com/json/";
+
+        // --- Function to fetch and display the user's own IP on page load ---
+        const fetchUserIP = async () => {
+          try {
+            const response = await fetch(API_ENDPOINT);
+            const data = await response.json();
+            if (data.status === "success") {
+              userIpDisplay.textContent = data.query;
+            } else {
+              userIpDisplay.textContent = "Could not fetch IP";
+            }
+          } catch (error) {
+            userIpDisplay.textContent = "Could not fetch IP";
+          }
+        };
+
+        // --- Function to perform a lookup ---
+        const performLookup = async (query) => {
+          // Show the results section and loader, hide old results/errors
+          resultsSection.classList.remove("hidden");
+          resultsTable.classList.add("hidden");
+          errorMessage.classList.add("hidden");
+          loader.classList.remove("hidden");
+
+          try {
+            const response = await fetch(`${API_ENDPOINT}${query}`);
+            const data = await response.json();
+
+            // Hide loader
+            loader.classList.add("hidden");
+
+            if (data.status === "success") {
+              // Populate the results table
+              document.getElementById("result-ip").textContent =
+                data.query || "N/A";
+              document.getElementById("result-hostname").textContent =
+                data.reverse || "N/A";
+              document.getElementById("result-location").textContent = `${
+                data.city || ""
+              }, ${data.zip || ""}`;
+              document.getElementById("result-region").textContent =
+                data.regionName || "N/A";
+              document.getElementById("result-country").textContent =
+                data.country || "N/A";
+              document.getElementById("result-isp").textContent =
+                data.isp || "N/A";
+              document.getElementById("result-asn").textContent =
+                data.as || "N/A";
+
+              // Show the table
+              resultsTable.classList.remove("hidden");
+            } else {
+              // Show error message
+              errorMessage.classList.remove("hidden");
+            }
+          } catch (error) {
+            loader.classList.add("hidden");
+            errorMessage.classList.remove("hidden");
+          }
+        };
+
+        // --- Event Listeners ---
+        lookupButton.addEventListener("click", () => {
+          const query = lookupInput.value.trim();
+          if (query) {
+            performLookup(query);
+          }
+        });
+
+        // Also allow lookup on pressing Enter
+        lookupInput.addEventListener("keyup", (event) => {
+          if (event.key === "Enter") {
+            const query = lookupInput.value.trim();
+            if (query) {
+              performLookup(query);
+            }
+          }
+        });
+
+        // --- Initial Call ---
+        fetchUserIP();
+      });
+    </script>
+    <footer class="footer items-center bg-neutral text-neutral-content p-4">
+      <aside class="grid-flow-col items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-yellow-400"
+          aria-hidden="true"
+        >
+          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+      </aside>
+
+      <nav
+        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+        aria-label="Social media links"
+      >
+        <a
+          href="https://github.com/Mayank170906"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's GitHub profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mayank170906/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's LinkedIn profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="mailto:mayankeducation.17@gmail.com"
+          aria-label="Send an email to Mayank"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

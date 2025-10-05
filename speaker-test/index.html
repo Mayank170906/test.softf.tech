@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Speaker Test - Check Your Stereo, Sound & Headphones |
+      test.softf.tech
+    </title>
+    <meta
+      name="description"
+      content="A free online speaker test to check your left and right channels, frequency response, and overall audio quality. Works for both speakers and headphones."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="keywords"
+      content="speaker test, audio test, sound test, stereo test, left right speaker test, headphone test, frequency test, audio check"
+    />
+    <meta name="author" content="Mayank" />
+    <meta name="theme-color" content="#1f2937" />
+
+    <link rel="canonical" href="https://test.softf.tech/speaker-test/" />
+
+    <meta
+      property="og:title"
+      content="Online Speaker & Headphone Test | test.softf.tech"
+    />
+    <meta
+      property="og:description"
+      content="A free browser-based tool to check your left/right stereo channels, full frequency range, bass response, and more without any software installation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://test.softf.tech/speaker-test/" />
+    <meta
+      property="og:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta property="og:image:width" content="610" />
+    <meta property="og:image:height" content="658" />
+    <meta property="og:image:alt" content="test.softf.tech Logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Online Speaker & Headphone Test | test.softf.tech"
+    />
+    <meta
+      name="twitter:description"
+      content="A free browser-based tool to check your left/right stereo channels, full frequency range, bass response, and more without any software installation."
+    />
+    <meta
+      name="twitter:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta name="twitter:image:alt" content="test.softf.tech Logo" />
+
+    <link href="../assets/css/output.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Online Speaker Test & Audio Check",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any (Web Browser)",
+            "url": "https://test.softf.tech/speaker-test/",
+            "description": "A free browser-based tool to test your speakers and headphones. Check left/right stereo channels, full frequency range, bass response, and more without any software installation.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "test.softf.tech"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "I can't hear anything. What should I do?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "First, check that your device's volume is not muted or set to zero. Ensure your speakers are properly connected and powered on. If using headphones, make sure they are securely plugged in. Finally, try adjusting the 'Test Volume' slider on our tool."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does my speaker rattle at certain frequencies?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rattling or buzzing is often caused by a damaged speaker driver (a 'blown speaker'). It can also be caused by a loose component inside the speaker cabinet or something in your room vibrating in sympathy with the sound."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this test safe for my speakers and headphones?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, the test tones are standard audio frequencies and are safe for all audio devices when played at a reasonable volume. We strongly recommend starting with a low volume and gradually increasing it to a comfortable level."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://test.softf.tech/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Speaker Test",
+                "item": "https://test.softf.tech/speaker-test/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-gray-400">
+    <header>
+      <nav
+        class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
+        aria-label="Main Navigation"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <button
+              tabindex="0"
+              class="btn btn-ghost lg:hidden"
+              aria-label="Open navigation menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </button>
+
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a
+                  href="../about.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../contact.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+
+              <li class="menu-title">
+                <span class="text-yellow-400">Web Tools & Tests</span>
+              </li>
+
+              <li>
+                <a
+                  href="../keyboard-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Keyboard Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../mouse-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Mouse Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../display-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Display Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speaker-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Speaker Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../ip-lookup/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >IP Lookup Tool</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speed-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Network Speed Test</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="../"
+            class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+            aria-label="Home - test.softf.tech"
+          >
+            test.softf.tech
+          </a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                href="../about.html"
+                class="hover:text-yellow-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../contact.html"
+                class="hover:text-yellow-400 transition-colors"
+                >Contact Us</a
+              >
+            </li>
+
+            <li>
+              <details>
+                <summary class="hover:text-yellow-400 transition-colors">
+                  Web Tools & Tests
+                </summary>
+
+                <ul
+                  class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
+                >
+                  <li>
+                    <a href="../keyboard-test/index.html">Keyboard Test</a>
+                  </li>
+
+                  <li><a href="../mouse-test/index.html">Mouse Test</a></li>
+
+                  <li><a href="../display-test/index.html">Display Test</a></li>
+
+                  <li><a href="../speaker-test/index.html">Speaker Test</a></li>
+
+                  <li><a href="../ip-lookup/index.html">IP Lookup Tool</a></li>
+
+                  <li>
+                    <a href="../speed-test/index.html">Network Speed Test</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <button
+              tabindex="0"
+              class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+              aria-label="Our tools network"
+            >
+              Tools
+            </button>
+
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
+            >
+              <li>
+                <a
+                  href="https://softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit softf.tech - Core Content Hub"
+                  >softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://tools.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit tools.softf.tech - Utility Engine"
+                  >tools.softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://test.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit test.softf.tech - Lightweight Test Bench"
+                  >test.softf.tech</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-base-200">
+        <div class="container mx-auto px-4 py-20 text-center">
+          <h1
+            class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+          >
+            Online Speaker Test & Audio Check
+          </h1>
+          <p class="mt-6 max-w-3xl mx-auto text-lg text-base-content/80">
+            Quickly test your stereo speakers, headphones, and audio system to
+            diagnose common sound problems. No installation is required.
+          </p>
+
+          <div class="card max-w-2xl mx-auto mt-12 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title mx-auto">Audio Test Panel</h2>
+
+              <canvas
+                id="audio-visualizer"
+                class="w-full h-24 bg-base-300 rounded-lg my-4"
+              ></canvas>
+              <p id="status-text" class="min-h-[1.5em] text-base-content/70">
+                Ready to test
+              </p>
+
+              <div class="form-control mt-4">
+                <label class="label" for="volume-slider">
+                  <span class="label-text">Test Volume</span>
+                </label>
+                <input
+                  type="range"
+                  id="volume-slider"
+                  min="0"
+                  max="100"
+                  value="50"
+                  class="range range-primary"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                <button
+                  id="left-channel-btn"
+                  class="btn btn-primary btn-outline"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11 17l-5-5m0 0l5-5m-5 5h12"
+                    />
+                  </svg>
+                  Test Left Speaker
+                </button>
+                <button
+                  id="right-channel-btn"
+                  class="btn btn-primary btn-outline"
+                >
+                  Test Right Speaker
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </button>
+                <button
+                  id="sweep-btn"
+                  class="btn btn-secondary btn-outline col-span-1 sm:col-span-2"
+                >
+                  Frequency Sweep (20Hz to 20kHz)
+                </button>
+                <button id="bass-btn" class="btn btn-accent btn-outline">
+                  Subwoofer / Bass Test
+                </button>
+                <button id="treble-btn" class="btn btn-accent btn-outline">
+                  High-Frequency Test
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container mx-auto px-4 py-20"
+        aria-labelledby="guide-heading"
+      >
+        <div class="text-center">
+          <h2 id="guide-heading" class="text-3xl font-bold sm:text-4xl">
+            What to Listen For
+          </h2>
+          <p class="mt-4 text-lg text-base-content/80 max-w-3xl mx-auto">
+            Each test is designed to help you identify specific audio problems.
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <h3 class="card-title">Stereo Sound Test</h3>
+              <p>
+                When testing the left or right channel, the sound should come
+                exclusively from that speaker. If you hear sound from both, your
+                stereo channels might be reversed or improperly configured.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <h3 class="card-title">Frequency Sweep</h3>
+              <p>
+                Listen for a smooth, continuous tone. Any buzzing, rattling, or
+                crackling could indicate a damaged speaker driver. Gaps in sound
+                might mean your speakers struggle with certain frequencies.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <h3 class="card-title">Bass & Treble Tests</h3>
+              <p>
+                The low and high-frequency sounds should be clear and distinct.
+                Distorted, muffled, or "tinny" sounds suggest your speakers
+                cannot reproduce those frequencies accurately at the current
+                volume.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-base-200 py-20" aria-labelledby="faq-heading">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="text-center mb-12">
+            <h2 id="faq-heading" class="text-3xl font-bold sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div class="space-y-4">
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                I can't hear anything. What should I do?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  First, check that your device's volume is not muted or set to
+                  zero. Ensure your speakers are properly connected and powered
+                  on. If using headphones, make sure they are securely plugged
+                  in. Finally, try adjusting the "Test Volume" slider on our
+                  tool.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                Why does my speaker rattle at certain frequencies?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Rattling or buzzing is often caused by a damaged speaker
+                  driver (a "blown speaker"). It can also be caused by a loose
+                  component inside the speaker cabinet or something in your room
+                  vibrating in sympathy with the sound. Try moving the speaker
+                  to see if the rattle persists.
+                </p>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                Is this test safe for my speakers and headphones?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Yes, the test tones are standard audio frequencies and are
+                  safe for all audio devices when played at a reasonable volume.
+                  We strongly recommend starting with a low volume and gradually
+                  increasing it to a comfortable level. Do not perform tests at
+                  maximum volume for extended periods.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // ===================================
+        // 1. SETUP VARIABLES & ELEMENTS
+        // ===================================
+
+        // Audio state variables
+        let audioCtx = null; // The main "audio engine"
+        let mainGainNode = null; // Controls the master volume
+        let analyserNode = null; // Used for the visualizer
+        let isTesting = false; // Prevents multiple tests from running at once
+        let animationFrameId = null; // Stores the animation frame for the visualizer
+
+        // Get all interactive HTML elements
+        const leftChannelBtn = document.getElementById("left-channel-btn");
+        const rightChannelBtn = document.getElementById("right-channel-btn");
+        const sweepBtn = document.getElementById("sweep-btn");
+        const bassBtn = document.getElementById("bass-btn");
+        const trebleBtn = document.getElementById("treble-btn");
+        const volumeSlider = document.getElementById("volume-slider");
+        const statusText = document.getElementById("status-text");
+
+        // Get the canvas for the visualizer
+        const canvas = document.getElementById("audio-visualizer");
+        const canvasCtx = canvas.getContext("2d");
+
+        const allTestButtons = [
+          leftChannelBtn,
+          rightChannelBtn,
+          sweepBtn,
+          bassBtn,
+          trebleBtn,
+        ];
+
+        // ===================================
+        // 2. AUDIO INITIALIZATION
+        // ===================================
+
+        /**
+         * Initializes the Web Audio API. This is the most critical part.
+         * It MUST be called by a direct user action (like a click).
+         */
+        function initAudio() {
+          // If the audio engine already exists, we don't need to do anything.
+          if (audioCtx) return;
+
+          try {
+            // Create a new AudioContext. This is the "audio engine".
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+            // Create a GainNode, which acts as our volume control.
+            mainGainNode = audioCtx.createGain();
+            mainGainNode.gain.value = volumeSlider.value / 100;
+
+            // Create an AnalyserNode to get data for the visualizer.
+            analyserNode = audioCtx.createAnalyser();
+            analyserNode.fftSize = 256; // Determines the visualizer's detail
+
+            // Connect the audio nodes in a chain:
+            // Volume Control -> Visualizer -> Speakers
+            mainGainNode.connect(analyserNode);
+            analyserNode.connect(audioCtx.destination);
+
+            console.log("AudioContext initialized successfully.");
+            visualize(); // Start the visualizer animation loop
+          } catch (e) {
+            statusText.textContent =
+              "Error: This browser does not support the Web Audio API.";
+            console.error("Could not initialize AudioContext:", e);
+          }
+        }
+
+        // ===================================
+        // 3. CORE SOUND GENERATION
+        // ===================================
+
+        /**
+         * Generates and plays a sound based on the provided options.
+         * @param {object} options - Configuration for the sound.
+         */
+        function playSound(options) {
+          // Check if a test is already running or if the audio engine isn't ready.
+          if (isTesting || !audioCtx || audioCtx.state !== "running") {
+            if (audioCtx?.state !== "running") {
+              // This can happen if the user revokes permissions.
+              console.warn(
+                "AudioContext is not in a running state. Trying to resume..."
+              );
+              audioCtx.resume();
+            }
+            return;
+          }
+
+          isTesting = true;
+          setButtonState(true); // Disable buttons during the test
+
+          const {
+            freq, // The frequency (pitch) of the tone
+            pan = 0, // -1 for left, 1 for right, 0 for center
+            duration = 2, // How long the sound plays in seconds
+            type = "sine", // The shape of the sound wave (sine is a pure tone)
+            sweepTo, // For frequency sweeps, the target frequency
+          } = options;
+
+          // Create an Oscillator - this is what generates the actual sound wave.
+          const oscillator = audioCtx.createOscillator();
+          oscillator.type = type;
+
+          // Create a StereoPanner to control left/right balance.
+          const panner = audioCtx.createStereoPanner();
+          panner.pan.setValueAtTime(pan, audioCtx.currentTime);
+
+          // Connect the sound source to the panner, and the panner to the main volume.
+          oscillator.connect(panner).connect(mainGainNode);
+
+          // Set the frequency.
+          oscillator.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+          // If it's a sweep, create a smooth transition to the target frequency.
+          if (sweepTo) {
+            oscillator.frequency.exponentialRampToValueAtTime(
+              sweepTo,
+              audioCtx.currentTime + duration
+            );
+          }
+
+          // Start the sound now.
+          oscillator.start();
+          // Schedule the sound to stop after the specified duration.
+          oscillator.stop(audioCtx.currentTime + duration);
+
+          // When the sound has finished playing, re-enable the UI.
+          oscillator.onended = () => {
+            isTesting = false;
+            setButtonState(false);
+            statusText.textContent = "Ready to test";
+          };
+        }
+
+        // ===================================
+        // 4. UI AND VISUALIZER
+        // ===================================
+
+        /** Disables or enables all test buttons. */
+        function setButtonState(disabled) {
+          allTestButtons.forEach((btn) => (btn.disabled = disabled));
+        }
+
+        /** The animation loop for drawing the visualizer on the canvas. */
+        function visualize() {
+          if (!analyserNode) return; // Stop if the analyser isn't ready
+
+          // Request the next animation frame to create a smooth loop
+          animationFrameId = requestAnimationFrame(visualize);
+
+          const bufferLength = analyserNode.frequencyBinCount;
+          const dataArray = new Uint8Array(bufferLength);
+          analyserNode.getByteFrequencyData(dataArray); // Get frequency data
+
+          // Clear the canvas
+          canvasCtx.fillStyle = "#e5e7eb"; // base-200 color
+          canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+
+          const barWidth = (canvas.width / bufferLength) * 2.5;
+          let x = 0;
+
+          // Draw a bar for each frequency bin
+          for (let i = 0; i < bufferLength; i++) {
+            const barHeight = dataArray[i] / 2.5;
+            canvasCtx.fillStyle = "#570df8"; // primary color
+            canvasCtx.fillRect(
+              x,
+              canvas.height - barHeight,
+              barWidth,
+              barHeight
+            );
+            x += barWidth + 1;
+          }
+        }
+
+        // ===================================
+        // 5. EVENT LISTENERS
+        // ===================================
+
+        // This is the key part: The FIRST time any test button is clicked,
+        // it will run `initAudio()` to get permission from the browser.
+        allTestButtons.forEach((button) => {
+          button.addEventListener("click", initAudio, { once: true });
+        });
+
+        leftChannelBtn.addEventListener("click", () => {
+          statusText.textContent = "Testing Left Speaker...";
+          playSound({ freq: 440, pan: -1, duration: 1.5 });
+        });
+
+        rightChannelBtn.addEventListener("click", () => {
+          statusText.textContent = "Testing Right Speaker...";
+          playSound({ freq: 440, pan: 1, duration: 1.5 });
+        });
+
+        sweepBtn.addEventListener("click", () => {
+          statusText.textContent = "Performing Frequency Sweep...";
+          playSound({ freq: 20, sweepTo: 20000, duration: 5 });
+        });
+
+        bassBtn.addEventListener("click", () => {
+          statusText.textContent = "Testing Low Frequencies (60Hz)...";
+          playSound({ freq: 60, duration: 2.5 });
+        });
+
+        trebleBtn.addEventListener("click", () => {
+          statusText.textContent = "Testing High Frequencies (12kHz)...";
+          playSound({ freq: 12000, duration: 2.5 });
+        });
+
+        // Update the volume in real-time when the slider is moved.
+        volumeSlider.addEventListener("input", (e) => {
+          if (mainGainNode) {
+            // Use setTargetAtTime for a smooth, click-free volume change.
+            mainGainNode.gain.setTargetAtTime(
+              e.target.value / 100,
+              audioCtx.currentTime,
+              0.01
+            );
+          }
+        });
+      });
+    </script>
+
+    <footer class="footer items-center bg-neutral text-neutral-content p-4">
+      <aside class="grid-flow-col items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-yellow-400"
+          aria-hidden="true"
+        >
+          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+      </aside>
+
+      <nav
+        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+        aria-label="Social media links"
+      >
+        <a
+          href="https://github.com/Mayank170906"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's GitHub profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mayank170906/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's LinkedIn profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="mailto:mayankeducation.17@gmail.com"
+          aria-label="Send an email to Mayank"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

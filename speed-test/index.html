@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Mouse Test - Check Clicks, Scroll & Accuracy | test.softf.tech
+    </title>
+    <meta
+      name="description"
+      content="A free and private online mouse test to check for double-clicks, scroll wheel issues, and button functionality. Instantly diagnose problems with our visual tester."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="keywords"
+      content="mouse test, mouse tester, click test, scroll test, double click test, online mouse tool, check mouse buttons, drag and drop test"
+    />
+    <meta name="author" content="Mayank" />
+    <meta name="theme-color" content="#1f2937" />
+
+    <link rel="canonical" href="https://test.softf.tech/mouse-test/" />
+
+    <meta
+      property="og:title"
+      content="Online Mouse Test - Instantly Diagnose Your Clicks & Scroll | test.softf.tech"
+    />
+    <meta
+      property="og:description"
+      content="A free and private online mouse test to check for double-clicks, scroll wheel issues, and button functionality. Instantly diagnose problems with our visual tester."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://test.softf.tech/mouse-test/" />
+    <meta
+      property="og:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta property="og:image:width" content="610" />
+    <meta property="og:image:height" content="658" />
+    <meta property="og:image:alt" content="test.softf.tech Logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Online Mouse Test - Instantly Diagnose Your Clicks & Scroll | test.softf.tech"
+    />
+    <meta
+      name="twitter:description"
+      content="A free and private online mouse test to check for double-clicks, scroll wheel issues, and button functionality. Instantly diagnose problems with our visual tester."
+    />
+    <meta
+      name="twitter:image"
+      content="https://test.softf.tech/assets/images/logo.jpg"
+    />
+    <meta name="twitter:image:alt" content="test.softf.tech Logo" />
+
+    <link href="../assets/css/output.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Online Mouse Test & Click Counter",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Any (Web Browser)",
+            "url": "https://test.softf.tech/mouse-test/",
+            "description": "A free, client-side web application to test all aspects of a computer mouse, including left, right, and middle clicks, scroll wheel functionality, and drag-and-drop accuracy.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "test.softf.tech"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is my mouse double-clicking when I only click once?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This is a common hardware failure where the mouse's mechanical switch registers multiple inputs from a single press. Our test helps confirm this: if the click counter increases by two or more from one physical click, the switch is likely failing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "My screen scrolls erratically. How can I test this?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use our scroll test by slowly rolling the wheel up and down. The visual indicators should light up consistently. If they jump, reverse, or fail to respond, the scroll wheel's encoder is likely dirty or damaged."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this online mouse test safe and private?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. This tool runs entirely in your web browser using JavaScript. No data is sent to a server, and no software is installed. Your activity is completely private."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://test.softf.tech/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Mouse Test",
+                "item": "https://test.softf.tech/mouse-test/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-400">
+    <header>
+      <nav
+        class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
+        aria-label="Main Navigation"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <button
+              tabindex="0"
+              class="btn btn-ghost lg:hidden"
+              aria-label="Open navigation menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </button>
+
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a
+                  href="../about.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../contact.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+
+              <li class="menu-title">
+                <span class="text-yellow-400">Web Tools & Tests</span>
+              </li>
+
+              <li>
+                <a
+                  href="../keyboard-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Keyboard Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../mouse-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Mouse Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../display-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Display Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speaker-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Speaker Test</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../ip-lookup/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >IP Lookup Tool</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../speed-test/index.html"
+                  class="hover:text-yellow-400 transition-colors"
+                  >Network Speed Test</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="../"
+            class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+            aria-label="Home - test.softf.tech"
+          >
+            test.softf.tech
+          </a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                href="../about.html"
+                class="hover:text-yellow-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../contact.html"
+                class="hover:text-yellow-400 transition-colors"
+                >Contact Us</a
+              >
+            </li>
+
+            <li>
+              <details>
+                <summary class="hover:text-yellow-400 transition-colors">
+                  Web Tools & Tests
+                </summary>
+
+                <ul
+                  class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
+                >
+                  <li>
+                    <a href="../keyboard-test/index.html">Keyboard Test</a>
+                  </li>
+
+                  <li><a href="../mouse-test/index.html">Mouse Test</a></li>
+
+                  <li><a href="../display-test/index.html">Display Test</a></li>
+
+                  <li><a href="../speaker-test/index.html">Speaker Test</a></li>
+
+                  <li><a href="../ip-lookup/index.html">IP Lookup Tool</a></li>
+
+                  <li>
+                    <a href="../speed-test/index.html">Network Speed Test</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <button
+              tabindex="0"
+              class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+              aria-label="Our tools network"
+            >
+              Tools
+            </button>
+
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
+            >
+              <li>
+                <a
+                  href="https://softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit softf.tech - Core Content Hub"
+                  >softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://tools.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit tools.softf.tech - Utility Engine"
+                  >tools.softf.tech</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://test.softf.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit test.softf.tech - Lightweight Test Bench"
+                  >test.softf.tech</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-base-200">
+        <div class="container mx-auto px-4 py-20 text-center">
+          <h1
+            class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+          >
+            Network Diagnostic Tools
+          </h1>
+          <p class="mt-6 max-w-2xl mx-auto text-lg text-base-content/80">
+            A collection of simple, browser-based utilities to check your
+            network status and connection quality.
+          </p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 py-16">
+        <div role="alert" class="alert alert-warning max-w-4xl mx-auto mb-12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="stroke-current shrink-0 h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            />
+          </svg>
+          <span
+            ><strong>Under Development:</strong> This page is a work in
+            progress. Some features are not yet functional.</span
+          >
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Your Public IP Address</h2>
+              <p class="text-4xl font-mono my-4 text-primary" id="ip-display">
+                Loading...
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-secondary btn-sm" id="ip-refresh-btn">
+                  Refresh
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Ping & Latency Test</h2>
+              <p class="text-4xl font-mono my-4">
+                <span class="text-accent" id="ping-display">--</span>
+                <span class="text-lg text-base-content/60">ms</span>
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="ping-test-btn">
+                  Run Ping Test
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure></figure>
+            <div class="card-body">
+              <div class="badge badge-info">Coming Soon</div>
+              <h2 class="card-title mt-2">Download Speed Test</h2>
+              <p class="text-4xl font-mono my-4">
+                <span id="download-display">--</span>
+                <span class="text-lg">Mbps</span>
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-disabled" id="download-test-btn">
+                  Run Download Test
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl image-full">
+            <figure></figure>
+            <div class="card-body">
+              <div class="badge badge-info">Coming Soon</div>
+              <h2 class="card-title mt-2">Upload Speed Test</h2>
+              <p class="text-4xl font-mono my-4">
+                <span id="upload-display">--</span>
+                <span class="text-lg">Mbps</span>
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-disabled" id="upload-test-btn">
+                  Run Upload Test
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-base-200 py-20" aria-labelledby="metrics-heading">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="text-center mb-10">
+            <h2 id="metrics-heading" class="text-3xl font-bold sm:text-4xl">
+              Understanding the Metrics
+            </h2>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold">IP Address</h3>
+              <p class="text-base-content/80 mt-2">
+                Your IP (Internet Protocol) address is a unique identifier for
+                your device on the internet, much like a mailing address for
+                your house. It allows data to be sent to and from your computer
+                correctly.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Ping (Latency)</h3>
+              <p class="text-base-content/80 mt-2">
+                Ping measures the round-trip time for a small piece of data to
+                travel from your computer to a server and back. A lower ping (in
+                milliseconds) means a more responsive connection, which is
+                crucial for online gaming and video calls.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      "use strict";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // ===================================
+        //  1. DOM ELEMENT SELECTIONS
+        // ===================================
+        const ipDisplayEl = document.getElementById("ip-display");
+        const ipRefreshBtn = document.getElementById("ip-refresh-btn");
+        const pingDisplayEl = document.getElementById("ping-display");
+        const pingTestBtn = document.getElementById("ping-test-btn");
+
+        // Note: The disabled download/upload buttons don't need to be selected
+        // as they have no actions associated with them yet.
+
+        // ===================================
+        //  2. IP ADDRESS FUNCTIONALITY
+        // ===================================
+
+        /**
+         * Fetches the user's public IP address from a free, simple API.
+         * Updates the UI with the result or an error message.
+         */
+        async function fetchIP() {
+          ipDisplayEl.textContent = "Loading...";
+          ipRefreshBtn.classList.add("btn-disabled"); // Disable button during fetch
+
+          try {
+            // api.ipify.org is a very simple service that just returns the IP as plain text.
+            const response = await fetch("https://api.ipify.org?format=json");
+            if (!response.ok)
+              throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            ipDisplayEl.textContent = data.ip;
+          } catch (error) {
+            console.error("Failed to fetch IP address:", error);
+            ipDisplayEl.textContent = "Unavailable";
+          } finally {
+            ipRefreshBtn.classList.remove("btn-disabled"); // Re-enable button
+          }
+        }
+
+        // ===================================
+        //  3. PING TEST FUNCTIONALITY
+        // ===================================
+
+        /**
+         * Runs a simple latency test by timing a lightweight network request.
+         * Updates the UI with the ping time or an error message.
+         */
+        async function runPingTest() {
+          pingDisplayEl.textContent = "...";
+          pingTestBtn.disabled = true;
+          pingTestBtn.textContent = "Pinging...";
+
+          try {
+            const startTime = performance.now();
+
+            // We send a HEAD request because we don't need the actual file content,
+            // just the server's response. A cache-busting parameter is added.
+            await fetch(
+              "https://eu.backend.librespeed.org/empty.php?_t=" + Date.now(),
+              {
+                method: "HEAD",
+                cache: "no-store",
+              }
+            );
+
+            const endTime = performance.now();
+            const pingTime = Math.round(endTime - startTime);
+            pingDisplayEl.textContent = pingTime;
+          } catch (error) {
+            console.error("Ping test failed:", error);
+            pingDisplayEl.textContent = "Fail";
+          } finally {
+            // Always reset the button after the test completes or fails
+            pingTestBtn.disabled = false;
+            pingTestBtn.textContent = "Run Ping Test";
+          }
+        }
+
+        // ===================================
+        //  4. EVENT LISTENERS & INITIALIZATION
+        // ===================================
+
+        // Attach the functions to their respective buttons
+        ipRefreshBtn.addEventListener("click", fetchIP);
+        pingTestBtn.addEventListener("click", runPingTest);
+
+        // --- Initial Action ---
+        // Fetch the IP address automatically when the page first loads.
+        fetchIP();
+      });
+    </script>
+
+    <footer class="footer items-center bg-neutral text-neutral-content p-4">
+      <aside class="grid-flow-col items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-yellow-400"
+          aria-hidden="true"
+        >
+          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+      </aside>
+
+      <nav
+        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+        aria-label="Social media links"
+      >
+        <a
+          href="https://github.com/Mayank170906"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's GitHub profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mayank170906/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Mayank's LinkedIn profile"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="mailto:mayankeducation.17@gmail.com"
+          aria-label="Send an email to Mayank"
+          class="hover:text-yellow-400 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
