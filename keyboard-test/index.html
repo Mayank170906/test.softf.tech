@@ -1,932 +1,929 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <!-- ======================================================================= -->
-    <!-- ============== HEAD FOR KEYBOARD TEST PAGE (SEO OPTIMIZED) ============== -->
-    <!-- ======================================================================= -->
-
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>
-      Online Keyboard Test - Diagnose Stuck Keys, Chatter & NKRO |
-      test.softf.tech
+        Online Keyboard Test: Check for Stuck Keys & Key Chatter
     </title>
     <meta
-      name="description"
-      content="A free, private online keyboard tester to diagnose hardware faults. Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+            name="description"
+            content="A free, private online keyboard tester to diagnose hardware faults. Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow"/>
 
     <!-- Keywords -->
     <meta
-      name="keywords"
-      content="keyboard test, keyboard tester, online keyboard test, key rollover test, NKRO test, keyboard ghosting test, keyboard chatter test, diagnose keyboard, stuck key test, mechanical keyboard test"
+            name="keywords"
+            content="keyboard test, keyboard tester, online keyboard test, key rollover test, NKRO test, keyboard ghosting test, keyboard chatter test, diagnose keyboard, stuck key test, mechanical keyboard test"
     />
-    <meta name="author" content="Mayank" />
-    <meta name="theme-color" content="#1f2937" />
+    <meta name="author" content="Mayank"/>
+    <meta name="theme-color" content="#1f2937"/>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://test.softf.tech/keyboard-test/" />
+    <link rel="canonical" href="https://test.softf.tech/keyboard-test/"/>
 
     <!-- Open Graph / Facebook -->
     <meta
-      property="og:title"
-      content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
+            property="og:title"
+            content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
     />
     <meta
-      property="og:description"
-      content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+            property="og:description"
+            content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://test.softf.tech/keyboard-test/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://test.softf.tech/keyboard-test/"/>
     <meta
-      property="og:image"
-      content="https://test.softf.tech/assets/images/logo.jpg"
+            property="og:image"
+            content="https://test.softf.tech/assets/images/logo.jpg"
     />
-    <meta property="og:image:width" content="610" />
-    <meta property="og:image:height" content="658" />
-    <meta property="og:image:alt" content="test.softf.tech Logo" />
+    <meta property="og:image:width" content="610"/>
+    <meta property="og:image:height" content="658"/>
+    <meta property="og:image:alt" content="test.softf.tech Logo"/>
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image"/>
     <meta
-      name="twitter:title"
-      content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
+            name="twitter:title"
+            content="Online Keyboard Test - Diagnose Your Keys | test.softf.tech"
     />
     <meta
-      name="twitter:description"
-      content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
+            name="twitter:description"
+            content="Test for stuck keys, ghosting, n-key rollover (NKRO), and keyboard chatter instantly in your browser."
     />
     <meta
-      name="twitter:image"
-      content="https://test.softf.tech/assets/images/logo.jpg"
+            name="twitter:image"
+            content="https://test.softf.tech/assets/images/logo.jpg"
     />
-    <meta name="twitter:image:alt" content="test.softf.tech Logo" />
+    <meta name="twitter:image:alt" content="test.softf.tech Logo"/>
 
     <!-- Tailwind CSS (relative path for subfolder) -->
-    <link href="../assets/css/output.css" rel="stylesheet" />
-
+    <link href="../assets/css/output.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/site.webmanifest">
     <!-- Schema.org JSON-LD Structured Data for this specific tool -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "Online Keyboard Tester",
-            "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "Any (Web Browser)",
-            "url": "https://test.softf.tech/keyboard-test/",
-            "description": "A free, client-side web application to test keyboard functionality, including diagnostics for n-key rollover (NKRO), ghosting, and key chatter.",
-            "offers": {
-              "@type": "Offer",
-              "price": "0"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "test.softf.tech"
-            }
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why is my keyboard typing double letters?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "This is a symptom of 'keyboard chatter,' a hardware fault our tool can detect. It's often caused by a failing mechanical switch that needs cleaning or replacement."
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "Online Keyboard Tester",
+                    "applicationCategory": "UtilitiesApplication",
+                    "operatingSystem": "Any (Web Browser)",
+                    "url": "https://test.softf.tech/keyboard-test/",
+                    "description": "A free, client-side web application to test keyboard functionality, including diagnostics for n-key rollover (NKRO), ghosting, and key chatter.",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "0"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "test.softf.tech"
+                    }
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Why is my keyboard typing double letters?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "This is a symptom of 'keyboard chatter,' a hardware fault our tool can detect. It's often caused by a failing mechanical switch that needs cleaning or replacement."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is N-Key Rollover (NKRO)?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "N-Key Rollover is the ability of a keyboard to register multiple key presses at the same time. This is a crucial feature for gaming. Our 'Max Keys Held' stat lets you test your keyboard's NKRO capability."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Is this keyboard test safe and private?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes, absolutely. The tool runs entirely in your web browser. No key presses or any other data is sent to a server."
+                            }
+                        }
+                    ]
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What is N-Key Rollover (NKRO)?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "N-Key Rollover is the ability of a keyboard to register multiple key presses at the same time. This is a crucial feature for gaming. Our 'Max Keys Held' stat lets you test your keyboard's NKRO capability."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is this keyboard test safe and private?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, absolutely. The tool runs entirely in your web browser. No key presses or any other data is sent to a server."
-                }
-              }
             ]
-          }
-        ]
-      }
+        }
     </script>
-  </head>
-  <body class="bg-gray-400">
-    <header>
-      <nav
-        class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
-        aria-label="Main Navigation"
-      >
+</head>
+<body class="bg-gray-400">
+<header>
+    <nav
+            class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
+            aria-label="Main Navigation"
+    >
         <div class="navbar-start">
-          <div class="dropdown">
-            <button
-              tabindex="0"
-              class="btn btn-ghost lg:hidden"
-              aria-label="Open navigation menu"
+            <div class="dropdown">
+                <button
+                        tabindex="0"
+                        class="btn btn-ghost lg:hidden"
+                        aria-label="Open navigation menu"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                    </svg>
+                </button>
+
+                <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
+                >
+                    <li>
+                        <a
+                                href="../about.html"
+                                class="hover:text-yellow-400 transition-colors"
+                        >About Us</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../contact.html"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Contact Us</a
+                        >
+                    </li>
+
+                    <li class="menu-title">
+                        <span class="text-yellow-400">Web Tools & Tests</span>
+                    </li>
+
+                    <li>
+                        <a
+                                href="../keyboard-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Keyboard Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../mouse-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Mouse Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../display-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Display Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../speaker-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Speaker Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../ip-lookup/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >IP Lookup Tool</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../speed-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Network Speed Test</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <a
+                    href="../"
+                    class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+                    aria-label="Home - test.softf.tech"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </button>
-
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a
-                  href="../about.html"
-                  class="hover:text-yellow-400 transition-colors"
-                  >About Us</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../contact.html"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Contact Us</a
-                >
-              </li>
-
-              <li class="menu-title">
-                <span class="text-yellow-400">Web Tools & Tests</span>
-              </li>
-
-              <li>
-                <a
-                  href="../keyboard-test/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Keyboard Test</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../mouse-test/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Mouse Test</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../display-test/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Display Test</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../speaker-test/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Speaker Test</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../ip-lookup/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >IP Lookup Tool</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="../speed-test/"
-                  class="hover:text-yellow-400 transition-colors"
-                  >Network Speed Test</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <a
-            href="../"
-            class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
-            aria-label="Home - test.softf.tech"
-          >
-            test.softf.tech
-          </a>
+                test.softf.tech
+            </a>
         </div>
 
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li>
-              <a
-                href="../about.html"
-                class="hover:text-yellow-400 transition-colors"
-                >About Us</a
-              >
-            </li>
+            <ul class="menu menu-horizontal px-1">
+                <li>
+                    <a
+                            href="../about.html"
+                            class="hover:text-yellow-400 transition-colors"
+                    >About Us</a
+                    >
+                </li>
 
-            <li>
-              <a
-                href="../contact.html"
-                class="hover:text-yellow-400 transition-colors"
-                >Contact Us</a
-              >
-            </li>
+                <li>
+                    <a
+                            href="../contact.html"
+                            class="hover:text-yellow-400 transition-colors"
+                    >Contact Us</a
+                    >
+                </li>
 
-            <li>
-              <details>
-                <summary class="hover:text-yellow-400 transition-colors">
-                  Web Tools & Tests
-                </summary>
+                <li>
+                    <details>
+                        <summary class="hover:text-yellow-400 transition-colors">
+                            Web Tools & Tests
+                        </summary>
 
-                <ul
-                  class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
-                >
-                  <li>
-                    <a href="../keyboard-test/">Keyboard Test</a>
-                  </li>
+                        <ul
+                                class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
+                        >
+                            <li>
+                                <a href="../keyboard-test/">Keyboard Test</a>
+                            </li>
 
-                  <li><a href="../mouse-test/">Mouse Test</a></li>
+                            <li><a href="../mouse-test/">Mouse Test</a></li>
 
-                  <li><a href="../display-test/">Display Test</a></li>
+                            <li><a href="../display-test/">Display Test</a></li>
 
-                  <li><a href="../speaker-test/">Speaker Test</a></li>
+                            <li><a href="../speaker-test/">Speaker Test</a></li>
 
-                  <li><a href="../ip-lookup/">IP Lookup Tool</a></li>
+                            <li><a href="../ip-lookup/">IP Lookup Tool</a></li>
 
-                  <li>
-                    <a href="../speed-test/">Network Speed Test</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+                            <li>
+                                <a href="../speed-test/">Network Speed Test</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
         </div>
 
         <div class="navbar-end">
-          <div class="dropdown dropdown-end">
-            <button
-              tabindex="0"
-              class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
-              aria-label="Our tools network"
-            >
-              Tools
-            </button>
-
-            <ul
-              tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
-            >
-              <li>
-                <a
-                  href="https://softf.tech"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visit softf.tech - Core Content Hub"
-                  >softf.tech</a
+            <div class="dropdown dropdown-end">
+                <button
+                        tabindex="0"
+                        class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+                        aria-label="Our tools network"
                 >
-              </li>
+                    Tools
+                </button>
 
-              <li>
-                <a
-                  href="https://tools.softf.tech"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visit tools.softf.tech - Utility Engine"
-                  >tools.softf.tech</a
+                <ul
+                        tabindex="0"
+                        class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
                 >
-              </li>
+                    <li>
+                        <a
+                                href="https://softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit softf.tech - Core Content Hub"
+                        >softf.tech</a
+                        >
+                    </li>
 
-              <li>
-                <a
-                  href="https://test.softf.tech"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visit test.softf.tech - Lightweight Test Bench"
-                  >test.softf.tech</a
-                >
-              </li>
-            </ul>
-          </div>
+                    <li>
+                        <a
+                                href="https://tools.softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit tools.softf.tech - Utility Engine"
+                        >tools.softf.tech</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="https://test.softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit test.softf.tech - Lightweight Test Bench"
+                        >test.softf.tech</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main>
-      <!-- Hero Section -->
-      <section
-        class="relative text-center py-24 px-4 bg-gray-900 overflow-hidden"
-      >
+<main>
+    <!-- Hero Section -->
+    <section
+            class="relative text-center py-24 px-4 bg-gray-900 overflow-hidden"
+    >
         <div
-          class="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-70"
+                class="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-70"
         ></div>
         <div class="relative z-10">
-          <h1 class="text-5xl font-bold text-white mb-4 tracking-tight">
-            Keyboard Tester
-          </h1>
-          <p class="text-lg max-w-3xl mx-auto text-gray-300">
-            Press any key on your keyboard. The corresponding key below will
-            light up to confirm it's working correctly.
-          </p>
-        </div>
-      </section>
-
-      <!-- Keyboard Visualizer Section -->
-      <section class="py-12 px-4 bg-gray-800">
-        <div class="container mx-auto">
-          <!-- Stats Display Section -->
-          <div
-            class="stats-container mb-8 p-6 bg-black/30 rounded-xl border border-white/10 shadow-lg max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center"
-          >
-            <div>
-              <p
-                class="text-sm font-bold text-gray-400 uppercase tracking-wider"
-                role="heading"
-                aria-level="3"
-              >
-                Keys Pressed
-              </p>
-              <p
-                id="keys-pressed-count"
-                class="text-3xl font-bold text-yellow-400"
-              >
-                0
-              </p>
-            </div>
-
-            <div>
-              <p
-                class="text-sm font-bold text-gray-400 uppercase tracking-wider"
-                role="heading"
-                aria-level="3"
-              >
-                Current Key
-              </p>
-              <p id="current-key" class="text-3xl font-bold text-white">-</p>
-            </div>
-
-            <div>
-              <p
-                class="text-sm font-bold text-gray-400 uppercase tracking-wider"
-                role="heading"
-                aria-level="3"
-              >
-                Max Keys Held
-              </p>
-              <p id="nkro-status" class="text-3xl font-bold text-white">0</p>
-            </div>
-
-            <div>
-              <p
-                class="text-sm font-bold text-gray-400 uppercase tracking-wider"
-                role="heading"
-                aria-level="3"
-              >
-                CapsLock
-              </p>
-              <p id="caps-lock-status" class="text-3xl font-bold text-white">
-                OFF
-              </p>
-            </div>
-
-            <div class="col-span-2 md:col-span-3 lg:col-span-1">
-              <p
-                class="text-sm font-bold text-gray-400 uppercase tracking-wider"
-                role="heading"
-                aria-level="3"
-              >
-                Chatter Detected
-              </p>
-              <p
-                id="chatter-status"
-                class="text-2xl font-bold text-red-500 h-full flex items-center justify-center"
-              >
-                None
-              </p>
-            </div>
-          </div>
-
-          <!-- Controls Section -->
-          <div
-            class="controls-container mb-12 max-w-5xl mx-auto flex justify-center items-center gap-6 p-4 bg-black/20 rounded-xl"
-          >
-            <div class="form-control">
-              <label class="label cursor-pointer gap-3">
-                <span class="label-text text-white">Keep Keys Highlighted</span>
-                <input
-                  type="checkbox"
-                  id="keep-highlighted-toggle"
-                  class="toggle toggle-accent bg-amber-300"
-                />
-              </label>
-            </div>
-            <button id="clear-button" class="btn btn-outline btn-accent">
-              Clear Tested Keys
-            </button>
-          </div>
-
-          <div
-            class="flex flex-col xl:flex-row justify-center items-start gap-12"
-          >
-            <!-- Standard Layout (Left Side) -->
-            <div class="w-full xl:w-auto">
-              <h2 class="text-2xl font-bold text-white text-center mb-6">
-                Standard Layout
-              </h2>
-              <div
-                class="keyboard p-2 md:p-4 bg-black/30 rounded-xl border border-white/10 shadow-2xl"
-              >
-                <!-- Function Keys -->
-                <div class="row flex justify-center gap-1 md:gap-2 mb-4">
-                  <div class="key h-[40px]" data-key="Escape">Esc</div>
-                  <div class="key h-[40px]" data-key="F1">F1</div>
-                  <div class="key h-[40px]" data-key="F2">F2</div>
-                  <div class="key h-[40px]" data-key="F3">F3</div>
-                  <div class="key h-[40px]" data-key="F4">F4</div>
-                  <div class="key h-[40px]" data-key="F5">F5</div>
-                  <div class="key h-[40px]" data-key="F6">F6</div>
-                  <div class="key h-[40px]" data-key="F7">F7</div>
-                  <div class="key h-[40px]" data-key="F8">F8</div>
-                  <div class="key h-[40px]" data-key="F9">F9</div>
-                  <div class="key h-[40px]" data-key="F10">F10</div>
-                  <div class="key h-[40px]" data-key="F11">F11</div>
-                  <div class="key h-[40px]" data-key="F12">F12</div>
-                </div>
-                <!-- Row 1: Numbers -->
-                <div class="row flex justify-center gap-1 md:gap-2">
-                  <div class="key" data-key="Backquote">`</div>
-                  <div class="key" data-key="Digit1">1</div>
-                  <div class="key" data-key="Digit2">2</div>
-                  <div class="key" data-key="Digit3">3</div>
-                  <div class="key" data-key="Digit4">4</div>
-                  <div class="key" data-key="Digit5">5</div>
-                  <div class="key" data-key="Digit6">6</div>
-                  <div class="key" data-key="Digit7">7</div>
-                  <div class="key" data-key="Digit8">8</div>
-                  <div class="key" data-key="Digit9">9</div>
-                  <div class="key" data-key="Digit0">0</div>
-                  <div class="key" data-key="Minus">-</div>
-                  <div class="key" data-key="Equal">=</div>
-                  <div class="key grow-[3]" data-key="Backspace">Backspace</div>
-                </div>
-                <!-- Row 2: QWERTY -->
-                <div
-                  class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
-                >
-                  <div class="key grow-[1.7]" data-key="Tab">Tab</div>
-                  <div class="key" data-key="KeyQ">Q</div>
-                  <div class="key" data-key="KeyW">W</div>
-                  <div class="key" data-key="KeyE">E</div>
-                  <div class="key" data-key="KeyR">R</div>
-                  <div class="key" data-key="KeyT">T</div>
-                  <div class="key" data-key="KeyY">Y</div>
-                  <div class="key" data-key="KeyU">U</div>
-                  <div class="key" data-key="KeyI">I</div>
-                  <div class="key" data-key="KeyO">O</div>
-                  <div class="key" data-key="KeyP">P</div>
-                  <div class="key" data-key="BracketLeft">[</div>
-                  <div class="key" data-key="BracketRight">]</div>
-                  <div class="key grow-[1.7]" data-key="Backslash">\</div>
-                </div>
-                <!-- Row 3: ASDF -->
-                <div
-                  class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
-                >
-                  <div
-                    class="key grow-[2] [&.toggled-on]:bg-yellow-600 [&.toggled-on]:text-white"
-                    data-key="CapsLock"
-                  >
-                    Caps Lock
-                  </div>
-                  <div class="key" data-key="KeyA">A</div>
-                  <div class="key" data-key="KeyS">S</div>
-                  <div class="key" data-key="KeyD">D</div>
-                  <div class="key" data-key="KeyF">F</div>
-                  <div class="key" data-key="KeyG">G</div>
-                  <div class="key" data-key="KeyH">H</div>
-                  <div class="key" data-key="KeyJ">J</div>
-                  <div class="key" data-key="KeyK">K</div>
-                  <div class="key" data-key="KeyL">L</div>
-                  <div class="key" data-key="Semicolon">;</div>
-                  <div class="key" data-key="Quote">'</div>
-                  <div class="key grow-[2.5]" data-key="Enter">Enter</div>
-                </div>
-                <!-- Row 4: ZXCV -->
-                <div
-                  class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
-                >
-                  <div class="key grow-[3]" data-key="ShiftLeft">Shift</div>
-                  <div class="key" data-key="KeyZ">Z</div>
-                  <div class="key" data-key="KeyX">X</div>
-                  <div class="key" data-key="KeyC">C</div>
-                  <div class="key" data-key="KeyV">V</div>
-                  <div class="key" data-key="KeyB">B</div>
-                  <div class="key" data-key="KeyN">N</div>
-                  <div class="key" data-key="KeyM">M</div>
-                  <div class="key" data-key="Comma">,</div>
-                  <div class="key" data-key="Period">.</div>
-                  <div class="key" data-key="Slash">/</div>
-                  <div class="key grow-[3]" data-key="ShiftRight">Shift</div>
-                </div>
-                <!-- Row 5: Bottom Row -->
-                <div
-                  class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
-                >
-                  <div class="key grow-[1.2]" data-key="ControlLeft">Ctrl</div>
-                  <div class="key grow-[1.2]" data-key="MetaLeft">Win</div>
-                  <div class="key grow-[1.2]" data-key="AltLeft">Alt</div>
-                  <div class="key grow-[10]" data-key="Space"></div>
-                  <div class="key grow-[1.2]" data-key="AltRight">Alt</div>
-                  <div class="key grow-[1.2]" data-key="MetaRight">Win</div>
-                  <div class="key grow-[1.2]" data-key="ContextMenu">Menu</div>
-                  <div class="key grow-[1.2]" data-key="ControlRight">Ctrl</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Extended Keys & Numpad (Right Side) -->
-            <div class="w-full xl:w-auto">
-              <h2 class="text-2xl font-bold text-white text-center mb-6">
-                Extended Keys & Numpad
-              </h2>
-              <div
-                class="extended-keys p-2 md:p-4 bg-black/30 rounded-xl border border-white/10 shadow-2xl flex flex-col sm:flex-row justify-center gap-4 md:gap-6"
-              >
-                <!-- Navigation & Arrow Keys -->
-                <div class="nav-keys flex flex-col gap-1 md:gap-2">
-                  <div class="row flex justify-between gap-1 md:gap-2 mb-2">
-                    <div
-                      class="key h-[40px] text-[10px]"
-                      data-key="PrintScreen"
-                    >
-                      PrtSc
-                    </div>
-                    <div class="key h-[40px] text-[10px]" data-key="ScrollLock">
-                      ScrLk
-                    </div>
-                    <div class="key h-[40px] text-[10px]" data-key="Pause">
-                      Pause
-                    </div>
-                  </div>
-                  <div class="grid grid-cols-3 gap-1 md:gap-2">
-                    <div class="key text-sm" data-key="Insert">Ins</div>
-                    <div class="key text-sm" data-key="Home">Home</div>
-                    <div class="key text-sm" data-key="PageUp">PgUp</div>
-                    <div class="key text-sm" data-key="Delete">Del</div>
-                    <div class="key text-sm" data-key="End">End</div>
-                    <div class="key text-sm" data-key="PageDown">PgDn</div>
-                  </div>
-                  <div class="flex-grow"></div>
-                  <!-- Spacer -->
-                  <div class="grid grid-cols-3 gap-1 md:gap-2 mt-2">
-                    <div></div>
-                    <!-- Empty cell for layout -->
-                    <div class="key" data-key="ArrowUp">↑</div>
-                    <div></div>
-                    <!-- Empty cell for layout -->
-                    <div class="key" data-key="ArrowLeft">←</div>
-                    <div class="key" data-key="ArrowDown">↓</div>
-                    <div class="key" data-key="ArrowRight">→</div>
-                  </div>
-                </div>
-
-                <!-- Numpad -->
-                <div
-                  class="numpad-keys grid grid-cols-4 grid-rows-5 gap-1 md:gap-2"
-                >
-                  <div
-                    class="key [&.toggled-on]:bg-yellow-600 [&.toggled-on]:text-white"
-                    data-key="NumLock"
-                  >
-                    NumL
-                  </div>
-                  <div class="key" data-key="NumpadDivide">/</div>
-                  <div class="key" data-key="NumpadMultiply">*</div>
-                  <div class="key" data-key="NumpadSubtract">-</div>
-                  <div class="key" data-key="Numpad7">7</div>
-                  <div class="key" data-key="Numpad8">8</div>
-                  <div class="key" data-key="Numpad9">9</div>
-                  <div class="key row-span-2" data-key="NumpadAdd">+</div>
-                  <div class="key" data-key="Numpad4">4</div>
-                  <div class="key" data-key="Numpad5">5</div>
-                  <div class="key" data-key="Numpad6">6</div>
-                  <div class="key" data-key="Numpad1">1</div>
-                  <div class="key" data-key="Numpad2">2</div>
-                  <div class="key" data-key="Numpad3">3</div>
-                  <div class="key row-span-2" data-key="NumpadEnter">Ent</div>
-                  <div class="key col-span-2" data-key="Numpad0">0</div>
-                  <div class="key" data-key="NumpadDecimal">.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============= DETAILED FEATURE EXPLANATION SECTIONS START ============= -->
-
-      <section
-        class="py-20 px-4 bg-gray-900"
-        aria-labelledby="tool-guide-heading"
-      >
-        <div class="container mx-auto max-w-5xl">
-          <!-- Section 1: About This Tool -->
-          <div class="text-center mb-16">
-            <h2
-              id="tool-guide-heading"
-              class="text-4xl font-bold text-white tracking-tight"
-            >
-              A Comprehensive Guide to Your Keyboard Test
-            </h2>
-            <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
-              Our tool is more than just a visualizer. It's a powerful
-              diagnostic utility designed to help you pinpoint common keyboard
-              issues, from unresponsive keys to complex hardware faults. All
-              tests run instantly and privately in your browser.
+            <h1 class="text-5xl font-bold text-white mb-4 tracking-tight">
+                Keyboard Tester
+            </h1>
+            <p class="text-lg max-w-3xl mx-auto text-gray-300">
+                Press any key on your keyboard. The corresponding key below will
+                light up to confirm it's working correctly.
             </p>
-          </div>
-
-          <!-- Section 2: Feature Breakdown Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Card 1: Live Visualizer -->
-            <div
-              class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
-            >
-              <div
-                class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-yellow-400/50 mb-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 text-yellow-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-white">
-                  Live Visualizer & Stats
-                </h3>
-                <p class="mt-2 text-gray-400">
-                  The on-screen keyboard provides immediate visual feedback,
-                  while the counters for
-                  <strong class="text-gray-200">"Keys Pressed"</strong> and
-                  <strong class="text-gray-200">"Current Key"</strong> track
-                  your inputs.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2: Testing Controls -->
-            <div
-              class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
-            >
-              <div
-                class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-accent/50 mb-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-white">Testing Controls</h3>
-                <p class="mt-2 text-gray-400">
-                  Use the
-                  <strong class="text-gray-200">"Keep Highlighted"</strong>
-                  toggle to track tested keys, and the
-                  <strong class="text-gray-200">"Clear"</strong> button to reset
-                  the board for a fresh test.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3: N-Key Rollover -->
-            <div
-              class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
-            >
-              <div
-                class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary/50 mb-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 text-primary"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h6l2-2h2l-2 2z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-white">
-                  Max Keys Held (NKRO Test)
-                </h3>
-                <p class="mt-2 text-gray-400">
-                  This test, known as
-                  <strong class="text-gray-200">N-Key Rollover</strong>,
-                  measures how many keys your keyboard can register
-                  simultaneously—a critical feature for gaming and fast typing.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 4: Chatter Test -->
-            <div
-              class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
-            >
-              <div
-                class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-red-500/50 mb-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 text-red-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-white">Chatter Detected</h3>
-                <p class="mt-2 text-gray-400">
-                  Our algorithm detects "chatter" or "double-typing," a common
-                  hardware fault where one key press is accidentally registered
-                  multiple times by a faulty switch.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- ========================= FAQ SECTION START ========================= -->
+    <!-- Keyboard Visualizer Section -->
+    <section class="py-12 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <!-- Stats Display Section -->
+            <div
+                    class="stats-container mb-8 p-6 bg-black/30 rounded-xl border border-white/10 shadow-lg max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center"
+            >
+                <div>
+                    <p
+                            class="text-sm font-bold text-gray-400 uppercase tracking-wider"
+                            role="heading"
+                            aria-level="3"
+                    >
+                        Keys Pressed
+                    </p>
+                    <p
+                            id="keys-pressed-count"
+                            class="text-3xl font-bold text-yellow-400"
+                    >
+                        0
+                    </p>
+                </div>
 
-      <section class="py-20 px-4 bg-gray-800" aria-labelledby="faq-heading">
+                <div>
+                    <p
+                            class="text-sm font-bold text-gray-400 uppercase tracking-wider"
+                            role="heading"
+                            aria-level="3"
+                    >
+                        Current Key
+                    </p>
+                    <p id="current-key" class="text-3xl font-bold text-white">-</p>
+                </div>
+
+                <div>
+                    <p
+                            class="text-sm font-bold text-gray-400 uppercase tracking-wider"
+                            role="heading"
+                            aria-level="3"
+                    >
+                        Max Keys Held
+                    </p>
+                    <p id="nkro-status" class="text-3xl font-bold text-white">0</p>
+                </div>
+
+                <div>
+                    <p
+                            class="text-sm font-bold text-gray-400 uppercase tracking-wider"
+                            role="heading"
+                            aria-level="3"
+                    >
+                        CapsLock
+                    </p>
+                    <p id="caps-lock-status" class="text-3xl font-bold text-white">
+                        OFF
+                    </p>
+                </div>
+
+                <div class="col-span-2 md:col-span-3 lg:col-span-1">
+                    <p
+                            class="text-sm font-bold text-gray-400 uppercase tracking-wider"
+                            role="heading"
+                            aria-level="3"
+                    >
+                        Chatter Detected
+                    </p>
+                    <p
+                            id="chatter-status"
+                            class="text-2xl font-bold text-red-500 h-full flex items-center justify-center"
+                    >
+                        None
+                    </p>
+                </div>
+            </div>
+
+            <!-- Controls Section -->
+            <div
+                    class="controls-container mb-12 max-w-5xl mx-auto flex justify-center items-center gap-6 p-4 bg-black/20 rounded-xl overflow-x-auto"
+            >
+                <div class="form-control">
+                    <label class="label cursor-pointer gap-3">
+                        <span class="label-text text-white">Keep Keys Highlighted</span>
+                        <input
+                                type="checkbox"
+                                id="keep-highlighted-toggle"
+                                class="toggle toggle-accent bg-amber-300"
+                        />
+                    </label>
+                </div>
+                <button id="clear-button" class="btn btn-outline btn-accent">
+                    Clear Tested Keys
+                </button>
+            </div>
+
+            <div
+                    class="flex flex-col xl:flex-row justify-center items-start gap-12"
+            >
+                <!-- Standard Layout (Left Side) -->
+                <div class="w-full xl:w-auto">
+                    <h2 class="text-2xl font-bold text-white text-center mb-6">
+                        Standard Layout
+                    </h2>
+                    <div
+                            class="keyboard p-2 md:p-4 bg-black/30 rounded-xl border border-white/10 shadow-2xl overflow-x-auto"
+                    >
+                        <!-- Function Keys -->
+                        <div class="row flex justify-center gap-1 md:gap-2 mb-4">
+                            <div class="key h-[40px]" data-key="Escape">Esc</div>
+                            <div class="key h-[40px]" data-key="F1">F1</div>
+                            <div class="key h-[40px]" data-key="F2">F2</div>
+                            <div class="key h-[40px]" data-key="F3">F3</div>
+                            <div class="key h-[40px]" data-key="F4">F4</div>
+                            <div class="key h-[40px]" data-key="F5">F5</div>
+                            <div class="key h-[40px]" data-key="F6">F6</div>
+                            <div class="key h-[40px]" data-key="F7">F7</div>
+                            <div class="key h-[40px]" data-key="F8">F8</div>
+                            <div class="key h-[40px]" data-key="F9">F9</div>
+                            <div class="key h-[40px]" data-key="F10">F10</div>
+                            <div class="key h-[40px]" data-key="F11">F11</div>
+                            <div class="key h-[40px]" data-key="F12">F12</div>
+                        </div>
+                        <!-- Row 1: Numbers -->
+                        <div class="row flex justify-center gap-1 md:gap-2">
+                            <div class="key" data-key="Backquote">`</div>
+                            <div class="key" data-key="Digit1">1</div>
+                            <div class="key" data-key="Digit2">2</div>
+                            <div class="key" data-key="Digit3">3</div>
+                            <div class="key" data-key="Digit4">4</div>
+                            <div class="key" data-key="Digit5">5</div>
+                            <div class="key" data-key="Digit6">6</div>
+                            <div class="key" data-key="Digit7">7</div>
+                            <div class="key" data-key="Digit8">8</div>
+                            <div class="key" data-key="Digit9">9</div>
+                            <div class="key" data-key="Digit0">0</div>
+                            <div class="key" data-key="Minus">-</div>
+                            <div class="key" data-key="Equal">=</div>
+                            <div class="key grow-[3]" data-key="Backspace">Backspace</div>
+                        </div>
+                        <!-- Row 2: QWERTY -->
+                        <div
+                                class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
+                        >
+                            <div class="key grow-[1.7]" data-key="Tab">Tab</div>
+                            <div class="key" data-key="KeyQ">Q</div>
+                            <div class="key" data-key="KeyW">W</div>
+                            <div class="key" data-key="KeyE">E</div>
+                            <div class="key" data-key="KeyR">R</div>
+                            <div class="key" data-key="KeyT">T</div>
+                            <div class="key" data-key="KeyY">Y</div>
+                            <div class="key" data-key="KeyU">U</div>
+                            <div class="key" data-key="KeyI">I</div>
+                            <div class="key" data-key="KeyO">O</div>
+                            <div class="key" data-key="KeyP">P</div>
+                            <div class="key" data-key="BracketLeft">[</div>
+                            <div class="key" data-key="BracketRight">]</div>
+                            <div class="key grow-[1.7]" data-key="Backslash">\</div>
+                        </div>
+                        <!-- Row 3: ASDF -->
+                        <div
+                                class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
+                        >
+                            <div
+                                    class="key grow-[2] [&.toggled-on]:bg-yellow-600 [&.toggled-on]:text-white"
+                                    data-key="CapsLock"
+                            >
+                                Caps Lock
+                            </div>
+                            <div class="key" data-key="KeyA">A</div>
+                            <div class="key" data-key="KeyS">S</div>
+                            <div class="key" data-key="KeyD">D</div>
+                            <div class="key" data-key="KeyF">F</div>
+                            <div class="key" data-key="KeyG">G</div>
+                            <div class="key" data-key="KeyH">H</div>
+                            <div class="key" data-key="KeyJ">J</div>
+                            <div class="key" data-key="KeyK">K</div>
+                            <div class="key" data-key="KeyL">L</div>
+                            <div class="key" data-key="Semicolon">;</div>
+                            <div class="key" data-key="Quote">'</div>
+                            <div class="key grow-[2.5]" data-key="Enter">Enter</div>
+                        </div>
+                        <!-- Row 4: ZXCV -->
+                        <div
+                                class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
+                        >
+                            <div class="key grow-[3]" data-key="ShiftLeft">Shift</div>
+                            <div class="key" data-key="KeyZ">Z</div>
+                            <div class="key" data-key="KeyX">X</div>
+                            <div class="key" data-key="KeyC">C</div>
+                            <div class="key" data-key="KeyV">V</div>
+                            <div class="key" data-key="KeyB">B</div>
+                            <div class="key" data-key="KeyN">N</div>
+                            <div class="key" data-key="KeyM">M</div>
+                            <div class="key" data-key="Comma">,</div>
+                            <div class="key" data-key="Period">.</div>
+                            <div class="key" data-key="Slash">/</div>
+                            <div class="key grow-[3]" data-key="ShiftRight">Shift</div>
+                        </div>
+                        <!-- Row 5: Bottom Row -->
+                        <div
+                                class="row flex justify-center gap-1 md:gap-2 mt-1 md:mt-2"
+                        >
+                            <div class="key grow-[1.2]" data-key="ControlLeft">Ctrl</div>
+                            <div class="key grow-[1.2]" data-key="MetaLeft">Win</div>
+                            <div class="key grow-[1.2]" data-key="AltLeft">Alt</div>
+                            <div class="key grow-[10]" data-key="Space"></div>
+                            <div class="key grow-[1.2]" data-key="AltRight">Alt</div>
+                            <div class="key grow-[1.2]" data-key="MetaRight">Win</div>
+                            <div class="key grow-[1.2]" data-key="ContextMenu">Menu</div>
+                            <div class="key grow-[1.2]" data-key="ControlRight">Ctrl</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extended Keys & Numpad (Right Side) -->
+                <div class="w-full xl:w-auto">
+                    <h2 class="text-2xl font-bold text-white text-center mb-6">
+                        Extended Keys & Numpad
+                    </h2>
+                    <div
+                            class="extended-keys p-2 md:p-4 bg-black/30 rounded-xl border border-white/10 shadow-2xl flex flex-col sm:flex-row justify-center gap-4 md:gap-6 overflow-x-auto"
+                    >
+                        <!-- Navigation & Arrow Keys -->
+                        <div class="nav-keys flex flex-col gap-1 md:gap-2">
+                            <div class="row flex justify-between gap-1 md:gap-2 mb-2">
+                                <div
+                                        class="key h-[40px] text-[10px]"
+                                        data-key="PrintScreen"
+                                >
+                                    PrtSc
+                                </div>
+                                <div class="key h-[40px] text-[10px]" data-key="ScrollLock">
+                                    ScrLk
+                                </div>
+                                <div class="key h-[40px] text-[10px]" data-key="Pause">
+                                    Pause
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-1 md:gap-2">
+                                <div class="key text-sm" data-key="Insert">Ins</div>
+                                <div class="key text-sm" data-key="Home">Home</div>
+                                <div class="key text-sm" data-key="PageUp">PgUp</div>
+                                <div class="key text-sm" data-key="Delete">Del</div>
+                                <div class="key text-sm" data-key="End">End</div>
+                                <div class="key text-sm" data-key="PageDown">PgDn</div>
+                            </div>
+                            <div class="flex-grow"></div>
+                            <!-- Spacer -->
+                            <div class="grid grid-cols-3 gap-1 md:gap-2 mt-2">
+                                <div></div>
+                                <!-- Empty cell for layout -->
+                                <div class="key" data-key="ArrowUp">↑</div>
+                                <div></div>
+                                <!-- Empty cell for layout -->
+                                <div class="key" data-key="ArrowLeft">←</div>
+                                <div class="key" data-key="ArrowDown">↓</div>
+                                <div class="key" data-key="ArrowRight">→</div>
+                            </div>
+                        </div>
+
+                        <!-- Numpad -->
+                        <div
+                                class="numpad-keys grid grid-cols-4 grid-rows-5 gap-1 md:gap-2"
+                        >
+                            <div
+                                    class="key [&.toggled-on]:bg-yellow-600 [&.toggled-on]:text-white"
+                                    data-key="NumLock"
+                            >
+                                NumL
+                            </div>
+                            <div class="key" data-key="NumpadDivide">/</div>
+                            <div class="key" data-key="NumpadMultiply">*</div>
+                            <div class="key" data-key="NumpadSubtract">-</div>
+                            <div class="key" data-key="Numpad7">7</div>
+                            <div class="key" data-key="Numpad8">8</div>
+                            <div class="key" data-key="Numpad9">9</div>
+                            <div class="key row-span-2" data-key="NumpadAdd">+</div>
+                            <div class="key" data-key="Numpad4">4</div>
+                            <div class="key" data-key="Numpad5">5</div>
+                            <div class="key" data-key="Numpad6">6</div>
+                            <div class="key" data-key="Numpad1">1</div>
+                            <div class="key" data-key="Numpad2">2</div>
+                            <div class="key" data-key="Numpad3">3</div>
+                            <div class="key row-span-2" data-key="NumpadEnter">Ent</div>
+                            <div class="key col-span-2" data-key="Numpad0">0</div>
+                            <div class="key" data-key="NumpadDecimal">.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= DETAILED FEATURE EXPLANATION SECTIONS START ============= -->
+
+    <section
+            class="py-20 px-4 bg-gray-900"
+            aria-labelledby="tool-guide-heading"
+    >
+        <div class="container mx-auto max-w-5xl">
+            <!-- Section 1: About This Tool -->
+            <div class="text-center mb-16">
+                <h2
+                        id="tool-guide-heading"
+                        class="text-4xl font-bold text-white tracking-tight"
+                >
+                    A Comprehensive Guide to Your Keyboard Test
+                </h2>
+                <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+                    Our tool is more than just a visualizer. It's a powerful
+                    diagnostic utility designed to help you pinpoint common keyboard
+                    issues, from unresponsive keys to complex hardware faults. All
+                    tests run instantly and privately in your browser.
+                </p>
+            </div>
+
+            <!-- Section 2: Feature Breakdown Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Card 1: Live Visualizer -->
+                <div
+                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                >
+                    <div
+                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-yellow-400/50 mb-6"
+                    >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-10 w-10 text-yellow-400"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">
+                            Live Visualizer & Stats
+                        </h3>
+                        <p class="mt-2 text-gray-400">
+                            The on-screen keyboard provides immediate visual feedback,
+                            while the counters for
+                            <strong class="text-gray-200">"Keys Pressed"</strong> and
+                            <strong class="text-gray-200">"Current Key"</strong> track
+                            your inputs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Testing Controls -->
+                <div
+                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                >
+                    <div
+                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-accent/50 mb-6"
+                    >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-10 w-10 text-accent"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                            />
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Testing Controls</h3>
+                        <p class="mt-2 text-gray-400">
+                            Use the
+                            <strong class="text-gray-200">"Keep Highlighted"</strong>
+                            toggle to track tested keys, and the
+                            <strong class="text-gray-200">"Clear"</strong> button to reset
+                            the board for a fresh test.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: N-Key Rollover -->
+                <div
+                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                >
+                    <div
+                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary/50 mb-6"
+                    >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-10 w-10 text-primary"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h6l2-2h2l-2 2z"
+                            />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">
+                            Max Keys Held (NKRO Test)
+                        </h3>
+                        <p class="mt-2 text-gray-400">
+                            This test, known as
+                            <strong class="text-gray-200">N-Key Rollover</strong>,
+                            measures how many keys your keyboard can register
+                            simultaneously—a critical feature for gaming and fast typing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Chatter Test -->
+                <div
+                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                >
+                    <div
+                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-red-500/50 mb-6"
+                    >
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-10 w-10 text-red-500"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                            />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Chatter Detected</h3>
+                        <p class="mt-2 text-gray-400">
+                            Our algorithm detects "chatter" or "double-typing," a common
+                            hardware fault where one key press is accidentally registered
+                            multiple times by a faulty switch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FAQ SECTION START ========================= -->
+
+    <section class="py-20 px-4 bg-gray-800" aria-labelledby="faq-heading">
         <div class="container mx-auto max-w-4xl">
-          <div class="text-center mb-12">
-            <h2
-              id="faq-heading"
-              class="text-4xl font-bold text-white tracking-tight"
-            >
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div class="space-y-6">
-            <div
-              tabindex="0"
-              class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-            >
-              <div class="collapse-title text-xl font-medium text-white">
-                Why is my keyboard typing double letters? (e.g., 'h' becomes
-                'hh')
-              </div>
-              <div class="collapse-content">
-                <p class="text-gray-300">
-                  This is a classic sign of "keyboard chatter," a hardware fault
-                  usually caused by a failing mechanical switch. Our "Chatter
-                  Detected" feature is specifically designed to identify this
-                  problem. If a key is flagged, it likely needs to be cleaned or
-                  replaced.
-                </p>
-              </div>
+            <div class="text-center mb-12">
+                <h2
+                        id="faq-heading"
+                        class="text-4xl font-bold text-white tracking-tight"
+                >
+                    Frequently Asked Questions
+                </h2>
             </div>
-            <div
-              tabindex="0"
-              class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-            >
-              <div class="collapse-title text-xl font-medium text-white">
-                What is N-Key Rollover (NKRO) and why does it matter?
-              </div>
-              <div class="collapse-content">
-                <p class="text-gray-300">
-                  N-Key Rollover refers to a keyboard's ability to correctly
-                  register multiple simultaneous key presses. Most standard
-                  keyboards can only handle about 6 keys at once (6KRO). For
-                  intense gaming or extremely fast typing, having "Full NKRO" is
-                  crucial to ensure every command is registered. Our "Max Keys
-                  Held" stat allows you to test your keyboard's limit.
-                </p>
-              </div>
+            <div class="space-y-6">
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-white">
+                        Why is my keyboard typing double letters? (e.g., 'h' becomes
+                        'hh')
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-gray-300">
+                            This is a classic sign of "keyboard chatter," a hardware fault
+                            usually caused by a failing mechanical switch. Our "Chatter
+                            Detected" feature is specifically designed to identify this
+                            problem. If a key is flagged, it likely needs to be cleaned or
+                            replaced.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-white">
+                        What is N-Key Rollover (NKRO) and why does it matter?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-gray-300">
+                            N-Key Rollover refers to a keyboard's ability to correctly
+                            register multiple simultaneous key presses. Most standard
+                            keyboards can only handle about 6 keys at once (6KRO). For
+                            intense gaming or extremely fast typing, having "Full NKRO" is
+                            crucial to ensure every command is registered. Our "Max Keys
+                            Held" stat allows you to test your keyboard's limit.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-white">
+                        Is this test safe and private?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-gray-300">
+                            Yes, 100%. This tool runs entirely within your browser
+                            (client-side). No key presses, logs, or any other data is ever
+                            sent to our servers. Your privacy is guaranteed.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div
-              tabindex="0"
-              class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-            >
-              <div class="collapse-title text-xl font-medium text-white">
-                Is this test safe and private?
-              </div>
-              <div class="collapse-content">
-                <p class="text-gray-300">
-                  Yes, 100%. This tool runs entirely within your browser
-                  (client-side). No key presses, logs, or any other data is ever
-                  sent to our servers. Your privacy is guaranteed.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <script>
-      // --- JavaScript for Keyboard Tester ---
+<script>
+    // --- JavaScript for Keyboard Tester ---
 
-      // DOM Element Selections
-      const allKeys = document.querySelectorAll(".key");
-      const keysPressedCountEl = document.getElementById("keys-pressed-count");
-      const currentKeyEl = document.getElementById("current-key");
-      const capsLockStatusEl = document.getElementById("caps-lock-status");
-      const nkroStatusEl = document.getElementById("nkro-status");
-      const chatterStatusEl = document.getElementById("chatter-status");
-      const keepHighlightedToggle = document.getElementById(
+    // DOM Element Selections
+    const allKeys = document.querySelectorAll(".key");
+    const keysPressedCountEl = document.getElementById("keys-pressed-count");
+    const currentKeyEl = document.getElementById("current-key");
+    const capsLockStatusEl = document.getElementById("caps-lock-status");
+    const nkroStatusEl = document.getElementById("nkro-status");
+    const chatterStatusEl = document.getElementById("chatter-status");
+    const keepHighlightedToggle = document.getElementById(
         "keep-highlighted-toggle"
-      );
-      const clearButton = document.getElementById("clear-button");
+    );
+    const clearButton = document.getElementById("clear-button");
 
-      // State Variables
-      let keyPressCount = 0;
-      let keepHighlighted = false;
-      const heldKeys = new Set();
-      let maxHeldKeys = 0;
-      const keyTimestamps = new Map();
-      const chatteringKeys = new Set();
-      const CHATTER_THRESHOLD = 40; // milliseconds
+    // State Variables
+    let keyPressCount = 0;
+    let keepHighlighted = false;
+    const heldKeys = new Set();
+    let maxHeldKeys = 0;
+    const keyTimestamps = new Map();
+    const chatteringKeys = new Set();
+    const CHATTER_THRESHOLD = 40; // milliseconds
 
-      // --- Event Handlers ---
+    // --- Event Handlers ---
 
-      function handleKeyDown(e) {
+    function handleKeyDown(e) {
         if (e.repeat) {
-          // Ignore repeated events from holding a key down
-          // Chatter test needs to check for rapid presses, not OS repeats
-          const lastTime = keyTimestamps.get(e.code);
-          const now = e.timeStamp;
-          if (now - lastTime < CHATTER_THRESHOLD) {
-            if (!chatteringKeys.has(e.key)) {
-              chatteringKeys.add(e.key);
-              updateChatterDisplay();
+            // Ignore repeated events from holding a key down
+            // Chatter test needs to check for rapid presses, not OS repeats
+            const lastTime = keyTimestamps.get(e.code);
+            const now = e.timeStamp;
+            if (now - lastTime < CHATTER_THRESHOLD) {
+                if (!chatteringKeys.has(e.key)) {
+                    chatteringKeys.add(e.key);
+                    updateChatterDisplay();
+                }
             }
-          }
-          keyTimestamps.set(e.code, now);
-          return;
+            keyTimestamps.set(e.code, now);
+            return;
         }
 
         keyTimestamps.set(e.code, e.timeStamp);
 
         const keyElement = document.querySelector(`.key[data-key="${e.code}"]`);
         if (keyElement) {
-          keyElement.classList.add("active");
+            keyElement.classList.add("active");
         }
 
         // Update stats
@@ -935,59 +932,59 @@
         currentKeyEl.textContent = e.key;
         heldKeys.add(e.code);
         if (heldKeys.size > maxHeldKeys) {
-          maxHeldKeys = heldKeys.size;
-          nkroStatusEl.textContent = maxHeldKeys;
+            maxHeldKeys = heldKeys.size;
+            nkroStatusEl.textContent = maxHeldKeys;
         }
 
         // Check toggle keys (CapsLock, NumLock)
         setTimeout(() => {
-          const isCapsLockOn = e.getModifierState("CapsLock");
-          capsLockStatusEl.textContent = isCapsLockOn ? "ON" : "OFF";
-          updateToggleKey(e, "CapsLock");
-          updateToggleKey(e, "NumLock");
+            const isCapsLockOn = e.getModifierState("CapsLock");
+            capsLockStatusEl.textContent = isCapsLockOn ? "ON" : "OFF";
+            updateToggleKey(e, "CapsLock");
+            updateToggleKey(e, "NumLock");
         }, 0);
 
         e.preventDefault();
-      }
+    }
 
-      function handleKeyUp(e) {
+    function handleKeyUp(e) {
         heldKeys.delete(e.code);
         const keyElement = document.querySelector(`.key[data-key="${e.code}"]`);
         if (keyElement) {
-          keyElement.classList.remove("active");
-          if (keepHighlighted) {
-            keyElement.classList.add("tested");
-          }
+            keyElement.classList.remove("active");
+            if (keepHighlighted) {
+                keyElement.classList.add("tested");
+            }
         }
-      }
+    }
 
-      // --- Helper Functions ---
+    // --- Helper Functions ---
 
-      function updateToggleKey(e, keyName) {
+    function updateToggleKey(e, keyName) {
         const toggleKeyElement = document.querySelector(
-          `.key[data-key="${keyName}"]`
+            `.key[data-key="${keyName}"]`
         );
         if (toggleKeyElement) {
-          const isToggledOn = e.getModifierState(keyName);
-          if (isToggledOn) {
-            toggleKeyElement.classList.add("toggled-on");
-          } else {
-            toggleKeyElement.classList.remove("toggled-on");
-          }
+            const isToggledOn = e.getModifierState(keyName);
+            if (isToggledOn) {
+                toggleKeyElement.classList.add("toggled-on");
+            } else {
+                toggleKeyElement.classList.remove("toggled-on");
+            }
         }
-      }
+    }
 
-      function updateChatterDisplay() {
+    function updateChatterDisplay() {
         if (chatteringKeys.size > 0) {
-          chatterStatusEl.textContent = Array.from(chatteringKeys).join(", ");
+            chatterStatusEl.textContent = Array.from(chatteringKeys).join(", ");
         } else {
-          chatterStatusEl.textContent = "None";
+            chatterStatusEl.textContent = "None";
         }
-      }
+    }
 
-      function clearAll() {
+    function clearAll() {
         allKeys.forEach((key) => {
-          key.classList.remove("tested", "toggled-on", "active");
+            key.classList.remove("tested", "toggled-on", "active");
         });
         // Reset stats
         keyPressCount = 0;
@@ -999,151 +996,151 @@
         updateChatterDisplay();
         // Re-check initial state of toggle keys
         window.addEventListener("keydown", checkInitialToggleStates, {
-          once: true,
+            once: true,
         });
-      }
+    }
 
-      // Initial check for toggle key states when the page loads
-      function checkInitialToggleStates(e) {
+    // Initial check for toggle key states when the page loads
+    function checkInitialToggleStates(e) {
         const isCapsLockOn = e.getModifierState("CapsLock");
         capsLockStatusEl.textContent = isCapsLockOn ? "ON" : "OFF";
         updateToggleKey(e, "CapsLock");
         updateToggleKey(e, "NumLock");
-      }
+    }
 
-      // --- Initialization ---
+    // --- Initialization ---
 
-      // Event Listeners
-      window.addEventListener("keydown", handleKeyDown);
-      window.addEventListener("keyup", handleKeyUp);
-      keepHighlightedToggle.addEventListener("change", (e) => {
+    // Event Listeners
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+    keepHighlightedToggle.addEventListener("change", (e) => {
         keepHighlighted = e.target.checked;
-      });
-      clearButton.addEventListener("click", clearAll);
+    });
+    clearButton.addEventListener("click", clearAll);
 
-      // Dynamic Styling
-      allKeys.forEach((key) => {
+    // Dynamic Styling
+    allKeys.forEach((key) => {
         key.classList.add(
-          "bg-gray-700/80",
-          "border-b-4",
-          "border-gray-900",
-          "text-gray-200",
-          "rounded-md",
-          "p-2",
-          "flex",
-          "items-center",
-          "justify-center",
-          "font-mono",
-          "text-xs",
-          "sm:text-sm",
-          "md:text-base",
-          "transition-all",
-          "duration-75",
-          "basis-[60px]",
-          "h-[60px]",
-          "[&.active]:bg-yellow-400",
-          "[&.active]:text-black",
-          "[&.active]:border-yellow-600",
-          "[&.active]:translate-y-[3px]",
-          "[&.active]:border-b-2",
-          "[&.tested]:bg-yellow-500",
-          "[&.tested]:text-black",
-          "[&.tested]:border-b-4",
-          "[&.tested]:border-yellow-700"
+            "bg-gray-700/80",
+            "border-b-4",
+            "border-gray-900",
+            "text-gray-200",
+            "rounded-md",
+            "p-2",
+            "flex",
+            "items-center",
+            "justify-center",
+            "font-mono",
+            "text-xs",
+            "sm:text-sm",
+            "md:text-base",
+            "transition-all",
+            "duration-75",
+            "basis-[60px]",
+            "h-[60px]",
+            "[&.active]:bg-yellow-400",
+            "[&.active]:text-black",
+            "[&.active]:border-yellow-600",
+            "[&.active]:translate-y-[3px]",
+            "[&.active]:border-b-2",
+            "[&.tested]:bg-yellow-500",
+            "[&.tested]:text-black",
+            "[&.tested]:border-b-4",
+            "[&.tested]:border-yellow-700"
         );
-      });
+    });
 
-      // Run the initial check on the very first key press
-      window.addEventListener("keydown", checkInitialToggleStates, {
+    // Run the initial check on the very first key press
+    window.addEventListener("keydown", checkInitialToggleStates, {
         once: true,
-      });
-    </script>
+    });
+</script>
 
-    <footer class="footer items-center bg-neutral text-neutral-content p-4">
-      <aside class="grid-flow-col items-center">
+<footer class="footer items-center bg-neutral text-neutral-content p-4">
+    <aside class="grid-flow-col items-center">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="text-yellow-400"
-          aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-yellow-400"
+                aria-hidden="true"
         >
-          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
         </svg>
         <p>Copyright © 2025 - Mayank. All rights reserved.</p>
-      </aside>
+    </aside>
 
-      <nav
-        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
-        aria-label="Social media links"
-      >
+    <nav
+            class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+            aria-label="Social media links"
+    >
         <a
-          href="https://github.com/Mayank170906"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View Mayank's GitHub profile"
-          class="hover:text-yellow-400 transition-colors"
+                href="https://github.com/Mayank170906"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's GitHub profile"
+                class="hover:text-yellow-400 transition-colors"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-            />
-          </svg>
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+            </svg>
         </a>
 
         <a
-          href="https://www.linkedin.com/in/mayank170906/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View Mayank's LinkedIn profile"
-          class="hover:text-yellow-400 transition-colors"
+                href="https://www.linkedin.com/in/mayank170906/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's LinkedIn profile"
+                class="hover:text-yellow-400 transition-colors"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-            />
-          </svg>
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+            </svg>
         </a>
 
         <a
-          href="mailto:mayankeducation.17@gmail.com"
-          aria-label="Send an email to Mayank"
-          class="hover:text-yellow-400 transition-colors"
+                href="mailto:mayankeducation.17@gmail.com"
+                aria-label="Send an email to Mayank"
+                class="hover:text-yellow-400 transition-colors"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
-            />
-          </svg>
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+            </svg>
         </a>
-      </nav>
-    </footer>
-  </body>
+    </nav>
+</footer>
+</body>
 </html>
