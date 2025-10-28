@@ -1,53 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Main Pages -->
-  <url>
-    <loc>https://test.softf.tech/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/about</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/contact</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
 
-  <!-- Tool Pages -->
-  <url>
-    <loc>https://test.softf.tech/display-test/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/ip-lookup/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/keyboard-test/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/mouse-test/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/speaker-test/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://test.softf.tech/speed-test/</loc>
-    <lastmod>2025-10-05</lastmod>
-    <priority>0.80</priority>
-  </url>
+    <!-- Main Pages -->
+    <url>
+        <loc>https://test.softf.tech/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/about</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/contact</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Tool Pages -->
+    <url>
+        <loc>https://test.softf.tech/display-test/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/ip-lookup/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/keyboard-test/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/mouse-test/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/speaker-test/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/speed-test/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>
