@@ -19,13 +19,13 @@
   "background_color": "#121212",
   "display": "standalone",
   "screenshots": [
-  { "src": "screenshots/index.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/keyboard.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/mouse1.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/mouse2.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/display.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/speaker.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/ip1.png", "sizes": "800x600", "type": "image/png" },
-  { "src": "screenshots/ip2.png", "sizes": "800x600", "type": "image/png" }
+  { "src": "screenshots/index.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/keyboard.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/mouse1.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/mouse2.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/display.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/speaker.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/ip1.png", "sizes": "1920x1080", "type": "image/png" },
+  { "src": "screenshots/ip2.png", "sizes": "1920x1080", "type": "image/png" }
 ]
 }
