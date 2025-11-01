@@ -3,6 +3,7 @@
   "short_name": "SysTest",
   "start_url": "./index.html",
   "description": "Test your system components like keyboard, mouse, display, and speakers.",
+  "orientation": "any",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
