@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="language" content="en" />
     <title>
         Online Speaker Test - Check Your Stereo, Sound & Headphones
     </title>
@@ -65,6 +66,11 @@
             "@graph": [
                 {
                     "@type": "SoftwareApplication",
+                    "@id": "https://test.softf.tech/speaker-test/#app",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://test.softf.tech/speaker-test/"
+                    },
                     "name": "Online Speaker Test & Audio Check",
                     "applicationCategory": "UtilitiesApplication",
                     "operatingSystem": "Any (Web Browser)",
@@ -77,18 +83,27 @@
                     },
                     "publisher": {
                         "@type": "Organization",
-                        "name": "test.softf.tech"
-                    }
+                        "name": "test.softf.tech",
+                        "logo": "https://test.softf.tech/assets/images/logo.jpg"
+                    },
+                    "inLanguage": "en",
+                    "datePublished": "2025-11-13",
+                    "dateModified": "2025-11-13"
                 },
                 {
                     "@type": "FAQPage",
+                    "about": {
+                        "@id": "https://test.softf.tech/speaker-test/#app"
+                    },
+                    "inLanguage": "en",
+                    "dateModified": "2025-11-13",
                     "mainEntity": [
                         {
                             "@type": "Question",
                             "name": "I can't hear anything. What should I do?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "First, check that your device's volume is not muted or set to zero. Ensure your speakers are properly connected and powered on. If using headphones, make sure they are securely plugged in. Finally, try adjusting the 'Test Volume' slider on our tool."
+                                "text": "First, check that your device's volume is not muted or set to zero. Ensure your speakers are properly connected and powered on. If using headphones, make sure they are securely plugged in. Finally, try adjusting the \"Test Volume\" slider on our tool."
                             }
                         },
                         {
@@ -96,7 +111,7 @@
                             "name": "Why does my speaker rattle at certain frequencies?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Rattling or buzzing is often caused by a damaged speaker driver (a 'blown speaker'). It can also be caused by a loose component inside the speaker cabinet or something in your room vibrating in sympathy with the sound."
+                                "text": "Rattling or buzzing is often caused by a damaged speaker driver (a \"blown speaker\"). It can also be caused by a loose component inside the speaker cabinet or something in your room vibrating in sympathy with the sound. Try moving the speaker to see if the rattle persists."
                             }
                         },
                         {
@@ -104,7 +119,39 @@
                             "name": "Is this test safe for my speakers and headphones?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Yes, the test tones are standard audio frequencies and are safe for all audio devices when played at a reasonable volume. We strongly recommend starting with a low volume and gradually increasing it to a comfortable level."
+                                "text": "Yes, the test tones are standard audio frequencies and are safe for all audio devices when played at a reasonable volume. We strongly recommend starting with a low volume and gradually increasing it to a comfortable level. Do not perform tests at maximum volume for extended periods."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How do I perform a left and right speaker test (stereo test)?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Use our \"Left/Right Stereo Test\" feature. The tool will play a sound exclusively through your left speaker, and then exclusively through your right. This is the best way to confirm that your stereo channels are correctly wired and that both of your speakers are functioning."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How can I test my subwoofer for bass?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The \"Low Frequency Test\" is designed for this. It plays very low-frequency tones (e.g., 20Hz - 80Hz). You should *feel* these bass tones from your subwoofer more than you *hear* them. If you get no response, check your subwoofer's power, volume, and crossover frequency settings."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is a speaker frequency sweep?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A frequency sweep plays a continuous tone that glides from the lowest audible frequency (around 20Hz) up to the highest (around 20,000Hz). This is an excellent way to check your speaker's (and your hearing's) overall range and to pinpoint specific frequencies where rattles or distortion occur."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Does this audio test work on phones, laptops, and TVs?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes. This is a browser-based test that works on any device with a modern web browser and speakers or a headphone jack. This includes Windows PCs, Macs, iPhones, Android phones, tablets, and most smart TVs. No installation is required."
                             }
                         }
                     ]
@@ -543,6 +590,75 @@
                         </p>
                     </div>
                 </div>
+
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium">
+                        How do I perform a left and right speaker test (stereo test)?
+                    </div>
+                    <div class="collapse-content">
+                        <p>
+                            Use our **"Left/Right Stereo Test"** feature. The tool will
+                            play a sound exclusively through your left speaker, and then
+                            exclusively through your right. This is the best way to
+                            confirm that your stereo channels are correctly wired and
+                            that both of your speakers are functioning.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium">
+                        How can I test my subwoofer for bass?
+                    </div>
+                    <div class="collapse-content">
+                        <p>
+                            The **"Low Frequency Test"** is designed for this. It plays
+                            very low-frequency tones (e.g., 20Hz - 80Hz). You should
+                            *feel* these bass tones from your subwoofer more than you
+                            *hear* them. If you get no response, check your subwoofer's
+                            power, volume, and crossover frequency settings.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium">
+                        What is a speaker frequency sweep?
+                    </div>
+                    <div class="collapse-content">
+                        <p>
+                            A **frequency sweep** plays a continuous tone that glides
+                            from the lowest audible frequency (around 20Hz) up to the
+                            highest (around 20,000Hz). This is an excellent way to check
+                            your speaker's (and your hearing's) overall range and to
+                            pinpoint specific frequencies where rattles or distortion
+                            occur.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium">
+                        Does this audio test work on phones, laptops, and TVs?
+                    </div>
+                    <div class="collapse-content">
+                        <p>
+                            Yes. This is a browser-based test that works on any device
+                            with a modern web browser and speakers or a headphone jack.
+                            This includes Windows PCs, Macs, iPhones, Android phones,
+                            tablets, and most smart TVs. No installation is required.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -777,104 +893,103 @@
 </script>
 
 <footer class="footer items-center bg-neutral text-neutral-content p-4">
-  <aside class="grid-flow-col items-center">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="text-yellow-400"
-      aria-hidden="true"
-    >
-      <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-    </svg>
-    <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+    <aside class="grid-flow-col items-center">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-yellow-400"
+                aria-hidden="true"
+        >
+            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
 
-    <!-- Legal Links -->
-    <div class="flex flex-wrap gap-4 text-sm mx-2 text-amber-600">
-      <a href="../privacy.html" class="hover:text-yellow-400 transition-colors"
-        >Privacy Policy</a
-      >
-      <a href="../terms.html" class="hover:text-yellow-400 transition-colors"
-        >Terms of Service</a
-      >
-      <a href="../disclaimer.html" class="hover:text-yellow-400 transition-colors"
-        >Disclaimer</a
-      >
-    </div>
-  </aside>
+        <!-- Legal Links -->
+        <div class="flex flex-wrap gap-4 text-sm mx-2 text-amber-600">
+            <a href="../privacy.html" class="hover:text-yellow-400 transition-colors"
+            >Privacy Policy</a
+            >
+            <a href="../terms.html" class="hover:text-yellow-400 transition-colors"
+            >Terms of Service</a
+            >
+            <a href="../disclaimer.html" class="hover:text-yellow-400 transition-colors"
+            >Disclaimer</a
+            >
+        </div>
+    </aside>
 
-  <nav
-    class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
-    aria-label="Social media links"
-  >
-    <a
-      href="https://github.com/Mayank170906"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Mayank's GitHub profile"
-      class="hover:text-yellow-400 transition-colors"
+    <nav
+            class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+            aria-label="Social media links"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-        />
-      </svg>
-    </a>
+        <a
+                href="https://github.com/Mayank170906"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's GitHub profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+            </svg>
+        </a>
 
-    <a
-      href="https://www.linkedin.com/in/mayank170906/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Mayank's LinkedIn profile"
-      class="hover:text-yellow-400 transition-colors"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-        />
-      </svg>
-    </a>
+        <a
+                href="https://www.linkedin.com/in/mayank170906/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's LinkedIn profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+            </svg>
+        </a>
 
-    <a
-      href="mailto:mayankeducation.17@gmail.com"
-      aria-label="Send an email to Mayank"
-      class="hover:text-yellow-400 transition-colors"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
-        />
-      </svg>
-    </a>
-  </nav>
+        <a
+                href="mailto:mayankeducation.17@gmail.com"
+                aria-label="Send an email to Mayank"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+            </svg>
+        </a>
+    </nav>
 </footer>
-..
 </body>
 </html>

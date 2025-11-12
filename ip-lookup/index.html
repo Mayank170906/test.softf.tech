@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="language" content="en" />
     <title>What Is My IP Address? - Free Public IP Lookup Tool</title>
     <meta
             name="description"
@@ -174,6 +175,11 @@
             "@graph": [
                 {
                     "@type": "SoftwareApplication",
+                    "@id": "https://test.softf.tech/ip-lookup/#app",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://test.softf.tech/ip-lookup/"
+                    },
                     "name": "IP Address Lookup Tool",
                     "applicationCategory": "UtilitiesApplication",
                     "operatingSystem": "Any (Web Browser)",
@@ -186,34 +192,83 @@
                     },
                     "publisher": {
                         "@type": "Organization",
-                        "name": "test.softf.tech"
-                    }
+                        "name": "test.softf.tech",
+                        "logo": "https://test.softf.tech/assets/images/logo.jpg"
+                    },
+                    "inLanguage": "en",
+                    "datePublished": "2025-11-13",
+                    "dateModified": "2025-11-13"
                 },
                 {
                     "@type": "FAQPage",
+                    "about": {
+                        "@id": "https://test.softf.tech/ip-lookup/#app"
+                    },
+                    "inLanguage": "en",
+                    "dateModified": "2025-11-13",
                     "mainEntity": [
                         {
                             "@type": "Question",
-                            "name": "What is an IP address?",
+                            "name": "What is a public IP address?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "An IP (Internet Protocol) address is a unique numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. It serves to identify the host and provide its location in the network."
+                                "text": "An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet for communication. Your public IP is the address visible to the rest of the internet."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "What is the difference between IPv4 and IPv6?",
+                            "name": "How accurate is the geolocation data?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "IPv4 uses a 32-bit address, allowing for about 4.3 billion addresses. IPv6 is the newer version which uses a 128-bit address, providing a vastly larger address space for the growing number of internet-connected devices."
+                                "text": "IP geolocation is accurate at the country and city level but is not precise enough to identify a specific street address. It determines location based on the registration data of the IP block."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "Is this IP lookup tool accurate?",
+                            "name": "What is an ASN?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "This tool provides highly accurate data from industry-leading databases. However, IP-based geolocation is not 100% precise and typically points to the location of the ISP's servers, not a specific personal address."
+                                "text": "An ASN (Autonomous System Number) is a unique number assigned to an Autonomous System (AS). An AS is a large network or group of networks that has a unified routing policy. Knowing the ASN helps identify the major network provider (like Google, Amazon, or a local ISP)."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can this tool be used for cybersecurity?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes. Security professionals use IP and domain lookup tools for threat intelligence, digital forensics, and network analysis to trace the origin of network traffic and identify potentially malicious sources."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What's the difference between a public and private IP address?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Your public IP (shown by this tool) is used to communicate with the global internet. Your private IP (like 192.168.1.x) is used by devices inside your local network (like your laptop and phone) to talk to your router. Your router acts as a gateway, managing all traffic between your private devices and your single public IP."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is a DNS lookup?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "DNS (Domain Name System) is the internet's phonebook. A DNS lookup translates a human-friendly domain name (like google.com) into a machine-readable IP address (like 172.217.14.228) so your browser can find the website. Our tool can perform this lookup for any domain."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is a Reverse DNS (rDNS) lookup?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A reverse DNS lookup does the opposite of a normal DNS lookup. Instead of finding the IP for a domain, it finds the domain name (hostname) associated with a specific IP address. This is often used to verify the identity of mail servers or check if an IP address is legitimate."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How can I hide my public IP address?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "The most common way to hide your public IP is by using a VPN (Virtual Private Network). A VPN encrypts your traffic and routes it through a server in another location, making it appear as if you are browsing from the VPN server's IP address, which enhances your privacy."
                             }
                         }
                     ]
@@ -788,6 +843,76 @@
                         </p>
                     </div>
                 </div>
+
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-gray-600 bg-gray-700 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-primary">
+                        What's the difference between a public and private IP address?
+                    </div>
+                    <div class="collapse-content text-gray-300">
+                        <p>
+                            Your **public IP** (shown by this tool) is used to communicate
+                            with the global internet. Your **private IP** (like 192.168.1.x)
+                            is used by devices *inside* your local network (like your
+                            laptop and phone) to talk to your router. Your router acts as
+                            a gateway, managing all traffic between your private devices
+                            and your single public IP.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-gray-600 bg-gray-700 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-primary">
+                        What is a DNS lookup?
+                    </div>
+                    <div class="collapse-content text-gray-300">
+                        <p>
+                            DNS (Domain Name System) is the internet's phonebook. A DNS
+                            lookup translates a human-friendly domain name (like
+                            `google.com`) into a machine-readable IP address (like
+                            `172.217.14.228`) so your browser can find the website. Our
+                            tool can perform this lookup for any domain.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-gray-600 bg-gray-700 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-primary">
+                        What is a Reverse DNS (rDNS) lookup?
+                    </div>
+                    <div class="collapse-content text-gray-300">
+                        <p>
+                            A reverse DNS lookup does the opposite of a normal DNS lookup.
+                            Instead of finding the IP for a domain, it finds the domain
+                            name (hostname) associated with a specific IP address. This is
+                            often used to verify the identity of mail servers or check if
+                            an IP address is legitimate.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        tabindex="0"
+                        class="collapse collapse-plus border border-gray-600 bg-gray-700 rounded-box"
+                >
+                    <div class="collapse-title text-xl font-medium text-primary">
+                        How can I hide my public IP address?
+                    </div>
+                    <div class="collapse-content text-gray-300">
+                        <p>
+                            The most common way to hide your public IP is by using a VPN
+                            (Virtual Private Network). A VPN encrypts your traffic and
+                            routes it through a server in another location, making it
+                            appear as if you are browsing from the VPN server's IP
+                            address, which enhances your privacy.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1016,103 +1141,103 @@
 </script>
 
 <footer class="footer items-center bg-neutral text-neutral-content p-4">
-  <aside class="grid-flow-col items-center">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="text-yellow-400"
-      aria-hidden="true"
-    >
-      <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-    </svg>
-    <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+    <aside class="grid-flow-col items-center">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-yellow-400"
+                aria-hidden="true"
+        >
+            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
 
-    <!-- Legal Links -->
-    <div class="flex flex-wrap gap-4 text-sm mx-2 text-amber-600">
-      <a href="../privacy.html" class="hover:text-yellow-400 transition-colors"
-        >Privacy Policy</a
-      >
-      <a href="../terms.html" class="hover:text-yellow-400 transition-colors"
-        >Terms of Service</a
-      >
-      <a href="../disclaimer.html" class="hover:text-yellow-400 transition-colors"
-        >Disclaimer</a
-      >
-    </div>
-  </aside>
+        <!-- Legal Links -->
+        <div class="flex flex-wrap gap-4 text-sm mx-2 text-amber-600">
+            <a href="../privacy.html" class="hover:text-yellow-400 transition-colors"
+            >Privacy Policy</a
+            >
+            <a href="../terms.html" class="hover:text-yellow-400 transition-colors"
+            >Terms of Service</a
+            >
+            <a href="../disclaimer.html" class="hover:text-yellow-400 transition-colors"
+            >Disclaimer</a
+            >
+        </div>
+    </aside>
 
-  <nav
-    class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
-    aria-label="Social media links"
-  >
-    <a
-      href="https://github.com/Mayank170906"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Mayank's GitHub profile"
-      class="hover:text-yellow-400 transition-colors"
+    <nav
+            class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+            aria-label="Social media links"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-        />
-      </svg>
-    </a>
+        <a
+                href="https://github.com/Mayank170906"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's GitHub profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+            </svg>
+        </a>
 
-    <a
-      href="https://www.linkedin.com/in/mayank170906/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View Mayank's LinkedIn profile"
-      class="hover:text-yellow-400 transition-colors"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-        />
-      </svg>
-    </a>
+        <a
+                href="https://www.linkedin.com/in/mayank170906/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's LinkedIn profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+            </svg>
+        </a>
 
-    <a
-      href="mailto:mayankeducation.17@gmail.com"
-      aria-label="Send an email to Mayank"
-      class="hover:text-yellow-400 transition-colors"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
-        />
-      </svg>
-    </a>
-  </nav>
+        <a
+                href="mailto:mayankeducation.17@gmail.com"
+                aria-label="Send an email to Mayank"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+            </svg>
+        </a>
+    </nav>
 </footer>
 
 </body>
