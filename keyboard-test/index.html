@@ -1178,6 +1178,12 @@
 
     // DOM Element Selections
     const allKeys = document.querySelectorAll(".key");
+    // Build fast lookup map (IMPORTANT)
+    const keyMap = {};
+    allKeys.forEach(el => {
+        keyMap[el.dataset.key] = el;
+    });
+
     const keysPressedCountEl = document.getElementById("keys-pressed-count");
     const currentKeyEl = document.getElementById("current-key");
     const capsLockStatusEl = document.getElementById("caps-lock-status");
@@ -1217,7 +1223,7 @@
 
         keyTimestamps.set(e.code, e.timeStamp);
 
-        const keyElement = document.querySelector(`.key[data-key="${e.code}"]`);
+        const keyElement = keyMap[e.code];
         if (keyElement) {
             keyElement.classList.add("active");
         }
@@ -1245,7 +1251,7 @@
 
     function handleKeyUp(e) {
         heldKeys.delete(e.code);
-        const keyElement = document.querySelector(`.key[data-key="${e.code}"]`);
+        const keyElement = keyMap[e.code];
         if (keyElement) {
             keyElement.classList.remove("active");
             if (keepHighlighted) {
@@ -1257,9 +1263,7 @@
     // --- Helper Functions ---
 
     function updateToggleKey(e, keyName) {
-        const toggleKeyElement = document.querySelector(
-            `.key[data-key="${keyName}"]`
-        );
+        const toggleKeyElement = keyMap[keyName];
         if (toggleKeyElement) {
             const isToggledOn = e.getModifierState(keyName);
             if (isToggledOn) {
