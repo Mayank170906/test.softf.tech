@@ -379,101 +379,100 @@
                 dead pixels, color accuracy, backlight bleed, and other common
                 display issues.
             </p>
-
+            <h2 class="mt-6 text-3xl sm:text-4xl font-bold tracking-tight">Monitor Testing Tools</h2>
             <div
                     class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
             >
-                <a
-                        href="#test-solid-color"
+                <button
+                        type="button"
                         id="test-solid-color"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Solid Color Test</div>
                         <p class="text-sm">Check for dead, stuck, or lit pixels.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-gradient"
+                <button
+                        type="button"
                         id="test-gradient"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Gradient Test</div>
                         <p class="text-sm">Identify color banding issues.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-contrast"
+                <button
+                        type="button"
                         id="test-contrast"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Contrast Test</div>
                         <p class="text-sm">Check black & white level accuracy.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-uniformity"
+                <button
+                        type="button"
                         id="test-uniformity"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Screen Uniformity</div>
                         <p class="text-sm">Find backlight bleed & clouding.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-sharpness"
+                <button
+                        type="button"
                         id="test-sharpness"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Sharpness Test</div>
                         <p class="text-sm">Evaluate text clarity and sharpness.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-viewing-angle"
+                <button
+                        type="button"
                         id="test-viewing-angle"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Viewing Angle</div>
                         <p class="text-sm">Check for color shifting from angles.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-response-time"
+                <button
+                        type="button"
                         id="test-response-time"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Response Time</div>
                         <p class="text-sm">A simple test for ghosting artifacts.</p>
                     </div>
-                </a>
+                </button>
 
-                <a
-                        href="#test-refresh-rate"
+                <button
+                        type="button"
                         id="test-refresh-rate"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
+                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
                 >
                     <div class="card-body items-center text-center">
                         <div class="card-title">Refresh Rate</div>
                         <p class="text-sm">A basic FPS counter for your display.</p>
                     </div>
-                </a>
+                </button>
             </div>
         </div>
     </section>
-
     <div id="test-screen" class="fixed inset-0 z-50 hidden bg-black">
         <div
                 id="test-content"
@@ -616,7 +615,7 @@
     <!-- Solid Color -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Dead Pixel Test (Solid Color Test)</h3>
+        <h3 id="dead-pixel-test" class="card-title">Dead Pixel Test (Solid Color Test)</h3>
         <p class="text-base-content/80">
           Displays fullscreen red, green, blue, black and white screens to detect dead pixels, stuck pixels and hot pixels. A dead pixel appears as a permanent black dot while a stuck pixel shows a constant colored dot.
         </p>
@@ -626,7 +625,7 @@
     <!-- Gradient -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Gradient Test (Color Banding Test)</h3>
+        <h3 id="gradient-test" class="card-title">Gradient Test (Color Banding Test)</h3>
         <p class="text-base-content/80">
           Shows smooth color transitions to identify color banding. Visible lines or steps instead of smooth gradients indicate poor panel quality or incorrect color depth settings.
         </p>
@@ -636,7 +635,7 @@
     <!-- Contrast -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Contrast Test</h3>
+        <h3 id="contrast-test" class="card-title">Contrast Test</h3>
         <p class="text-base-content/80">
           Checks black and white levels to ensure proper contrast ratio. Helps determine whether dark details are crushed or bright areas are overexposed.
         </p>
@@ -646,7 +645,7 @@
     <!-- Uniformity -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Backlight Bleed & Screen Uniformity Test</h3>
+        <h3 id="uniformity-test" class="card-title">Backlight Bleed & Screen Uniformity Test</h3>
         <p class="text-base-content/80">
           Uses dark screens to reveal uneven brightness, clouding, and backlight bleed. Bright patches near edges are common in LCD and LED monitors.
         </p>
@@ -656,7 +655,7 @@
     <!-- Sharpness -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Sharpness & Text Clarity Test</h3>
+        <h3 id="sharpness-test" class="card-title">Sharpness & Text Clarity Test</h3>
         <p class="text-base-content/80">
           Displays text patterns to evaluate image sharpness and scaling. Helps verify resolution settings and detect blurry fonts caused by incorrect display configuration.
         </p>
@@ -666,7 +665,7 @@
     <!-- Viewing Angle -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Viewing Angle Test</h3>
+        <h3 id="viewing-angle-test" class="card-title">Viewing Angle Test</h3>
         <p class="text-base-content/80">
           Shows color patterns to check color shifting when viewing the screen from different angles. Useful for comparing TN, VA and IPS panel performance.
         </p>
@@ -676,7 +675,7 @@
     <!-- Response Time -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Ghosting & Response Time Test</h3>
+        <h3 id="ghosting-test" class="card-title">Ghosting & Response Time Test</h3>
         <p class="text-base-content/80">
           Displays moving objects to detect ghosting and motion blur. Trails behind moving shapes indicate slow pixel response time, common in older or low-quality panels.
         </p>
@@ -686,7 +685,7 @@
     <!-- Refresh Rate -->
     <div class="card bg-base-100 shadow-md">
       <div class="card-body">
-        <h3 class="card-title">Refresh Rate Checker</h3>
+        <h3 id="refresh-rate-test" class="card-title">Refresh Rate Checker</h3>
         <p class="text-base-content/80">
           Measures the actual refresh rate of your display and confirms whether your monitor is running at 60Hz, 120Hz, 144Hz or higher. Many high-refresh monitors default to 60Hz unless manually enabled.
         </p>
