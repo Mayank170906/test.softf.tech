@@ -4,19 +4,19 @@
     <!-- Main Pages -->
     <url>
         <loc>https://test.softf.tech/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/about</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.30</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/contact</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.30</priority>
     </url>
@@ -24,19 +24,19 @@
     <!-- Legal Pages -->
     <url>
         <loc>https://test.softf.tech/privacy</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.20</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/terms</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.20</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/disclaimer</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.20</priority>
     </url>
@@ -44,37 +44,37 @@
     <!-- Tool Pages -->
     <url>
         <loc>https://test.softf.tech/display-test/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/ip-lookup/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/keyboard-test/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/mouse-test/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/speaker-test/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://test.softf.tech/speed-test/</loc>
-        <lastmod>2026-02-10</lastmod>
+        <lastmod>2026-02-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
