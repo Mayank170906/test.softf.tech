@@ -767,6 +767,154 @@
         </div>
     </section>
 
+    <section class="bg-gray-800 py-20" aria-labelledby="ip-guide-heading">
+  <div class="container mx-auto px-4 max-w-5xl">
+
+    <div class="text-center mb-12">
+      <h2 id="ip-guide-heading" class="text-3xl lg:text-4xl font-bold text-warning-content">
+        IP Address Lookup Guide
+      </h2>
+      <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        Learn what a public IP address is, what information it reveals, and how this network lookup tool analyzes internet connections and domains.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- What is IP lookup -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          What an IP Address Is
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          An IP address (Internet Protocol address) is a unique identifier assigned to a device connected to the internet. Every time you visit a website, stream content, or connect to an online service, your device communicates using this address so servers know where to send data.
+        </p>
+        <p class="text-gray-300 leading-relaxed mt-3">
+          Websites cannot directly see your device or files — they only see your network connection represented by the public IP provided by your internet service provider.
+        </p>
+      </div>
+
+      <!-- How tool works -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          How the Lookup Tool Works
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          The lookup tool queries public routing and registry databases to retrieve network ownership information. It resolves a domain name to its IP address and identifies the ISP, hosting provider, and autonomous system responsible for that connection.
+        </p>
+        <p class="text-gray-300 leading-relaxed mt-3">
+          All results come from publicly available network records. The tool does not scan devices, access private systems, or collect personal data.
+        </p>
+      </div>
+
+      <!-- What information it shows -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          What Information a Lookup Can Reveal
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          An IP lookup provides network-level details such as approximate geographic region, internet provider, and organization managing the IP block. The location shown is based on ISP infrastructure and is not an exact physical address of a user.
+        </p>
+        <p class="text-gray-300 leading-relaxed mt-3">
+          Security analysts and developers use this information to understand traffic sources, server hosting locations, and network routing paths.
+        </p>
+      </div>
+
+      <!-- Why useful -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          Why Use an IP Lookup
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          IP lookup tools are commonly used for diagnosing connection issues, verifying website hosting providers, investigating suspicious activity, and monitoring server traffic. Developers also use IP detection to adjust services based on user region.
+        </p>
+        <p class="text-gray-300 leading-relaxed mt-3">
+          Because the lookup uses public internet routing information, it only shows network data and cannot identify a specific person or device.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="bg-gray-800 py-20" aria-labelledby="network-concepts-heading">
+  <div class="container mx-auto px-4 max-w-6xl">
+
+    <div class="text-center mb-12">
+      <h2 id="network-concepts-heading" class="text-3xl lg:text-4xl font-bold text-warning-content">
+        Understanding IP Addresses & Network Data
+      </h2>
+      <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        These explanations help you understand what the reported IP information means and how internet routing, DNS, and geolocation actually work.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Public vs Private -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          Public vs Private IP Address
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          A public IP address is assigned by your internet provider and is visible to websites and servers on the internet. A private IP address exists only inside your local network, such as within a home or office router. Websites can detect your public IP but cannot directly access devices inside your private network.
+        </p>
+      </div>
+
+      <!-- DNS -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          What is a DNS Lookup?
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          The Domain Name System (DNS) converts domain names into IP addresses. When you enter a website address, your browser performs a DNS lookup to locate the server hosting that website. This tool resolves domain names and displays the network details of the hosting server.
+        </p>
+      </div>
+
+      <!-- Reverse DNS -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          Reverse DNS (rDNS)
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          Reverse DNS lookup performs the opposite process of DNS resolution. Instead of converting a domain to an IP address, it attempts to determine the hostname associated with an IP. This helps identify servers, hosting providers, and mail systems.
+        </p>
+      </div>
+
+      <!-- ASN -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          Autonomous System Number (ASN)
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          An ASN identifies a network operated by an ISP, data center, or organization. Large internet providers control blocks of IP addresses through ASNs. The ASN helps determine who manages the network that an IP address belongs to.
+        </p>
+      </div>
+
+      <!-- Geolocation -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          IP Geolocation Accuracy
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          IP geolocation shows an approximate region based on network registry information. It typically identifies the city of the provider’s infrastructure rather than the user’s exact physical location. Mobile networks, proxies, and VPNs can change the displayed region.
+        </p>
+      </div>
+
+      <!-- Hide IP -->
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-semibold text-warning-content mb-3">
+          Hiding Your Public IP Address
+        </h3>
+        <p class="text-gray-300 leading-relaxed">
+          Users can mask their IP address using VPN services, proxy servers, or privacy networks. These services route traffic through another server, so websites detect the server’s IP address instead of the original connection.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <section class="py-20" aria-labelledby="faq-heading">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="text-center mb-12">
