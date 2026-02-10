@@ -383,85 +383,93 @@
             <div
                     class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
             >
-                <div
+                <a
+                        href="#test-solid-color"
                         id="test-solid-color"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Solid Color Test</h3>
+                        <div class="card-title">Solid Color Test</div>
                         <p class="text-sm">Check for dead, stuck, or lit pixels.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-gradient"
                         id="test-gradient"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Gradient Test</h3>
+                        <div class="card-title">Gradient Test</div>
                         <p class="text-sm">Identify color banding issues.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-contrast"
                         id="test-contrast"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Contrast Test</h3>
+                        <div class="card-title">Contrast Test</div>
                         <p class="text-sm">Check black & white level accuracy.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-uniformity"
                         id="test-uniformity"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Screen Uniformity</h3>
+                        <div class="card-title">Screen Uniformity</div>
                         <p class="text-sm">Find backlight bleed & clouding.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-sharpness"
                         id="test-sharpness"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Sharpness Test</h3>
+                        <div class="card-title">Sharpness Test</div>
                         <p class="text-sm">Evaluate text clarity and sharpness.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-viewing-angle"
                         id="test-viewing-angle"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Viewing Angle</h3>
+                        <div class="card-title">Viewing Angle</div>
                         <p class="text-sm">Check for color shifting from angles.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-response-time"
                         id="test-response-time"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Response Time</h3>
+                        <div class="card-title">Response Time</div>
                         <p class="text-sm">A simple test for ghosting artifacts.</p>
                     </div>
-                </div>
+                </a>
 
-                <div
+                <a
+                        href="#test-refresh-rate"
                         id="test-refresh-rate"
                         class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer"
                 >
                     <div class="card-body items-center text-center">
-                        <h3 class="card-title">Refresh Rate</h3>
+                        <div class="card-title">Refresh Rate</div>
                         <p class="text-sm">A basic FPS counter for your display.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -593,7 +601,6 @@
   </div>
 </section>
 
-
     <section class="container mx-auto px-4 py-20 max-w-5xl">
   <div class="text-center mb-12">
     <h2 class="text-3xl font-bold sm:text-4xl">
@@ -687,146 +694,144 @@
     </div>
 
   </div>
-</section
+</section>
 
     <section class="bg-base-200 py-20" aria-labelledby="faq-heading">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-12">
-                <h2 id="faq-heading" class="text-3xl font-bold sm:text-4xl">
-                    Frequently Asked Questions
-                </h2>
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+            <h2 id="faq-heading" class="text-3xl font-bold sm:text-4xl">
+                Frequently Asked Questions
+            </h2>
+        </div>
+        <div class="space-y-4">
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    What is the difference between a dead pixel and a stuck pixel?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        A **dead pixel** is a pixel that remains unlit (black) at all
+                        times. This is typically a hardware defect that cannot be
+                        fixed. A **stuck pixel** is a pixel that is permanently stuck
+                        on one color (usually red, green, or blue) because one of its
+                        sub-pixels is always on. Stuck pixels can sometimes be fixed
+                        with software tools.
+                    </p>
+                </div>
             </div>
-            <div class="space-y-4">
-                <!-- Your Original 3 Questions -->
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        What is the difference between a dead pixel and a stuck pixel?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            A **dead pixel** is a pixel that remains unlit (black) at all
-                            times. This is typically a hardware defect that cannot be
-                            fixed. A **stuck pixel** is a pixel that is permanently stuck
-                            on one color (usually red, green, or blue) because one of its
-                            sub-pixels is always on. Stuck pixels can sometimes be fixed
-                            with software tools.
-                        </p>
-                    </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    How do I test for backlight bleed?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        The best way to test for backlight bleed is to use the "Screen
+                        Uniformity" test. Select the black or dark gray color pattern,
+                        make your room as dark as possible, and increase your
+                        monitor's brightness. Look for patches of light "bleeding" in
+                        from the edges of the screen. This is most common on LCD/LED
+                        displays.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        How do I test for backlight bleed?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            The best way to test for backlight bleed is to use the "Screen
-                            Uniformity" test. Select the black or dark gray color pattern,
-                            make your room as dark as possible, and increase your
-                            monitor's brightness. Look for patches of light "bleeding" in
-                            from the edges of the screen. This is most common on LCD/LED
-                            displays.
-                        </p>
-                    </div>
+            </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    Is this test compatible with OLED displays?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        Yes, all tests except the "Screen Uniformity" test for
+                        backlight bleed are fully compatible with OLED displays. Since
+                        OLED pixels produce their own light, they do not have a
+                        backlight and therefore cannot suffer from backlight bleed or
+                        clouding. The dead pixel and color tests are still very useful
+                        for OLED screens.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        Is this test compatible with OLED displays?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            Yes, all tests except the "Screen Uniformity" test for
-                            backlight bleed are fully compatible with OLED displays. Since
-                            OLED pixels produce their own light, they do not have a
-                            backlight and therefore cannot suffer from backlight bleed or
-                            clouding. The dead pixel and color tests are still very useful
-                            for OLED screens.
-                        </p>
-                    </div>
-                </div>
+            </div>
 
-                <!-- 4 New Questions Added Below -->
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        How do I use this online monitor test?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            It's simple. Use the buttons to cycle through the different
-                            test patterns. We recommend going full-screen (press F11) in
-                            a dark room. Carefully inspect the screen during each color
-                            test (Red, Green, Blue, White, Black) to find any dead or
-                            stuck pixels. Use the other patterns to check for uniformity,
-                            ghosting, and color banding.
-                        </p>
-                    </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    How do I use this online monitor test?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        It's simple. Use the buttons to cycle through the different
+                        test patterns. We recommend going full-screen (press F11) in
+                        a dark room. Carefully inspect the screen during each color
+                        test (Red, Green, Blue, White, Black) to find any dead or
+                        stuck pixels. Use the other patterns to check for uniformity,
+                        ghosting, and color banding.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        Can this tool fix a stuck pixel?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            This tool is primarily for *testing* and *finding* pixels.
-                            However, some users have success fixing stuck pixels by
-                            rapidly cycling through different colors. You can try our
-                            "Stuck Pixel Fixer" tool, which flashes high-contrast colors
-                            to try and "unstick" the pixel. This is not guaranteed to
-                            work and has no effect on dead pixels.
-                        </p>
-                    </div>
+            </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    Can this tool fix a stuck pixel?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        This tool is primarily for *testing* and *finding* pixels.
+                        However, some users have success fixing stuck pixels by
+                        rapidly cycling through different colors. You can try our
+                        "Stuck Pixel Fixer" tool, which flashes high-contrast colors
+                        to try and "unstick" the pixel. This is not guaranteed to
+                        work and has no effect on dead pixels.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        What is screen ghosting or motion blur?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            Ghosting (or motion blur) is a trail or "ghost" image left
-                            behind by moving objects on a screen. It's caused by a
-                            monitor's slow response time. Our "Ghosting Test" (often a
-                            UFO or moving box pattern) is designed to make this effect
-                            obvious. A high-refresh-rate monitor with a fast response
-                            time will show a much clearer moving image.
-                        </p>
-                    </div>
+            </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    What is screen ghosting or motion blur?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        Ghosting (or motion blur) is a trail or "ghost" image left
+                        behind by moving objects on a screen. It's caused by a
+                        monitor's slow response time. Our "Ghosting Test" (often a
+                        UFO or moving box pattern) is designed to make this effect
+                        obvious. A high-refresh-rate monitor with a fast response
+                        time will show a much clearer moving image.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium">
-                        Is this monitor test tool safe and private?
-                    </div>
-                    <div class="collapse-content">
-                        <p>
-                            Yes, 100%. This tool is a simple web page that runs
-                            entirely in your browser. It does not install any software,
-                            and no data about your monitor or system is sent to our
-                            servers. It's completely safe and private to use.
-                        </p>
-                    </div>
+            </div>
+            <div
+                    tabindex="0"
+                    class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+            >
+                <h3 class="collapse-title text-xl font-medium">
+                    Is this monitor test tool safe and private?
+                </h3>
+                <div class="collapse-content">
+                    <p>
+                        Yes, 100%. This tool is a simple web page that runs
+                        entirely in your browser. It does not install any software,
+                        and no data about your monitor or system is sent to our
+                        servers. It's completely safe and private to use.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </main>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
