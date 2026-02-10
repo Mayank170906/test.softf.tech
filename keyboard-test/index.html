@@ -1239,12 +1239,10 @@
         }
 
         // Check toggle keys (CapsLock, NumLock)
-        setTimeout(() => {
-            const isCapsLockOn = e.getModifierState("CapsLock");
-            capsLockStatusEl.textContent = isCapsLockOn ? "ON" : "OFF";
-            updateToggleKey(e, "CapsLock");
-            updateToggleKey(e, "NumLock");
-        }, 0);
+        const isCapsLockOn = e.getModifierState("CapsLock");
+        capsLockStatusEl.textContent = isCapsLockOn ? "ON" : "OFF";
+        updateToggleKey(e, "CapsLock");
+        updateToggleKey(e, "NumLock");
 
         e.preventDefault();
     }
@@ -1319,36 +1317,6 @@
     clearButton.addEventListener("click", clearAll);
 
     // Dynamic Styling
-    allKeys.forEach((key) => {
-        key.classList.add(
-            "bg-gray-700/80",
-            "border-b-4",
-            "border-gray-900",
-            "text-gray-200",
-            "rounded-md",
-            "p-2",
-            "flex",
-            "items-center",
-            "justify-center",
-            "font-mono",
-            "text-xs",
-            "sm:text-sm",
-            "md:text-base",
-            "transition-all",
-            "duration-75",
-            "basis-[60px]",
-            "h-[60px]",
-            "[&.active]:bg-yellow-400",
-            "[&.active]:text-black",
-            "[&.active]:border-yellow-600",
-            "[&.active]:translate-y-[3px]",
-            "[&.active]:border-b-2",
-            "[&.tested]:bg-yellow-500",
-            "[&.tested]:text-black",
-            "[&.tested]:border-b-4",
-            "[&.tested]:border-yellow-700"
-        );
-    });
 
     // Run the initial check on the very first key press
     window.addEventListener("keydown", checkInitialToggleStates, {
