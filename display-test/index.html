@@ -42,46 +42,52 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/display-test/#webapp",
-  "applicationSubCategory": "Monitor and Display Test Tool",
-  "name": "Online Monitor Test",
-  "url": "https://test.softf.tech/display-test/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "A complete suite of free browser-based tests to check for dead pixels, color accuracy, backlight bleed, and display uniformity. Runs locally with no installation.",
-  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
-  "featureList": [
-    "Dead pixel and stuck pixel detection",
-    "Color banding and gradient testing",
-    "Contrast and brightness accuracy check",
-    "Backlight bleed and uniformity analysis",
-    "Sharpness and text clarity evaluation",
-    "Ghosting and response time test",
-    "Refresh rate (FPS) counter",
-    "Works on LCD, LED, IPS, and OLED panels"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/display-test/#webpage",
+      "url": "https://test.softf.tech/display-test/",
+      "name": "Online Monitor Test - Check Dead Pixels & Display Quality",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "primaryImageOfPage": { "@id": "https://test.softf.tech/display-test/#logo" },
+      "description": "Professional browser-based monitor diagnostic tool. Test for dead pixels, backlight bleed, and color accuracy instantly with 100% privacy.",
+      "breadcrumb": { "@id": "https://test.softf.tech/display-test/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/display-test/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/display-test/#webapp",
+      "name": "SoftF Monitor Tester",
+      "url": "https://test.softf.tech/display-test/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Monitor and Display Test Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "A complete suite of free browser-based tests to check for dead pixels, color accuracy, backlight bleed, and display uniformity. Runs locally with no installation.",
+      "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+      "featureList": [
+        "Dead pixel and stuck pixel detection",
+        "Color banding and gradient testing",
+        "Contrast and brightness accuracy check",
+        "Backlight bleed and uniformity analysis",
+        "Sharpness and text clarity evaluation",
+        "Ghosting and response time test",
+        "Refresh rate (FPS) counter",
+        "Works on LCD, LED, IPS, and OLED panels"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -108,6 +114,9 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "isPartOf": {
+    "@id": "https://test.softf.tech/display-test/#webapp"
+  },
   "mainEntity": [
     {
       "@type": "Question",

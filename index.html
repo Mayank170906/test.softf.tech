@@ -73,29 +73,40 @@
       "@id": "https://test.softf.tech/#website",
       "url": "https://test.softf.tech/",
       "name": "SoftF.Tech Hardware Tests",
-      "description": "Test your PC hardware online. Check keyboard keys, mouse buttons, screen dead pixels, and more.",
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://softf.tech/#organization"
+      "description": "Professional browser-based hardware diagnostic suite.",
+      "publisher": { "@id": "https://softf.tech/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/#webpage",
+      "url": "https://test.softf.tech/",
+      "name": "SoftF Test Bench | Online Hardware Diagnostic Tools",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "A collection of 100% private, browser-based hardware tests for monitors, keyboards, mice, and network speed.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Available Hardware Tests",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": "https://test.softf.tech/display-test/", "name": "Monitor Test" },
+          { "@type": "ListItem", "position": 2, "url": "https://test.softf.tech/keyboard-test/", "name": "Keyboard Test" },
+          { "@type": "ListItem", "position": 3, "url": "https://test.softf.tech/mouse-test/", "name": "Mouse Test" },
+          { "@type": "ListItem", "position": 4, "url": "https://test.softf.tech/speaker-test/", "name": "Speaker Test" },
+          { "@type": "ListItem", "position": 5, "url": "https://test.softf.tech/ip-lookup/", "name": "IP Lookup" },
+          { "@type": "ListItem", "position": 6, "url": "https://test.softf.tech/speed-test/", "name": "Network Speed Test" }
+        ]
       }
     },
-
     {
       "@type": "Organization",
       "@id": "https://softf.tech/#organization",
       "name": "SoftF.Tech",
       "url": "https://softf.tech/",
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "https://softf.tech/#logo",
-        "url": "https://softf.tech/android-chrome-512x512.png"
-      },
+      "logo": "https://softf.tech/android-chrome-512x512.png",
       "sameAs": [
         "https://github.com/Mayank170906",
         "https://www.linkedin.com/in/mayank170906/"
       ]
     }
-
   ]
 }
 </script>
@@ -103,72 +114,45 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  },
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is a public IP address?",
+      "name": "Are the hardware testing tools private?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet for communication. Your public IP is the address visible to the rest of the internet."
+        "text": "Yes. All tests run directly inside your web browser. No keystrokes, audio, or screen data are uploaded to our servers."
       }
     },
     {
       "@type": "Question",
-      "name": "How accurate is the geolocation data?",
+      "name": "Do I need to install any software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "IP geolocation is accurate at the country and city level but is not precise enough to identify a specific street address. It determines location based on the registration data of the IP block."
+        "text": "No installation is required. The tools work instantly in modern browsers on desktop and mobile devices."
       }
     },
     {
       "@type": "Question",
-      "name": "What is an ASN?",
+      "name": "Are the tools free to use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An ASN (Autonomous System Number) is a unique number assigned to an Autonomous System (AS). An AS is a large network or group of networks that has a unified routing policy. Knowing the ASN helps identify the major network provider (like Google, Amazon, or a local ISP)."
+        "text": "Yes. All utilities are completely free to use and do not require registration or payment."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this tool be used for cybersecurity?",
+      "name": "Do the tools show advertisements or track users?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Security professionals use IP and domain lookup tools for threat intelligence, digital forensics, and network analysis to trace the origin of network traffic and identify potentially malicious sources."
+        "text": "No. The tools do not contain ads and do not store personal testing data."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the difference between a public and private IP address?",
+      "name": "Which devices and browsers are supported?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your public IP (shown by this tool) is used to communicate with the global internet. Your private IP (like 192.168.1.x) is used by devices inside your local network (like your laptop and phone) to talk to your router. Your router acts as a gateway, managing all traffic between your private devices and your single public IP."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a DNS lookup?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "DNS (Domain Name System) is the internet's phonebook. A DNS lookup translates a human-friendly domain name (like google.com) into a machine-readable IP address (like 172.217.14.228) so your browser can find the website. Our tool can perform this lookup for any domain."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Reverse DNS (rDNS) lookup?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A reverse DNS lookup does the opposite of a normal DNS lookup. Instead of finding the IP for a domain, it finds the domain name (hostname) associated with a specific IP address. This is often used to verify the identity of mail servers or check if an IP address is legitimate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I hide my public IP address?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The most common way to hide your public IP is by using a VPN (Virtual Private Network). A VPN encrypts your traffic and routes it through a server in another location, making it appear as if you are browsing from the VPN server's IP address, which enhances your privacy."
+        "text": "The tools work on modern browsers such as Chrome, Edge, Firefox, and Safari across Windows, macOS, Linux, Android, and iOS."
       }
     }
   ]

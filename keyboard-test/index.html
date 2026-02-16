@@ -69,46 +69,51 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/keyboard-test/#webapp",
-  "applicationSubCategory": "Keyboard Diagnostic Tool",
-  "name": "Keyboard Tester Online",
-  "url": "https://test.softf.tech/keyboard-test/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "A comprehensive keyboard diagnostic utility to check for stuck keys, double typing (chatter), ghosting, and N-Key Rollover (NKRO).",
-  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
-  "featureList": [
-    "Live on-screen keyboard visualizer",
-    "Key chatter and double-typing detection",
-    "N-Key Rollover (NKRO) / Max Keys Held test",
-    "Ghosting and input delay identification",
-    "Modifier and Lock key state tracking",
-    "Supports Mechanical, Laptop, and Wireless keyboards",
-    "Works offline after initial load",
-    "Private and secure client-side testing"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/keyboard-test/#webpage",
+      "url": "https://test.softf.tech/keyboard-test/",
+      "name": "Keyboard Test Online - Mechanical & Laptop Key Checker",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "Professional keyboard tester to check for key chatter, stuck keys, and N-Key Rollover (NKRO). Private, secure, and runs entirely in your browser.",
+      "breadcrumb": { "@id": "https://test.softf.tech/keyboard-test/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/keyboard-test/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/keyboard-test/#webapp",
+      "name": "Keyboard Tester Online",
+      "url": "https://test.softf.tech/keyboard-test/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Keyboard Diagnostic Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "A comprehensive keyboard diagnostic utility to check for stuck keys, double typing (chatter), ghosting, and N-Key Rollover (NKRO).",
+      "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+      "featureList": [
+        "Live on-screen keyboard visualizer",
+        "Key chatter and double-typing detection",
+        "N-Key Rollover (NKRO) / Max Keys Held test",
+        "Ghosting and input delay identification",
+        "Modifier and Lock key state tracking",
+        "Supports Mechanical, Laptop, and Wireless keyboards",
+        "Works offline after initial load",
+        "Private and secure client-side testing"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -135,6 +140,9 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "isPartOf": {
+    "@id": "https://test.softf.tech/keyboard-test/#webapp"
+  },
   "mainEntity": [
     {
       "@type": "Question",

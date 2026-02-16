@@ -63,46 +63,51 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/mouse-test/#webapp",
-  "applicationSubCategory": "Mouse Diagnostic & Input Tool",
-  "name": "Online Mouse Tester",
-  "url": "https://test.softf.tech/mouse-test/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "A professional mouse testing utility to diagnose double-clicking, scroll wheel jumps, drag-and-drop consistency, and button responsiveness.",
-  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
-  "featureList": [
-    "Left, Right, and Middle click detection",
-    "Double-click fault identification",
-    "Scroll wheel direction and jump testing",
-    "Drag & Drop consistency checker",
-    "Side button (Mouse 4/5) support",
-    "Laptop touchpad and gesture verification",
-    "Real-time input event counters",
-    "Fully private client-side execution"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/mouse-test/#webpage",
+      "url": "https://test.softf.tech/mouse-test/",
+      "name": "Mouse Test Online - Check Double Clicking, Scroll & Buttons",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "Diagnose mouse hardware issues instantly. Test for double-clicking, scroll wheel jumps, and side button responsiveness with our professional browser-based tester.",
+      "breadcrumb": { "@id": "https://test.softf.tech/mouse-test/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/mouse-test/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/mouse-test/#webapp",
+      "name": "Online Mouse Tester",
+      "url": "https://test.softf.tech/mouse-test/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Mouse Diagnostic & Input Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "A professional mouse testing utility to diagnose double-clicking, scroll wheel jumps, drag-and-drop consistency, and button responsiveness.",
+      "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+      "featureList": [
+        "Left, Right, and Middle click detection",
+        "Double-click fault identification",
+        "Scroll wheel direction and jump testing",
+        "Drag & Drop consistency checker",
+        "Side button (Mouse 4/5) support",
+        "Laptop touchpad and gesture verification",
+        "Real-time input event counters",
+        "Fully private client-side execution"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -129,6 +134,9 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "isPartOf": {
+    "@id": "https://test.softf.tech/mouse-test/#webapp"
+  },
   "mainEntity": [
     {
       "@type": "Question",

@@ -172,46 +172,51 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/ip-lookup/#webapp",
-  "applicationSubCategory": "IP Lookup & Network Intelligence Tool",
-  "name": "ShadowTrace IP Lookup",
-  "url": "https://test.softf.tech/ip-lookup/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "Instantly discover your public IP address, geolocation, ISP, and device details. Resolve domains and investigate network data with precision.",
-  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
-  "featureList": [
-    "Real-time Public IPv4 & IPv6 detection",
-    "Precise Geolocation (City, Region, Country)",
-    "ISP & ASN Mapping",
-    "Device, OS, and Browser detection",
-    "Domain to IP resolution",
-    "Reverse DNS (rDNS) lookup",
-    "Secure & Private (No logging)",
-    "Client-side network analysis"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/ip-lookup/#webpage",
+      "url": "https://test.softf.tech/ip-lookup/",
+      "name": "ShadowTrace IP Lookup - Find IP Geolocation & Network Info",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "Discover your public IP address, precise geolocation, ISP, and ASN data instantly. Secure, private, and client-side network intelligence.",
+      "breadcrumb": { "@id": "https://test.softf.tech/ip-lookup/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/ip-lookup/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/ip-lookup/#webapp",
+      "name": "ShadowTrace IP Lookup",
+      "url": "https://test.softf.tech/ip-lookup/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "IP Lookup & Network Intelligence Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "Instantly discover your public IP address, geolocation, ISP, and device details. Resolve domains and investigate network data with precision.",
+      "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+      "featureList": [
+        "Real-time Public IPv4 & IPv6 detection",
+        "Precise Geolocation (City, Region, Country)",
+        "ISP & ASN Mapping",
+        "Device, OS, and Browser detection",
+        "Domain to IP resolution",
+        "Reverse DNS (rDNS) lookup",
+        "Secure & Private (No logging)",
+        "Client-side network analysis"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -238,6 +243,9 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "isPartOf": {
+    "@id": "https://test.softf.tech/ip-lookup/#webapp"
+  },
   "mainEntity": [
     {
       "@type": "Question",

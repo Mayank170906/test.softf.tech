@@ -63,46 +63,51 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/speaker-test/#webapp",
-  "applicationSubCategory": "Audio Diagnostic & Speaker Test Tool",
-  "name": "Online Speaker Test",
-  "url": "https://test.softf.tech/speaker-test/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "Quickly test your stereo speakers, headphones, and audio systems. Diagnose channel imbalance, frequency response issues, and sound distortion instantly.",
-  "browserRequirements": "Requires JavaScript and Audio support. Works on modern browsers.",
-  "featureList": [
-    "Stereo Left and Right channel separation test",
-    "Full range Frequency Sweep (Low to High)",
-    "Bass and Subwoofer performance check",
-    "Treble and High-frequency clarity test",
-    "Audio distortion and rattling detection",
-    "Mono vs Stereo configuration verification",
-    "Works with Bluetooth, USB, and Jack outputs",
-    "No installation or software downloads required"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/speaker-test/#webpage",
+      "url": "https://test.softf.tech/speaker-test/",
+      "name": "Online Speaker Test - Check Stereo, Bass & Audio Quality",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "Test your speakers and headphones for channel balance, frequency range, and distortion. A professional, browser-based audio diagnostic tool.",
+      "breadcrumb": { "@id": "https://test.softf.tech/speaker-test/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/speaker-test/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/speaker-test/#webapp",
+      "name": "Online Speaker Test",
+      "url": "https://test.softf.tech/speaker-test/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Audio Diagnostic & Speaker Test Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "Quickly test your stereo speakers, headphones, and audio systems. Diagnose channel imbalance, frequency response issues, and sound distortion instantly.",
+      "browserRequirements": "Requires JavaScript and Audio support. Works on modern browsers.",
+      "featureList": [
+        "Stereo Left and Right channel separation test",
+        "Full range Frequency Sweep (Low to High)",
+        "Bass and Subwoofer performance check",
+        "Treble and High-frequency clarity test",
+        "Audio distortion and rattling detection",
+        "Mono vs Stereo configuration verification",
+        "Works with Bluetooth, USB, and Jack outputs",
+        "No installation or software downloads required"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -129,6 +134,9 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "isPartOf": {
+    "@id": "https://test.softf.tech/speaker-test/#webapp"
+  },
   "mainEntity": [
     {
       "@type": "Question",

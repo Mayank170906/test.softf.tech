@@ -65,45 +65,50 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "@id": "https://test.softf.tech/speed-test/#webapp",
-  "applicationSubCategory": "Network Connection & Speed Test Tool",
-  "name": "Network Diagnostic Tools",
-  "url": "https://test.softf.tech/speed-test/",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "softwareVersion": "1.0",
-  "inLanguage": "en",
-  "softwareHelp": {
-    "@id": "https://test.softf.tech/contact/#webpage"
-  },
-  "applicationSuite": "SoftF.Tech Hardware Tests",
-  "description": "A suite of browser-based utilities to check your network status. Includes public IP detection, ping latency measurement, and download/upload speed testing.",
-  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
-  "featureList": [
-    "Real-time Public IP Address detection",
-    "Ping and Latency measurement",
-    "Download speed testing",
-    "Upload speed testing",
-    "Connection quality analysis",
-    "No installation required",
-    "Privacy-focused diagnostic tools"
-  ],
-  "isAccessibleForFree": true,
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
-  },
-  "publisher": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "brand": {
-    "@id": "https://softf.tech/#organization"
-  },
-  "isPartOf": {
-    "@id": "https://test.softf.tech/#website"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://test.softf.tech/speed-test/#webpage",
+      "url": "https://test.softf.tech/speed-test/",
+      "name": "Network Speed Test - Check Ping, Download & Upload Speed",
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "description": "Professional browser-based network diagnostic tool. Measure your ping, latency, and internet speed instantly with 100% privacy and no data logging.",
+      "breadcrumb": { "@id": "https://test.softf.tech/speed-test/#breadcrumb" },
+      "mainEntity": { "@id": "https://test.softf.tech/speed-test/#webapp" },
+      "lastReviewed": "2026-02-17",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://test.softf.tech/speed-test/#webapp",
+      "name": "SoftF Network Diagnostic Tools",
+      "url": "https://test.softf.tech/speed-test/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Network Connection & Speed Test Tool",
+      "operatingSystem": "Any",
+      "softwareVersion": "1.0",
+      "applicationSuite": "SoftF.Tech Hardware Tests",
+      "description": "A suite of browser-based utilities to check your network status. Includes public IP detection, ping latency measurement, and download/upload speed testing.",
+      "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+      "featureList": [
+        "Real-time Public IP Address detection",
+        "Ping and Latency measurement",
+        "Download speed testing",
+        "Upload speed testing",
+        "Connection quality analysis",
+        "No installation required",
+        "Privacy-focused diagnostic tools"
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "brand": { "@id": "https://softf.tech/#organization" }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
