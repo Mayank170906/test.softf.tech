@@ -74,7 +74,8 @@
       "url": "https://test.softf.tech/",
       "name": "SoftF.Tech Hardware Tests",
       "description": "Professional browser-based hardware diagnostic suite.",
-      "publisher": { "@id": "https://softf.tech/#organization" }
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "inLanguage": "en"
     },
     {
       "@type": "WebPage",
@@ -82,17 +83,68 @@
       "url": "https://test.softf.tech/",
       "name": "SoftF Test Bench | Online Hardware Diagnostic Tools",
       "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "about": { "@id": "https://softf.tech/#organization" },
       "description": "A collection of 100% private, browser-based hardware tests for monitors, keyboards, mice, and network speed.",
+      "breadcrumb": { "@id": "https://test.softf.tech/#breadcrumb" },
       "mainEntity": {
         "@type": "ItemList",
+        "@id": "https://test.softf.tech/#toollist",
         "name": "Available Hardware Tests",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "url": "https://test.softf.tech/display-test/", "name": "Monitor Test" },
-          { "@type": "ListItem", "position": 2, "url": "https://test.softf.tech/keyboard-test/", "name": "Keyboard Test" },
-          { "@type": "ListItem", "position": 3, "url": "https://test.softf.tech/mouse-test/", "name": "Mouse Test" },
-          { "@type": "ListItem", "position": 4, "url": "https://test.softf.tech/speaker-test/", "name": "Speaker Test" },
-          { "@type": "ListItem", "position": 5, "url": "https://test.softf.tech/ip-lookup/", "name": "IP Lookup" },
-          { "@type": "ListItem", "position": 6, "url": "https://test.softf.tech/speed-test/", "name": "Network Speed Test" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/display-test/",
+              "name": "Monitor Test"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/keyboard-test/",
+              "name": "Keyboard Test"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/mouse-test/",
+              "name": "Mouse Test"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/speaker-test/",
+              "name": "Speaker Test"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/ip-lookup/",
+              "name": "IP Lookup"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "WebPage",
+              "url": "https://test.softf.tech/speed-test/",
+              "name": "Network Speed Test"
+            }
+          }
         ]
       }
     },
@@ -101,7 +153,12 @@
       "@id": "https://softf.tech/#organization",
       "name": "SoftF.Tech",
       "url": "https://softf.tech/",
-      "logo": "https://softf.tech/android-chrome-512x512.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://softf.tech/android-chrome-512x512.png",
+        "width": "512",
+        "height": "512"
+      },
       "sameAs": [
         "https://github.com/Mayank170906",
         "https://www.linkedin.com/in/mayank170906/"

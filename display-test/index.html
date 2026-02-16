@@ -49,16 +49,20 @@
       "url": "https://test.softf.tech/display-test/",
       "name": "Online Monitor Test - Check Dead Pixels & Display Quality",
       "isPartOf": { "@id": "https://test.softf.tech/#website" },
-      "primaryImageOfPage": { "@id": "https://test.softf.tech/display-test/#logo" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://softf.tech/android-chrome-512x512.png"
+      },
       "description": "Professional browser-based monitor diagnostic tool. Test for dead pixels, backlight bleed, and color accuracy instantly with 100% privacy.",
       "breadcrumb": { "@id": "https://test.softf.tech/display-test/#breadcrumb" },
       "mainEntity": { "@id": "https://test.softf.tech/display-test/#webapp" },
       "lastReviewed": "2026-02-17",
-      "inLanguage": "en-US"
+      "inLanguage": "en"
     },
     {
       "@type": "WebApplication",
       "@id": "https://test.softf.tech/display-test/#webapp",
+      "mainEntityOfPage": { "@id": "https://test.softf.tech/display-test/#webpage" },
       "name": "SoftF Monitor Tester",
       "url": "https://test.softf.tech/display-test/",
       "applicationCategory": "UtilitiesApplication",
