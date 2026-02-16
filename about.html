@@ -62,27 +62,95 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     <link rel="manifest" href="../assets/images/site.webmanifest">
     <!-- 5. Updated Schema.org JSON-LD Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "name": "About test.softf.tech",
-            "url": "https://test.softf.tech/about.html",
-            "description": "Learn about the mission and philosophy behind test.softf.tech. We are dedicated to creating fast, private, and free client-side hardware testing tools for everyone.",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://test.softf.tech/about.html"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "test.softf.tech",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://test.softf.tech/assets/images/logo.jpg"
-                }
-            }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+
+  "@graph": [
+
+    {
+      "@type": "AboutPage",
+      "@id": "https://test.softf.tech/about/#webpage",
+      "url": "https://test.softf.tech/about",
+      "name": "About SoftF Hardware Tests – Mission & Privacy",
+      "description": "Learn about the mission and philosophy behind test.softf.tech. We are dedicated to creating fast, private, and free client-side hardware testing tools.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://test.softf.tech/#website"
+      },
+      "mainEntity": {
+        "@id": "https://softf.tech/#organization"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://test.softf.tech/#website",
+      "url": "https://test.softf.tech/",
+      "name": "SoftF.Tech Hardware Tests",
+      "publisher": {
+        "@id": "https://softf.tech/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://softf.tech/#organization",
+      "name": "SoftF.Tech",
+      "alternateName": "SoftF Tech",
+      "url": "https://softf.tech/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://softf.tech/#logo",
+        "url": "https://softf.tech/android-chrome-512x512.png"
+      },
+      "description": "SoftF.Tech develops privacy-focused browser-based utilities that run locally in the user's browser without uploads or installation.",
+      "inLanguage": "en",
+      "sameAs": [
+        "https://github.com/Mayank170906",
+        "https://www.linkedin.com/in/mayank170906/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://test.softf.tech/contact",
+        "email": "contact@softf.tech",
+        "availableLanguage": ["en"]
+      },
+      "areaServed": "Worldwide",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
         }
-    </script>
+      }
+    }
+
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://test.softf.tech/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://test.softf.tech/about"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="bg-gray-400">

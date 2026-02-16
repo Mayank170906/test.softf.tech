@@ -60,27 +60,84 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     <link rel="manifest" href="../assets/images/site.webmanifest">
     <!-- Updated Schema.org JSON-LD Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact test.softf.tech",
-        "url": "https://test.softf.tech/contact.html",
-        "description": "Contact information for test.softf.tech. Reach out for support, feedback, or to report technical issues.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://test.softf.tech/contact.html"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "test.softf.tech",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://test.softf.tech/assets/images/logo.jpg"
-          }
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+
+  "@graph": [
+
+    {
+      "@type": "ContactPage",
+      "@id": "https://test.softf.tech/contact/#webpage",
+      "url": "https://test.softf.tech/contact",
+      "name": "Contact SoftF Hardware Tests – Support & Help",
+      "description": "Contact SoftF Hardware Tests for support, reporting bugs, or feedback about our online hardware testing utilities.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://test.softf.tech/#website"
+      },
+      "mainEntity": {
+        "@id": "https://softf.tech/#organization"
       }
-    </script>
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://test.softf.tech/#website",
+      "url": "https://test.softf.tech/",
+      "name": "SoftF.Tech Hardware Tests",
+      "publisher": {
+        "@id": "https://softf.tech/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://softf.tech/#organization",
+      "name": "SoftF.Tech",
+      "url": "https://softf.tech/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://softf.tech/#logo",
+        "url": "https://softf.tech/android-chrome-512x512.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://test.softf.tech/contact",
+        "email": "contact@softf.tech",
+        "availableLanguage": ["en"]
+      },
+      "sameAs": [
+        "https://github.com/Mayank170906",
+        "https://www.linkedin.com/in/mayank170906/"
+      ]
+    }
+
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://test.softf.tech/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://test.softf.tech/contact"
+    }
+  ]
+}
+</script>
   </head>
 
   <body class="bg-gray-400">
