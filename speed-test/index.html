@@ -62,77 +62,70 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     <link rel="manifest" href="../assets/images/site.webmanifest">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "SoftwareApplication",
-                    "name": "Network Diagnostic Tools",
-                    "applicationCategory": "UtilitiesApplication",
-                    "operatingSystem": "Any (Web Browser)",
-                    "url": "https://test.softf.tech/speed-test/",
-                    "description": "A free, client-side web application to check a user's public IP address, test network ping and latency, and (soon) measure internet download and upload speed.",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0",
-                        "priceCurrency": "USD"
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "test.softf.tech",
-                        "logo": "https://test.softf.tech/assets/images/logo.jpg"
-                    }
-                },
-                {
-                    "@type": "FAQPage",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": "What is a Public IP Address?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Your IP (Internet Protocol) address is a unique identifier for your device on the internet, much like a mailing address for your house. It allows data to be sent to and from your computer correctly."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What is Ping (Latency)?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Ping measures the round-trip time for a small piece of data to travel from your computer to a server and back. A lower ping (in milliseconds) means a more responsive connection, which is crucial for online gaming and video calls."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is this network test private?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes. All tests, like the ping test, run entirely in your web browser. Your IP address is visible to you, but no test data is saved or sent to our servers."
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://test.softf.tech/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Speed Test",
-                            "item": "https://test.softf.tech/speed-test/"
-                        }
-                    ]
-                }
-            ]
-        }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://test.softf.tech/speed-test/#webapp",
+  "applicationSubCategory": "Network Connection & Speed Test Tool",
+  "name": "Network Diagnostic Tools",
+  "url": "https://test.softf.tech/speed-test/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "softwareVersion": "1.0",
+  "inLanguage": "en",
+  "softwareHelp": {
+    "@id": "https://test.softf.tech/contact/#webpage"
+  },
+  "applicationSuite": "SoftF.Tech Hardware Tests",
+  "description": "A suite of browser-based utilities to check your network status. Includes public IP detection, ping latency measurement, and download/upload speed testing.",
+  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+  "featureList": [
+    "Real-time Public IP Address detection",
+    "Ping and Latency measurement",
+    "Download speed testing",
+    "Upload speed testing",
+    "Connection quality analysis",
+    "No installation required",
+    "Privacy-focused diagnostic tools"
+  ],
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@id": "https://softf.tech/#organization"
+  },
+  "brand": {
+    "@id": "https://softf.tech/#organization"
+  },
+  "isPartOf": {
+    "@id": "https://test.softf.tech/#website"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://test.softf.tech/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Speed Test",
+      "item": "https://test.softf.tech/speed-test/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="bg-gray-400">

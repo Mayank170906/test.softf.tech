@@ -66,126 +66,71 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     <link rel="manifest" href="../assets/images/site.webmanifest">
     <!-- Schema.org JSON-LD Structured Data for this specific tool -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "SoftwareApplication",
-                    "@id": "https://test.softf.tech/keyboard-test/#app",
-                    "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": "https://test.softf.tech/keyboard-test/"
-                    },
-                    "name": "Online Keyboard Tester",
-                    "applicationCategory": "UtilitiesApplication",
-                    "operatingSystem": "Any (Web Browser)",
-                    "url": "https://test.softf.tech/keyboard-test/",
-                    "description": "A free, client-side web application to test keyboard functionality, including diagnostics for n-key rollover (NKRO), ghosting, and key chatter.",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0",
-                        "priceCurrency": "USD"
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "test.softf.tech",
-                        "logo": "https://test.softf.tech/assets/images/logo.jpg"
-                    },
-                    "inLanguage": "en",
-                    "datePublished": "2025-11-13",
-                    "dateModified": "2025-11-13"
-                },
-                {
-                    "@type": "FAQPage",
-                    "about": {
-                        "@id": "https://test.softf.tech/keyboard-test/#app"
-                    },
-                    "inLanguage": "en",
-                    "datePublished": "2025-11-13",
-                    "dateModified": "2025-11-13",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": "Why is my keyboard typing double letters? (e.g., 'h' becomes 'hh')",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "This is a classic sign of \"keyboard chatter,\" a hardware fault usually caused by a failing mechanical switch. Our \"Chatter Detected\" feature is specifically designed to identify this problem. If a key is flagged, it likely needs to be cleaned or replaced."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What is N-Key Rollover (NKRO) and why does it matter?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "N-Key Rollover refers to a keyboard's ability to correctly register multiple simultaneous key presses. Most standard keyboards can only handle about 6 keys at once (6KRO). For intense gaming or extremely fast typing, having \"Full NKRO\" is crucial to ensure every command is registered. Our \"Max Keys Held\" stat allows you to test your keyboard's limit."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is this test safe and private?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, 100%. This tool runs entirely within your browser (client-side). No key presses, logs, or any other data is ever sent to our servers. Your privacy is guaranteed."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What is keyboard ghosting?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Keyboard ghosting is a hardware limitation where pressing multiple keys at once (especially in certain combinations) causes some of the pressed keys to not be registered at all. It's as if a \"ghost\" is preventing the key press. Our tool helps you identify this by showing you exactly which keys your computer \"sees\" when you press several keys together."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "How do I use this online keyboard test?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "It's simple: just start pressing keys on your keyboard. The virtual keyboard on the screen will light up instantly to show which key is being registered. You can use this to test individual keys, check your \"Max Keys Held\" for N-Key Rollover, and watch for \"Chatter\" warnings. No installation or setup is required."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Why are some keys on my keyboard not working?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "This tool can help you diagnose the problem. If you press a key and it doesn't light up on our tester, it confirms the signal isn't reaching the computer. This could be due to a hardware fault (like a broken switch or circuit), dirt/debris under the keycap, or a driver issue. For mechanical keyboards, it often means the switch needs cleaning or replacing."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is this tool compatible with Mac/Windows/Linux?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, absolutely. Our keyboard tester runs entirely in your web browser (like Chrome, Firefox, Safari, or Edge). It is fully compatible with any operating system, including Windows, macOS, and Linux, as well as on most laptops and external keyboards."
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://test.softf.tech/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Keyboard Test",
-                    "item": "https://test.softf.tech/keyboard-test/"
-                }
-            ]
-        }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://test.softf.tech/keyboard-test/#webapp",
+  "applicationSubCategory": "Keyboard Diagnostic Tool",
+  "name": "Keyboard Tester Online",
+  "url": "https://test.softf.tech/keyboard-test/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "softwareVersion": "1.0",
+  "inLanguage": "en",
+  "softwareHelp": {
+    "@id": "https://test.softf.tech/contact/#webpage"
+  },
+  "applicationSuite": "SoftF.Tech Hardware Tests",
+  "description": "A comprehensive keyboard diagnostic utility to check for stuck keys, double typing (chatter), ghosting, and N-Key Rollover (NKRO).",
+  "browserRequirements": "Requires JavaScript. Works on modern browsers.",
+  "featureList": [
+    "Live on-screen keyboard visualizer",
+    "Key chatter and double-typing detection",
+    "N-Key Rollover (NKRO) / Max Keys Held test",
+    "Ghosting and input delay identification",
+    "Modifier and Lock key state tracking",
+    "Supports Mechanical, Laptop, and Wireless keyboards",
+    "Works offline after initial load",
+    "Private and secure client-side testing"
+  ],
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@id": "https://softf.tech/#organization"
+  },
+  "brand": {
+    "@id": "https://softf.tech/#organization"
+  },
+  "isPartOf": {
+    "@id": "https://test.softf.tech/#website"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://test.softf.tech/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Keyboard Test",
+      "item": "https://test.softf.tech/keyboard-test/"
+    }
+  ]
+}
+</script>
 
 
 </head>
