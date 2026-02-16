@@ -65,9 +65,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
       "@type": "AboutPage",
       "@id": "https://test.softf.tech/about/#webpage",
@@ -75,25 +73,37 @@
       "name": "About SoftF Hardware Tests – Mission & Privacy",
       "description": "Learn about the mission and philosophy behind test.softf.tech. We are dedicated to creating fast, private, and free client-side hardware testing tools.",
       "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://test.softf.tech/#website"
-      },
-      "mainEntity": {
-        "@id": "https://softf.tech/#organization"
-      }
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "breadcrumb": { "@id": "https://test.softf.tech/about/#breadcrumb" },
+      "mainEntity": { "@id": "https://softf.tech/#organization" },
+      "lastReviewed": "2026-02-17"
     },
-
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://test.softf.tech/about/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://test.softf.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://test.softf.tech/about"
+        }
+      ]
+    },
     {
       "@type": "WebSite",
       "@id": "https://test.softf.tech/#website",
       "url": "https://test.softf.tech/",
       "name": "SoftF.Tech Hardware Tests",
-      "publisher": {
-        "@id": "https://softf.tech/#organization"
-      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
       "inLanguage": "en"
     },
-
     {
       "@type": "Organization",
       "@id": "https://softf.tech/#organization",
@@ -106,7 +116,6 @@
         "url": "https://softf.tech/android-chrome-512x512.png"
       },
       "description": "SoftF.Tech develops privacy-focused browser-based utilities that run locally in the user's browser without uploads or installation.",
-      "inLanguage": "en",
       "sameAs": [
         "https://github.com/Mayank170906",
         "https://www.linkedin.com/in/mayank170906/"
@@ -117,36 +126,7 @@
         "url": "https://test.softf.tech/contact",
         "email": "contact@softf.tech",
         "availableLanguage": ["en"]
-      },
-      "areaServed": "Worldwide",
-      "foundingLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "IN"
-        }
       }
-    }
-
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://test.softf.tech/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "About",
-      "item": "https://test.softf.tech/about"
     }
   ]
 }

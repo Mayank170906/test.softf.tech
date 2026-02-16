@@ -17,9 +17,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
       "@type": "PrivacyPolicy",
       "@id": "https://test.softf.tech/privacy/#webpage",
@@ -27,25 +25,37 @@
       "name": "Privacy Policy - SoftF Hardware Tests",
       "description": "Our privacy policy explains how we handle your data. We focus on browser-based, client-side testing to ensure maximum privacy without server uploads.",
       "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://test.softf.tech/#website"
-      },
-      "publisher": {
-        "@id": "https://softf.tech/#organization"
-      }
+      "isPartOf": { "@id": "https://test.softf.tech/#website" },
+      "breadcrumb": { "@id": "https://test.softf.tech/privacy/#breadcrumb" },
+      "publisher": { "@id": "https://softf.tech/#organization" },
+      "lastReviewed": "2026-02-17"
     },
-
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://test.softf.tech/privacy/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://test.softf.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy",
+          "item": "https://test.softf.tech/privacy"
+        }
+      ]
+    },
     {
       "@type": "WebSite",
       "@id": "https://test.softf.tech/#website",
       "url": "https://test.softf.tech/",
       "name": "SoftF.Tech Hardware Tests",
-      "publisher": {
-        "@id": "https://softf.tech/#organization"
-      },
+      "publisher": { "@id": "https://softf.tech/#organization" },
       "inLanguage": "en"
     },
-
     {
       "@type": "Organization",
       "@id": "https://softf.tech/#organization",
@@ -60,27 +70,6 @@
         "https://github.com/Mayank170906",
         "https://www.linkedin.com/in/mayank170906/"
       ]
-    }
-
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://test.softf.tech/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Privacy Policy",
-      "item": "https://test.softf.tech/privacy"
     }
   ]
 }
