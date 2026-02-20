@@ -395,111 +395,109 @@
 
 <main>
     <section class="bg-base-200">
-        <div class="container mx-auto px-4 py-20 text-center">
-            <h1
-                    class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+    <div class="container mx-auto px-4 py-20 text-center">
+        <h1
+                class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+        >
+            Online Monitor Test: Find dead pixels and backlight bleed
+        </h1>
+        <p class="mt-6 max-w-3xl mx-auto text-lg text-base-content/80">
+            Don't let a faulty panel ruin your experience. Use these professional-grade patterns to check for dead pixels, color banding, and screen uniformity right in your browser.
+        </p>
+        <h2 class="mt-12 text-3xl sm:text-4xl font-bold tracking-tight">Pick a test to begin</h2>
+        <div
+                class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+        >
+            <button
+                    type="button"
+                    id="test-solid-color"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
             >
-                Online Monitor Test – Check Dead Pixels, Screen Bleed & Display Issues
-            </h1>
-            <p class="mt-6 max-w-3xl mx-auto text-lg text-base-content/80">
-                A complete suite of free browser-based tests to help you check for
-                dead pixels, color accuracy, backlight bleed, and other common
-                display issues.
-            </p>
-            <h2 class="mt-6 text-3xl sm:text-4xl font-bold tracking-tight">Monitor Testing Tools</h2>
-            <div
-                    class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Dead Pixels</div>
+                    <p class="text-sm">Spot stuck or dead pixels with solid color fills.</p>
+                </div>
+            </button>
+
+            <button
+                    type="button"
+                    id="test-gradient"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
             >
-                <button
-                        type="button"
-                        id="test-solid-color"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Solid Color Test</div>
-                        <p class="text-sm">Check for dead, stuck, or lit pixels.</p>
-                    </div>
-                </button>
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Color Banding</div>
+                    <p class="text-sm">Check for smooth gradients and bit-depth issues.</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-gradient"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Gradient Test</div>
-                        <p class="text-sm">Identify color banding issues.</p>
-                    </div>
-                </button>
+            <button
+                    type="button"
+                    id="test-contrast"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Contrast Check</div>
+                    <p class="text-sm">Can you actually see the darkest shadows?</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-contrast"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Contrast Test</div>
-                        <p class="text-sm">Check black & white level accuracy.</p>
-                    </div>
-                </button>
+            <button
+                    type="button"
+                    id="test-uniformity"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Backlight Bleed</div>
+                    <p class="text-sm">Find uneven lighting or "clouding" on dark screens.</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-uniformity"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Screen Uniformity</div>
-                        <p class="text-sm">Find backlight bleed & clouding.</p>
-                    </div>
-                </button>
+            <button
+                    type="button"
+                    id="test-sharpness"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Text Sharpness</div>
+                    <p class="text-sm">Verify font clarity and scaling settings.</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-sharpness"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Sharpness Test</div>
-                        <p class="text-sm">Evaluate text clarity and sharpness.</p>
-                    </div>
-                </button>
+            <button
+                    type="button"
+                    id="test-viewing-angle"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Viewing Angles</div>
+                    <p class="text-sm">Test for color shifting from the side.</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-viewing-angle"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Viewing Angle</div>
-                        <p class="text-sm">Check for color shifting from angles.</p>
-                    </div>
-                </button>
+            <button
+                    type="button"
+                    id="test-response-time"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Motion Blur</div>
+                    <p class="text-sm">Find "ghosting" artifacts with moving objects.</p>
+                </div>
+            </button>
 
-                <button
-                        type="button"
-                        id="test-response-time"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Response Time</div>
-                        <p class="text-sm">A simple test for ghosting artifacts.</p>
-                    </div>
-                </button>
-
-                <button
-                        type="button"
-                        id="test-refresh-rate"
-                        class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-shadow cursor-pointer block"
-                >
-                    <div class="card-body items-center text-center">
-                        <div class="card-title">Refresh Rate</div>
-                        <p class="text-sm">A basic FPS counter for your display.</p>
-                    </div>
-                </button>
-            </div>
+            <button
+                    type="button"
+                    id="test-refresh-rate"
+                    class="card card-compact bg-base-100 shadow-md hover:shadow-xl transition-all cursor-pointer block border border-transparent hover:border-amber-500"
+            >
+                <div class="card-body items-center text-center">
+                    <div class="card-title text-amber-600">Refresh Rate</div>
+                    <p class="text-sm">Verify your actual FPS and Hz.</p>
+                </div>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
     <div id="test-screen" class="fixed inset-0 z-50 hidden bg-black">
         <div
                 id="test-content"
@@ -511,114 +509,103 @@
     </div>
 
     <section
-            class="container mx-auto px-4 py-20"
-            aria-labelledby="how-to-heading"
+        class="container mx-auto px-4 py-20"
+        aria-labelledby="how-to-heading"
+>
+    <div class="text-center">
+        <h2 id="how-to-heading" class="text-3xl font-bold sm:text-4xl">
+            Don't miss a defect: How to test properly
+        </h2>
+        <p class="mt-4 text-lg text-base-content/80 max-w-3xl mx-auto">
+            A quick glance isn't enough to find subtle panel issues. Follow these steps to ensure you’re seeing everything.
+        </p>
+    </div>
+    <ul
+            class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
     >
-        <div class="text-center">
-            <h2 id="how-to-heading" class="text-3xl font-bold sm:text-4xl">
-                How to Get the Best Results
-            </h2>
-            <p class="mt-4 text-lg text-base-content/80 max-w-3xl mx-auto">
-                Follow these simple steps to perform a thorough and accurate check
-                of your monitor.
+        <li class="p-6 bg-base-100 rounded-lg shadow border-t-4 border-primary">
+            <strong class="text-lg font-bold"
+            >Kill the lights</strong
+            >
+            <p class="mt-2 text-sm leading-relaxed">
+                Reflections and bright office lights hide backlight bleed. For an accurate test, dim your room lights. This makes "clouding" and edge-lit issues stand out immediately.
             </p>
-        </div>
-        <ul
-                class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
-        >
-            <li class="p-6 bg-base-100 rounded-lg shadow">
-                <strong class="text-lg text-primary"
-                >1. Prepare Your Environment</strong
-                >
-                <p class="mt-2">
-                    For best results, test in a dimly lit room to make issues like
-                    backlight bleed more obvious. Make sure your monitor is clean and
-                    free of dust or smudges.
-                </p>
-            </li>
-            <li class="p-6 bg-base-100 rounded-lg shadow">
-                <strong class="text-lg text-primary">2. Use Fullscreen Mode</strong>
-                <p class="mt-2">
-                    Our tests are designed to run in fullscreen. This hides
-                    distractions and allows you to inspect the very edges of your
-                    display for problems.
-                </p>
-            </li>
-            <li class="p-6 bg-base-100 rounded-lg shadow">
-                <strong class="text-lg text-primary"
-                >3. Know What to Look For</strong
-                >
-                <p class="mt-2">
-                    In the solid color tests, look for tiny dots that are the wrong
-                    color (dead or stuck pixels). In the uniformity test, look for
-                    bright patches, especially near the edges (backlight bleed).
-                </p>
-            </li>
-        </ul>
-    </section>
+        </li>
+        <li class="p-6 bg-base-100 rounded-lg shadow border-t-4 border-primary">
+            <strong class="text-lg font-bold">Go Fullscreen</strong>
+            <p class="mt-2 text-sm leading-relaxed">
+                Browser tabs and taskbars cover the edges of your screen—which is exactly where most defects occur. Always use Fullscreen mode to inspect every single pixel from corner to corner.
+            </p>
+        </li>
+        <li class="p-6 bg-base-100 rounded-lg shadow border-t-4 border-primary">
+            <strong class="text-lg font-bold"
+            >Clean your screen first</strong
+            >
+            <p class="mt-2 text-sm leading-relaxed">
+                It sounds obvious, but a tiny speck of dust can look exactly like a dead pixel. Use a microfiber cloth to wipe the panel before you start so you don't panic over a smudge.
+            </p>
+        </li>
+    </ul>
+</section>
 
     <section class="bg-base-200">
   <div class="container mx-auto px-4 py-20 max-w-5xl">
 
     <div class="text-center mb-12">
       <h2 class="text-3xl font-bold sm:text-4xl">
-        Online Monitor Test Guide
+        Monitor testing: What you need to know
       </h2>
       <p class="mt-4 text-base-content/70 max-w-2xl mx-auto">
-        This guide explains what the display test does, how it works, and when you should use it to verify the condition of your screen.
+        Screen defects are easy to miss during normal use. This guide explains how to use our patterns to catch hardware issues before they become a permanent problem.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- Card 1 -->
-      <div class="card bg-base-100 shadow-lg">
+      <div class="card bg-base-100 shadow-lg border-l-4 border-amber-500">
         <div class="card-body">
-          <h3 class="card-title">What This Online Monitor Test Is</h3>
+          <h3 class="card-title">What is this test for?</h3>
           <p class="text-base-content/80">
-            This page is a browser-based monitor testing utility that checks the physical quality of your display. It shows fullscreen patterns and motion elements designed to reveal hardware defects that everyday applications often hide.
+            Standard apps and wallpapers are great at hiding defects. Our tool uses specifically engineered fullscreen patterns to "stress test" your pixels. It forces every part of your panel to show its true colors, making it impossible for dead pixels or backlight issues to stay hidden.
           </p>
           <p class="text-base-content/80">
-            The test runs entirely inside your web browser, so you do not need to download or install any software. No system information is collected and nothing is modified on your device.
+            Since it runs entirely in your browser, you don't have to risk downloading weird executables just to check your screen.
           </p>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="card bg-base-100 shadow-lg">
+      <div class="card bg-base-100 shadow-lg border-l-4 border-amber-500">
         <div class="card-body">
-          <h3 class="card-title">How the Display Test Works</h3>
+          <h3 class="card-title">How it helps you spot defects</h3>
           <p class="text-base-content/80">
-            The tool displays controlled colors, gradients, motion objects and contrast patterns across the full screen. These patterns force every pixel to change state so you can visually inspect the panel.
+            The logic is simple: by displaying perfectly uniform colors and gradients, we remove all "visual noise." If your monitor has a hardware flaw, it will stick out like a sore thumb against our solid backgrounds.
           </p>
           <p class="text-base-content/80">
-            If a monitor has a defect, it becomes visible during these patterns as dots, uneven lighting, blur, brightness patches or motion trails that are difficult to notice during normal use.
+            Whether it’s a tiny black dot (dead pixel) or a weird glowing patch in the corner (backlight bleed), these patterns make it obvious.
           </p>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="card bg-base-100 shadow-lg">
+      <div class="card bg-base-100 shadow-lg border-l-4 border-amber-500">
         <div class="card-body">
-          <h3 class="card-title">Why You Should Test Your Screen</h3>
+          <h3 class="card-title">When should you use this?</h3>
           <p class="text-base-content/80">
-            Many displays ship with minor panel defects that users only notice after the replacement period ends. Running a screen test immediately after buying a monitor or laptop helps confirm the display is working properly while it is still under warranty.
+            Always run these tests the moment you unbox a new monitor or laptop. Many manufacturers have a "zero dead pixel" policy only for the first few days. Testing immediately ensures you can get a replacement or refund while the warranty is still fresh.
           </p>
           <p class="text-base-content/80">
-            The test is useful for gaming, office work, programming, and photo editing where clear text, accurate colors and smooth motion are important for comfortable viewing.
+            It’s also great for used gear, helping you verify that "Grade A" listing is actually telling the truth.
           </p>
         </div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="card bg-base-100 shadow-lg">
+      <div class="card bg-base-100 shadow-lg border-l-4 border-amber-500">
         <div class="card-body">
-          <h3 class="card-title">Supported Devices</h3>
+          <h3 class="card-title">Does it work on my screen?</h3>
           <p class="text-base-content/80">
-            The monitor test works on desktop monitors, gaming displays, laptops, ultrawide screens, televisions and tablets. It supports LCD, LED, IPS, VA and OLED panels across Windows, macOS, Linux and mobile browsers.
+            Yes. Whether you have a $2,000 OLED gaming display, an ultrawide productivity beast, or a standard laptop screen, these tests work the same. It is compatible with Windows, Mac, and Linux because it relies on web standards, not system drivers.
           </p>
           <p class="text-base-content/80">
-            Because the page only renders visual patterns, it is safe to use and does not change any monitor or system settings.
+            It’s completely safe—we just show you colors; we don't change any of your hardware settings.
           </p>
         </div>
       </div>
@@ -630,91 +617,83 @@
     <section class="container mx-auto px-4 py-20 max-w-5xl">
   <div class="text-center mb-12">
     <h2 class="text-3xl font-bold sm:text-4xl">
-      Monitor Tests Explained
+      What these patterns reveal
     </h2>
-    <p class="mt-4 text-base-content/70 max-w-2xl mx-auto text-black">
-      Each screen test is designed to detect a specific display problem. Use the descriptions below to understand what to look for while testing your monitor.
+    <p class="mt-4 text-base-content/70 max-w-2xl mx-auto">
+      Each test is a targeted check for specific hardware flaws. Here is how to interpret what you see on your screen.
     </p>
   </div>
 
   <div class="grid md:grid-cols-2 gap-8">
 
-    <!-- Solid Color -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="dead-pixel-test" class="card-title">Dead Pixel Test (Solid Color Test)</h3>
+        <h3 id="dead-pixel-test" class="card-title">Dead & Stuck Pixels</h3>
         <p class="text-base-content/80">
-          Displays fullscreen red, green, blue, black and white screens to detect dead pixels, stuck pixels and hot pixels. A dead pixel appears as a permanent black dot while a stuck pixel shows a constant colored dot.
+          Cycle through red, green, blue, and white. A <strong>dead pixel</strong> is a tiny black speck that never turns on. A <strong>stuck pixel</strong> stays one bright color (usually red or green) even when the background changes.
         </p>
       </div>
     </div>
 
-    <!-- Gradient -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="gradient-test" class="card-title">Gradient Test (Color Banding Test)</h3>
+        <h3 id="gradient-test" class="card-title">Color Banding</h3>
         <p class="text-base-content/80">
-          Shows smooth color transitions to identify color banding. Visible lines or steps instead of smooth gradients indicate poor panel quality or incorrect color depth settings.
+          Gradients should be buttery smooth. If you see visible "steps" or lines instead of a clean transition, your monitor might be struggling with bit-depth or have poor internal processing.
         </p>
       </div>
     </div>
 
-    <!-- Contrast -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="contrast-test" class="card-title">Contrast Test</h3>
+        <h3 id="contrast-test" class="card-title">Shadow & Highlight Detail</h3>
         <p class="text-base-content/80">
-          Checks black and white levels to ensure proper contrast ratio. Helps determine whether dark details are crushed or bright areas are overexposed.
+          This test reveals "black crush." You should be able to distinguish between very dark gray and pure black. If the dark boxes all look the same, you're losing detail in movies and games.
         </p>
       </div>
     </div>
 
-    <!-- Uniformity -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="uniformity-test" class="card-title">Backlight Bleed & Screen Uniformity Test</h3>
+        <h3 id="uniformity-test" class="card-title">Bleed & Uniformity</h3>
         <p class="text-base-content/80">
-          Uses dark screens to reveal uneven brightness, clouding, and backlight bleed. Bright patches near edges are common in LCD and LED monitors.
+          Check a pure black screen in a dark room. Bright "glow" near the corners is <strong>backlight bleed</strong>. Patchy, cloud-like areas in the middle indicate poor panel uniformity.
         </p>
       </div>
     </div>
 
-    <!-- Sharpness -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="sharpness-test" class="card-title">Sharpness & Text Clarity Test</h3>
+        <h3 id="sharpness-test" class="card-title">Text Clarity</h3>
         <p class="text-base-content/80">
-          Displays text patterns to evaluate image sharpness and scaling. Helps verify resolution settings and detect blurry fonts caused by incorrect display configuration.
+          If text looks "fuzzy" or has a weird shadow, your sharpness setting is likely too high or your resolution isn't native. Use this to get your font rendering pixel-perfect.
         </p>
       </div>
     </div>
 
-    <!-- Viewing Angle -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="viewing-angle-test" class="card-title">Viewing Angle Test</h3>
+        <h3 id="viewing-angle-test" class="card-title">Color Shifting</h3>
         <p class="text-base-content/80">
-          Shows color patterns to check color shifting when viewing the screen from different angles. Useful for comparing TN, VA and IPS panel performance.
+          Move your head from side to side. If the colors wash out or change tint, your panel has limited viewing angles. This is common on TN panels but shouldn't happen much on IPS screens.
         </p>
       </div>
     </div>
 
-    <!-- Response Time -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="ghosting-test" class="card-title">Ghosting & Response Time Test</h3>
+        <h3 id="ghosting-test" class="card-title">Ghosting & Trails</h3>
         <p class="text-base-content/80">
-          Displays moving objects to detect ghosting and motion blur. Trails behind moving shapes indicate slow pixel response time, common in older or low-quality panels.
+          Watch the moving objects. If you see a "smear" or a faint trail following the shape, that's <strong>ghosting</strong>. It usually means the pixels can't change color fast enough for high-speed motion.
         </p>
       </div>
     </div>
 
-    <!-- Refresh Rate -->
-    <div class="card bg-base-100 shadow-md">
+    <div class="card bg-base-100 shadow-md border-t-2 border-amber-500">
       <div class="card-body">
-        <h3 id="refresh-rate-test" class="card-title">Refresh Rate Checker</h3>
+        <h3 id="refresh-rate-test" class="card-title">Hz Verification</h3>
         <p class="text-base-content/80">
-          Measures the actual refresh rate of your display and confirms whether your monitor is running at 60Hz, 120Hz, 144Hz or higher. Many high-refresh monitors default to 60Hz unless manually enabled.
+          Many 144Hz monitors ship defaulted to 60Hz. This counter shows what your browser is <em>actually</em> seeing. If it doesn't match your monitor's box, check your Windows or Mac display settings.
         </p>
       </div>
     </div>
