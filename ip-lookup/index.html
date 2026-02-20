@@ -538,18 +538,16 @@
     >
         <div class="container mx-auto px-4">
             <h1
-                    id="main-heading"
-                    class="text-5xl lg:text-6xl font-extrabold mb-4 text-warning-content drop-shadow-lg"
-            >
-                What Is My IP Address? Check Your Public IPv4 & IPv6 Instantly
-            </h1>
+                id="main-heading"
+                class="text-5xl lg:text-6xl font-extrabold mb-4 text-white drop-shadow-lg"
+        >
+            What is my IP? <span class="text-blue-500">Trace your network footprint.</span>
+        </h1>
             <p
-                    class="text-lg lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-10"
-            >
-                Instantly discover your public IP address, geolocation, ISP, and device
-                details. Securely investigate any IP or resolve any domain to its core
-                network data with precision.
-            </p>
+                class="text-lg lg:text-xl text-slate-400 max-w-4xl mx-auto leading-relaxed mb-10"
+        >
+            Is your VPN actually working? Use ShadowTrace to instantly reveal your public IPv4/IPv6, ISP, and geographic origin. Professional-grade network intelligence, zero logs.
+        </p>
 
             <div
                     class="bg-gray-800 rounded-xl shadow-2xl p-8 max-w-3xl mx-auto space-y-8"
@@ -710,153 +708,133 @@
     </section>
 
     <section class="bg-gray-800 py-20" aria-labelledby="features-heading">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="text-center mb-12">
-                <h2 id="features-heading" class="text-3xl lg:text-4xl font-bold text-warning-content">
-                    Core Features of Our IP Lookup Tool
-                </h2>
-                <p class="mt-4 text-gray-400 leading-relaxed">
-                    ShadowTrace provides comprehensive network intelligence and
-                    client-side analytics for security professionals and developers.
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-12">
+            <h2 id="features-heading" class="text-3xl lg:text-4xl font-bold text-blue-400">
+                Network Intelligence Modules
+            </h2>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                ShadowTrace doesn't just "show numbers." We pull back the curtain on network routing and digital fingerprints so you can see who's actually knocking on your door.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    Geographic Origin
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    Find out where that IP actually lives. We track country, region, and city data so you can tell if your "local" traffic is actually coming from a data center halfway across the globe.
                 </p>
             </div>
 
-            <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center"
-            >
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        Geolocation Precision
-                    </h3>
-                    <p class="text-gray-300">
-                        Pinpoint the city, region, postal code, and country for any IP or
-                        domain worldwide.
-                    </p>
-                </div>
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        ISP & ASN Mapping
-                    </h3>
-                    <p class="text-gray-300">
-                        Identify Internet Service Providers, AS numbers, and the
-                        organizational owner of an IP block.
-                    </p>
-                </div>
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        Device & Browser Detection
-                    </h3>
-                    <p class="text-gray-300">
-                        Instantly detect your client's device type, operating system, and
-                        browser for deeper analysis.
-                    </p>
-                </div>
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        Secure & Private Lookups
-                    </h3>
-                    <p class="text-gray-300">
-                        All lookups are encrypted via HTTPS. We respect your privacy and do
-                        not log user search queries.
-                    </p>
-                </div>
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        Domain to IP Resolution
-                    </h3>
-                    <p class="text-gray-300">
-                        Quickly convert any domain name to its corresponding IP address
-                        and retrieve its full network details.
-                    </p>
-                </div>
-                <div
-                        class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-primary transition-all"
-                >
-                    <h3 class="text-xl font-bold mb-2 text-warning-content">
-                        Rapid, Real-time Results
-                    </h3>
-                    <p class="text-gray-300">
-                        Our tool is optimized for speed, delivering fast and accurate
-                        lookup results for IPs and domains.
-                    </p>
-                </div>
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    ISP & ASN Fingerprinting
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    Is it a person on a home Wi-Fi or a bot in a server farm? Unmask the Internet Service Provider and Autonomous System (ASN) behind any connection instantly.
+                </p>
+            </div>
+
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    Agent Detection
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    See the OS, browser, and device type in one glance. It's the easiest way to confirm your user-agent switcher is actually working (or that your "private" browser is leaking info).
+                </p>
+            </div>
+
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    Zero-Trace Lookups
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    We don't keep a burn book of your searches. Everything is encrypted via HTTPS, and your queries disappear the moment you close the tab. Your privacy isn't our product.
+                </p>
+            </div>
+
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    DNS Pivot
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    Turn a domain name into a network map. Resolve any URL to its host IP address to see where a website is hiding its servers.
+                </p>
+            </div>
+
+            <div class="card bg-gray-700 shadow-xl p-6 rounded-xl border border-gray-600 hover:border-blue-500 transition-all group">
+                <h3 class="text-xl font-bold mb-2 text-white group-hover:text-blue-400">
+                    Surgical Speed
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    No bloated maps, no heavy tracking scripts, no waiting. Just the raw data you need, delivered before you can finish saying "Internet Protocol."
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="bg-gray-800 py-20" aria-labelledby="ip-guide-heading">
+    <section class="bg-gray900 py-20" aria-labelledby="ip-guide-heading">
   <div class="container mx-auto px-4 max-w-5xl">
 
     <div class="text-center mb-12">
-      <h2 id="ip-guide-heading" class="text-3xl lg:text-4xl font-bold text-warning-content">
-        IP Address Lookup Guide
+      <h2 id="ip-guide-heading" class="text-3xl lg:text-4xl font-bold text-blue-400">
+        The "ShadowTrace" Intel Briefing
       </h2>
       <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        Learn what a public IP address is, what information it reveals, and how this network lookup tool analyzes internet connections and domains.
+        Your IP address is your digital license plate. Here is how we read the data, what it actually means, and why your physical address isn't as "exposed" as you think.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- What is IP lookup -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          What an IP Address Is
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-l-4 border-l-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          Your Digital ID (The IP)
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          An IP address (Internet Protocol address) is a unique identifier assigned to a device connected to the internet. Every time you visit a website, stream content, or connect to an online service, your device communicates using this address so servers know where to send data.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Think of an IP address as the "return address" on an envelope. Every time you request a cat video or an email, the internet needs to know where to send that data back. That’s your public IP.
         </p>
-        <p class="text-gray-300 leading-relaxed mt-3">
-          Websites cannot directly see your device or files — they only see your network connection represented by the public IP provided by your internet service provider.
+        <p class="text-gray-300 text-sm leading-relaxed mt-3">
+          Websites can’t see your selfies or your browser history through an IP; they just see the front door of the network your ISP built for you.
         </p>
       </div>
 
-      <!-- How tool works -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          How the Lookup Tool Works
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-l-4 border-l-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          How ShadowTrace Digs
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          The lookup tool queries public routing and registry databases to retrieve network ownership information. It resolves a domain name to its IP address and identifies the ISP, hosting provider, and autonomous system responsible for that connection.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          We don't "hack" anything. We query massive, public routing registries (like ARIN or RIPE) to see who owns a specific block of addresses.
         </p>
-        <p class="text-gray-300 leading-relaxed mt-3">
-          All results come from publicly available network records. The tool does not scan devices, access private systems, or collect personal data.
+        <p class="text-gray-300 text-sm leading-relaxed mt-3">
+          By cross-referencing these databases, we can tell if a connection is coming from a quiet suburb in Kansas or a massive Amazon Web Services data center in Dublin.
         </p>
       </div>
 
-      <!-- What information it shows -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          What Information a Lookup Can Reveal
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-l-4 border-l-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          What we can (and can't) see
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          An IP lookup provides network-level details such as approximate geographic region, internet provider, and organization managing the IP block. The location shown is based on ISP infrastructure and is not an exact physical address of a user.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          An IP lookup reveals "network-level" intel: your ISP, your general region, and your ASN. If you’re worried about someone finding your house—relax.
         </p>
-        <p class="text-gray-300 leading-relaxed mt-3">
-          Security analysts and developers use this information to understand traffic sources, server hosting locations, and network routing paths.
+        <p class="text-gray-300 text-sm leading-relaxed mt-3">
+          The "location" is usually just the nearest ISP exchange point. Unless someone has a subpoena and your ISP’s logs, they aren't finding your front porch.
         </p>
       </div>
 
-      <!-- Why useful -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          Why Use an IP Lookup
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-l-4 border-l-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          Why bother checking?
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          IP lookup tools are commonly used for diagnosing connection issues, verifying website hosting providers, investigating suspicious activity, and monitoring server traffic. Developers also use IP detection to adjust services based on user region.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Developers use this to debug regional issues, while security pros use it to spot suspicious traffic. For the rest of us? It’s the ultimate "BS Detector" for your VPN.
         </p>
-        <p class="text-gray-300 leading-relaxed mt-3">
-          Because the lookup uses public internet routing information, it only shows network data and cannot identify a specific person or device.
+        <p class="text-gray-300 text-sm leading-relaxed mt-3">
+          If your VPN says you're in Switzerland but ShadowTrace says you're in New Jersey, your "privacy" is currently leaking like a sieve.
         </p>
       </div>
 
@@ -868,73 +846,67 @@
   <div class="container mx-auto px-4 max-w-6xl">
 
     <div class="text-center mb-12">
-      <h2 id="network-concepts-heading" class="text-3xl lg:text-4xl font-bold text-warning-content">
-        Understanding IP Addresses & Network Data
+      <h2 id="network-concepts-heading" class="text-3xl lg:text-4xl font-bold text-blue-400">
+        Decoding the Network Data
       </h2>
       <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        These explanations help you understand what the reported IP information means and how internet routing, DNS, and geolocation actually work.
+        Internet routing isn't magic—it's just a giant game of "who’s who." Here’s the technical breakdown of the intel we just pulled on that connection.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Public vs Private -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          Public vs Private IP Address
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          The "Public" vs "Private" Mixup
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          A public IP address is assigned by your internet provider and is visible to websites and servers on the internet. A private IP address exists only inside your local network, such as within a home or office router. Websites can detect your public IP but cannot directly access devices inside your private network.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Your router has a <strong>private</strong> IP (usually something like 192.168.1.1) that it keeps to itself. Your <strong>public</strong> IP is the one the world sees. Websites can find your house (your public IP), but they can’t see your smart toaster or your laptop unless you intentionally let them in.
         </p>
       </div>
 
-      <!-- DNS -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          What is a DNS Lookup?
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          DNS: The Internet's Phonebook
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          The Domain Name System (DNS) converts domain names into IP addresses. When you enter a website address, your browser performs a DNS lookup to locate the server hosting that website. This tool resolves domain names and displays the network details of the hosting server.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Humans hate numbers; machines love them. DNS (Domain Name System) is the translator that turns "google.com" into its numeric IP address. When you use our domain resolver, you’re basically asking the internet: <em>"Hey, what’s the real number for this URL?"</em>
         </p>
       </div>
 
-      <!-- Reverse DNS -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
           Reverse DNS (rDNS)
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          Reverse DNS lookup performs the opposite process of DNS resolution. Instead of converting a domain to an IP address, it attempts to determine the hostname associated with an IP. This helps identify servers, hosting providers, and mail systems.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          The "uno-reverse" card of networking. Instead of turning a name into a number, rDNS looks at an IP and tries to find its name. It’s the easiest way to tell if a random IP belongs to a reputable mail server or a shady botnet.
         </p>
       </div>
 
-      <!-- ASN -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          Autonomous System Number (ASN)
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          ASN: The Network Boss
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          An ASN identifies a network operated by an ISP, data center, or organization. Large internet providers control blocks of IP addresses through ASNs. The ASN helps determine who manages the network that an IP address belongs to.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          An Autonomous System Number (ASN) identifies who actually owns the pipes. Think of it as identifying the carrier. If an IP has an ASN belonging to "Amazon" or "Google," it’s a server. If it’s "Comcast" or "AT&T," it’s likely just a regular person browsing the web.
         </p>
       </div>
 
-      <!-- Geolocation -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          IP Geolocation Accuracy
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          How "Close" Is Geolocation?
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          IP geolocation shows an approximate region based on network registry information. It typically identifies the city of the provider’s infrastructure rather than the user’s exact physical location. Mobile networks, proxies, and VPNs can change the displayed region.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Geolocation isn't GPS. It maps your IP to the nearest ISP hub, not your couch. If your test says you’re in a city 50 miles away, don’t panic—that’s just where your internet provider decided to put their physical equipment.
         </p>
       </div>
 
-      <!-- Hide IP -->
-      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
-        <h3 class="text-xl font-semibold text-warning-content mb-3">
-          Hiding Your Public IP Address
+      <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg border-b-2 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          Masking the Trail
         </h3>
-        <p class="text-gray-300 leading-relaxed">
-          Users can mask their IP address using VPN services, proxy servers, or privacy networks. These services route traffic through another server, so websites detect the server’s IP address instead of the original connection.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Want to disappear? VPNs and Proxies act as "middlemen." They take your data, wrap it in their own IP address, and send it to the destination. To the website, it looks like the traffic is coming from the VPN's server, while your real IP stays hidden in the shadows.
         </p>
       </div>
 
