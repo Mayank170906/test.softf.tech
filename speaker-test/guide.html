@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="language" content="en" />
+
+    <title>Speaker Balance & Buzzing Fix: Audio Troubleshooting Guide</title>
+
+    <meta name="description" content="Is one speaker louder than the other? Hear buzzing or distortion? Learn how to diagnose audio imbalance, mono settings, and hardware faults with our expert guide."/>
+    <meta name="robots" content="index, follow"/>
+
+    <meta name="keywords" content="fix speaker imbalance, speaker buzzing sound fix, troubleshoot audio distortion, why is one earbud louder, stereo channel test guide, fix muffled speaker sound"/>
+    <meta name="author" content="Mayank"/>
+    <meta name="theme-color" content="#1f2937"/>
+
+    <link rel="canonical" href="https://test.softf.tech/speaker-test/guide"/>
+
+    <meta property="og:title" content="Speaker & Audio Troubleshooting Guide | softf.tech"/>
+    <meta property="og:description" content="Diagnose channel imbalance, buzzing, and frequency loss with our comprehensive audio hardware guide."/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://test.softf.tech/speaker-test/guide"/>
+    <meta property="og:image" content="https://test.softf.tech/assets/images/logo.jpg"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Fix Speaker Buzzing & Imbalance: The Ultimate Audio Guide"/>
+    <meta name="twitter:description" content="Identify if your audio issues are hardware failures or simple configuration mistakes."/>
+    <meta name="twitter:image" content="https://test.softf.tech/assets/images/logo.jpg"/>
+
+    <link href="../../assets/css/output.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://test.softf.tech/speaker-test/guide#article",
+          "headline": "One speaker louder than the other or strange buzzing sounds? Troubleshooting Guide",
+          "description": "A comprehensive guide for diagnosing audio hardware issues, including channel imbalance, physical driver damage, and configuration errors.",
+          "url": "https://test.softf.tech/speaker-test/guide",
+          "author": { "@type": "Person", "name": "Mayank" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "softf.tech",
+            "logo": { "@type": "ImageObject", "url": "https://softf.tech/android-chrome-512x512.png" }
+          },
+          "inLanguage": "en",
+          "articleSection": "Hardware Diagnostics",
+          "datePublished": "2026-02-17",
+          "dateModified": "2026-02-20"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://test.softf.tech/" },
+            { "@type": "ListItem", "position": 2, "name": "Speaker Test", "item": "https://test.softf.tech/speaker-test/" },
+            { "@type": "ListItem", "position": 3, "name": "Guide", "item": "https://test.softf.tech/speaker-test/guide" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-gray-900">
+<header>
+    <nav
+            class="navbar bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-md"
+            aria-label="Main Navigation"
+    >
+        <div class="navbar-start">
+            <div class="dropdown">
+                <button
+                        tabindex="0"
+                        class="btn btn-ghost lg:hidden"
+                        aria-label="Open navigation menu"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                    </svg>
+                </button>
+
+                <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-gradient-to-r from-gray-500 to-gray-800 rounded-box z-50 mt-3 w-52 p-2 shadow"
+                >
+                    <li>
+                        <a
+                                href="../about.html"
+                                class="hover:text-yellow-400 transition-colors"
+                        >About Us</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../contact.html"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Contact Us</a
+                        >
+                    </li>
+
+                    <li class="menu-title">
+                        <span class="text-yellow-400">Web Tools & Tests</span>
+                    </li>
+
+                    <li>
+                        <a
+                                href="../keyboard-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Keyboard Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../mouse-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Mouse Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../display-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Display Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../speaker-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Speaker Test</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../ip-lookup/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >IP Lookup Tool</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="../speed-test/"
+                                class="hover:text-yellow-400 transition-colors"
+                        >Network Speed Test</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <a
+                    href="../"
+                    class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+                    aria-label="Home - test.softf.tech"
+            >
+                test.softf.tech
+            </a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li>
+                    <a
+                            href="../about.html"
+                            class="hover:text-yellow-400 transition-colors"
+                    >About Us</a
+                    >
+                </li>
+
+                <li>
+                    <a
+                            href="../contact.html"
+                            class="hover:text-yellow-400 transition-colors"
+                    >Contact Us</a
+                    >
+                </li>
+
+                <li>
+                    <details>
+                        <summary class="hover:text-yellow-400 transition-colors">
+                            Web Tools & Tests
+                        </summary>
+
+                        <ul
+                                class="p-2 bg-gradient-to-r from-gray-800 to-gray-900 rounded-box z-50"
+                        >
+                            <li>
+                                <a href="../keyboard-test/">Keyboard Test</a>
+                            </li>
+
+                            <li><a href="../mouse-test/">Mouse Test</a></li>
+
+                            <li><a href="../display-test/">Display Test</a></li>
+
+                            <li><a href="../speaker-test/">Speaker Test</a></li>
+
+                            <li><a href="../ip-lookup/">IP Lookup Tool</a></li>
+
+                            <li>
+                                <a href="../speed-test/">Network Speed Test</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <button
+                        tabindex="0"
+                        class="btn btn-ghost text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-amber-400 hover:to-yellow-500 transition-all"
+                        aria-label="Our tools network"
+                >
+                    Tools
+                </button>
+
+                <ul
+                        tabindex="0"
+                        class="dropdown-content menu p-2 shadow bg-gradient-to-r from-gray-500 to-gray-800 rounded-box w-52 mt-2"
+                >
+                    <li>
+                        <a
+                                href="https://softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit softf.tech - Core Content Hub"
+                        >softf.tech</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="https://tools.softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit tools.softf.tech - Utility Engine"
+                        >tools.softf.tech</a
+                        >
+                    </li>
+
+                    <li>
+                        <a
+                                href="https://test.softf.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Visit test.softf.tech - Lightweight Test Bench"
+                        >test.softf.tech</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-16 space-y-16 text-gray-300">
+
+    <!-- HERO -->
+    <section class="text-center py-10 bg-gradient-to-b from-gray-800 to-transparent rounded-3xl border border-gray-700/50">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 px-4">
+            One speaker louder than the other or strange buzzing sounds?
+        </h1>
+        <p class="text-xl max-w-2xl mx-auto text-gray-400 leading-relaxed px-6">
+            If music sounds off, voices lean to one side, or bass turns into vibration instead of sound, you are probably hearing a hardware or configuration problem. Before blaming your audio drivers or replacing headphones, you should isolate the channels and test the speakers directly.
+        </p>
+    </section>
+
+    <!-- WHAT IT MEANS -->
+    <section class="bg-gray-800/40 p-8 rounded-2xl border-l-4 border-blue-500 shadow-lg">
+        <h2 class="text-2xl font-bold text-white mb-4">What is actually happening</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="mb-4">
+                    Every sound you hear is a waveform sent separately to the left and right channels. When a speaker driver wears out, a cable weakens, or settings force mono output, the channels stop behaving independently.
+                </p>
+                <p>
+                    The result is imbalance, distortion, or missing frequencies. This is usually a physical speaker issue or a configuration setting, not a software bug.
+                </p>
+            </div>
+            <div class="bg-gray-900/50 p-4 rounded-xl text-center border border-gray-700">
+                <span class="text-xs uppercase tracking-widest text-gray-500 block mb-2">Channel Example</span>
+                <div class="text-3xl font-mono text-green-400 tracking-tighter">L → Sound | R → Silent</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMON PROBLEMS -->
+    <section>
+        <h2 class="text-3xl font-bold text-white text-center mb-10">Common audio problems</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <div class="text-blue-400 text-2xl mb-3">🔊</div>
+                <h3 class="text-lg font-bold text-white mb-2">Channel Imbalance</h3>
+                <p class="text-sm text-gray-400">One side louder than the other due to worn drivers or system mono settings.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <div class="text-yellow-400 text-2xl mb-3">📉</div>
+                <h3 class="text-lg font-bold text-white mb-2">Frequency Loss</h3>
+                <p class="text-sm text-gray-400">Missing bass or muffled highs caused by failing speaker components.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <div class="text-red-400 text-2xl mb-3">🪛</div>
+                <h3 class="text-lg font-bold text-white mb-2">Rattling & Buzzing</h3>
+                <p class="text-sm text-gray-400">Loose housing, torn cones, or vibration against the speaker frame.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                <div class="text-purple-400 text-2xl mb-3">🎚</div>
+                <h3 class="text-lg font-bold text-white mb-2">Configuration Issues</h3>
+                <p class="text-sm text-gray-400">Mono audio, aggressive equalizers, or incorrect output device selected.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOW TO TEST -->
+    <section class="bg-blue-600 rounded-3xl p-10 text-center text-white shadow-2xl shadow-blue-500/20">
+        <h2 class="text-3xl font-black mb-4">Run the speaker test</h2>
+        <p class="text-blue-100 mb-6 max-w-xl mx-auto">
+            Play the left and right channel tones separately, then use the frequency sweep. This reveals channel imbalance, distortion, and missing frequencies instantly.
+        </p>
+
+        <a href="https://test.softf.tech/speaker-test/" class="inline-block bg-white text-blue-600 font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition transform">
+            Start the Speaker Test
+        </a>
+    </section>
+
+    <!-- INTERPRETING RESULTS -->
+    <section class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-6">How to read the results</h2>
+
+        <div class="space-y-4">
+
+            <div class="flex gap-4 items-start">
+                <div class="bg-green-500/20 text-green-400 p-2 rounded-lg font-bold">1</div>
+                <p>If only the left tone plays in the left ear and the right tone in the right ear, stereo separation is correct.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <div class="bg-yellow-500/20 text-yellow-400 p-2 rounded-lg font-bold">2</div>
+                <p>If both speakers play at once during a single-channel test, your system is in mono mode or a cable is shorted.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <div class="bg-red-500/20 text-red-400 p-2 rounded-lg font-bold">3</div>
+                <p>Buzzing or vibration during bass tones indicates a damaged driver or loose speaker housing.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <div class="bg-blue-500/20 text-blue-400 p-2 rounded-lg font-bold">4</div>
+                <p>If certain pitches disappear during the sweep, your speakers cannot reproduce those frequencies.</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer items-center bg-neutral text-neutral-content p-4">
+    <aside class="grid-flow-col items-center">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-yellow-400"
+                aria-hidden="true"
+        >
+            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+        <p>Copyright © 2025 - Mayank. All rights reserved.</p>
+
+        <!-- Legal Links -->
+        <div class="flex flex-wrap gap-4 text-sm mx-2 text-amber-600">
+            <a href="../privacy.html" class="hover:text-yellow-400 transition-colors"
+            >Privacy Policy</a
+            >
+            <a href="../terms.html" class="hover:text-yellow-400 transition-colors"
+            >Terms of Service</a
+            >
+            <a href="../disclaimer.html" class="hover:text-yellow-400 transition-colors"
+            >Disclaimer</a
+            >
+        </div>
+    </aside>
+
+    <nav
+            class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
+            aria-label="Social media links"
+    >
+        <a
+                href="https://github.com/Mayank170906"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's GitHub profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+            </svg>
+        </a>
+
+        <a
+                href="https://www.linkedin.com/in/mayank170906/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Mayank's LinkedIn profile"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+            </svg>
+        </a>
+
+        <a
+                href="mailto:mayankeducation.17@gmail.com"
+                aria-label="Send an email to Mayank"
+                class="hover:text-yellow-400 transition-colors"
+        >
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+            >
+                <path
+                        d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+            </svg>
+        </a>
+    </nav>
+</footer>
+</body>
+</html>
