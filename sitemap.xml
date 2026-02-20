@@ -81,7 +81,7 @@
 
     <!-- Guide Pages -->
     <url>
-        <loc>https://test.softf.tech/guide</loc>
+        <loc>https://test.softf.tech/guides</loc>
         <lastmod>2026-02-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.60</priority>
