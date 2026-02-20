@@ -79,4 +79,42 @@
         <priority>0.80</priority>
     </url>
 
+    <!-- Guide Pages -->
+    <url>
+        <loc>https://test.softf.tech/display-test/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/ip-lookup/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/keyboard-test/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/mouse-test/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/speaker-test/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://test.softf.tech/speed-test/guide</loc>
+        <lastmod>2026-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+
 </urlset>
