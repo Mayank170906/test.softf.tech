@@ -152,26 +152,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why is my keyboard typing double letters? (e.g., 'h' becomes 'hh')",
+      "name": "Why is my keyboard typing double letters?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This is a classic sign of 'keyboard chatter,' a hardware fault usually caused by a failing mechanical switch. Our 'Chatter Detected' feature is specifically designed to identify this problem. If a key is flagged, it likely needs to be cleaned or replaced."
+        "text": "This is usually \"keyboard chatter.\" It happens when a mechanical switch gets old or dirty and sends two signals for one press. Our chatter detector will flag these keys in red so you know exactly which ones to clean or swap out."
       }
     },
     {
       "@type": "Question",
-      "name": "What is N-Key Rollover (NKRO) and why does it matter?",
+      "name": "What is N-Key Rollover (NKRO)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "N-Key Rollover refers to a keyboard's ability to correctly register multiple simultaneous key presses. Most standard keyboards can only handle about 6 keys at once (6KRO). For intense gaming or extremely fast typing, having 'Full NKRO' is crucial to ensure every command is registered. Our 'Max Keys Held' stat allows you to test your keyboard's limit."
+        "text": "It is just a measure of how many keys your keyboard can handle at the same time. Most office keyboards stop working after 6 keys. Gaming boards often have \"Full NKRO\" so you can mash as many buttons as you want without the system freezing up."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this test safe and private?",
+      "name": "Is this test private?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, 100%. This tool runs entirely within your browser (client-side). No key presses, logs, or any other data is ever sent to our servers. Your privacy is guaranteed."
+        "text": "Yes. I do not log your keys or send any data to a server. Everything runs locally in your browser. You can even check the source code if you are curious."
       }
     },
     {
@@ -179,31 +179,23 @@
       "name": "What is keyboard ghosting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Keyboard ghosting is a hardware limitation where pressing multiple keys at once (especially in certain combinations) causes some of the pressed keys to not be registered at all. It's as if a 'ghost' is preventing the key press. Our tool helps you identify this by showing you exactly which keys your computer 'sees' when you press several keys together."
+        "text": "Ghosting is when you press a few keys and a random extra key \"ghosts\" into the input, or some keys do not show up at all. It is a hardware limitation of cheaper boards. Our visualizer shows you exactly what your computer is seeing so you can spot these errors."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I use this online keyboard test?",
+      "name": "How do I start the test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's simple: just start pressing keys on your keyboard. The virtual keyboard on the screen will light up instantly to show which key is being registered. You can use this to test individual keys, check your 'Max Keys Held' for N-Key Rollover, and watch for 'Chatter' warnings. No installation or setup is required."
+        "text": "Just start typing. There is no \"Start\" button or setup required. As soon as you hit a key, the virtual board on this page will light up."
       }
     },
     {
       "@type": "Question",
-      "name": "Why are some keys on my keyboard not working?",
+      "name": "Why is my key not lighting up?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This tool can help you diagnose the problem. If you press a key and it doesn't light up on our tester, it confirms the signal isn't reaching the computer. This could be due to a hardware fault (like a broken switch or circuit), dirt/debris under the keycap, or a driver issue. For mechanical keyboards, it often means the switch needs cleaning or replacing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this tool compatible with Mac/Windows/Linux?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, absolutely. Our keyboard tester runs entirely in your web browser (like Chrome, Firefox, Safari, or Edge). It is fully compatible with any operating system, including Windows, macOS, and Linux, as well as on most laptops and external keyboards."
+        "text": "If you press a key and nothing happens on the screen, the signal is not reaching your PC. This usually means a dead switch, a broken PCB trace, or a lot of dust blocking the contact. Try cleaning it with some compressed air first."
       }
     }
   ]
@@ -423,21 +415,20 @@
 <main>
 
     <section
-            class="relative text-center py-24 px-4 bg-gray-900 overflow-hidden"
-    >
-        <div
-                class="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-70"
-        ></div>
-        <div class="relative z-10">
-            <h1 class="text-5xl font-bold text-white mb-4 tracking-tight">
-                 Keyboard Tester Online – Check Stuck Keys, Ghosting & Chatter
-            </h1>
-            <p class="text-lg max-w-3xl mx-auto text-gray-300">
-                Press any key on your keyboard. The corresponding key below will
-                light up to confirm it's working correctly.
-            </p>
-        </div>
-    </section>
+        class="relative text-center py-24 px-4 bg-gray-900 overflow-hidden"
+>
+    <div
+            class="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-70"
+    ></div>
+    <div class="relative z-10">
+        <h1 class="text-5xl font-bold text-white mb-4 tracking-tight">
+             Keyboard Tester Online: Is your hardware ghosting you?
+        </h1>
+        <p class="text-lg max-w-3xl mx-auto text-gray-300">
+            Stop guessing if your keyboard is actually broken. You can use our online keyboard tester to find stuck switches, annoying chatter, or ghosting issues in real-time. Just mash a few keys to see what is registering. It is fast, private, and it might save you from buying a new board you do not even need.
+        </p>
+    </div>
+</section>
 
     <section class="py-12 px-4 bg-gray-800">
         <div class="w-full max-w-[1700px] mx-auto">
@@ -721,236 +712,212 @@
         </div>
     </section>
     <section
-            class="py-20 px-4 bg-gray-900"
-            aria-labelledby="tool-guide-heading"
-    >
-        <div class="container mx-auto max-w-5xl">
-            <!-- Section 1: About This Tool -->
-            <div class="text-center mb-16">
-                <h2
-                        id="tool-guide-heading"
-                        class="text-4xl font-bold text-white tracking-tight"
+        class="py-20 px-4 bg-gray-900"
+        aria-labelledby="tool-guide-heading"
+>
+    <div class="container mx-auto max-w-5xl">
+        <div class="text-center mb-16">
+            <h2
+                    id="tool-guide-heading"
+                    class="text-4xl font-bold text-white tracking-tight"
+            >
+                How to use this keyboard tester
+            </h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
+                This is more than just a visualizer. It is a diagnostic tool built to find unresponsive keys and hardware faults before you decide to throw your keyboard away. Everything happens right in your browser.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div
+                    class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+            >
+                <div
+                        class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-yellow-400/50 mb-6"
                 >
-                    A Comprehensive Guide to Your Keyboard Test
-                </h2>
-                <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
-                    Our tool is more than just a visualizer. It's a powerful
-                    diagnostic utility designed to help you pinpoint common keyboard
-                    issues, from unresponsive keys to complex hardware faults. All
-                    tests run instantly and privately in your browser.
-                </p>
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-10 w-10 text-yellow-400"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">
+                        Live Visualizer
+                    </h3>
+                    <p class="mt-2 text-gray-400">
+                        The on-screen layout gives you instant feedback. Use the
+                        <strong class="text-gray-200">Keys Pressed</strong> and
+                        <strong class="text-gray-200">Current Key</strong> stats to see exactly what your computer is receiving.
+                    </p>
+                </div>
             </div>
 
-            <!-- Section 2: Feature Breakdown Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Card 1: Live Visualizer -->
+            <div
+                    class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+            >
                 <div
-                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                        class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-accent/50 mb-6"
                 >
-                    <div
-                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-yellow-400/50 mb-6"
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-10 w-10 text-accent"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
                     >
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-10 w-10 text-yellow-400"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                        >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white">
-                            Live Visualizer & Stats
-                        </h3>
-                        <p class="mt-2 text-gray-400">
-                            The on-screen keyboard provides immediate visual feedback,
-                            while the counters for
-                            <strong class="text-gray-200">"Keys Pressed"</strong> and
-                            <strong class="text-gray-200">"Current Key"</strong> track
-                            your inputs.
-                        </p>
-                    </div>
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.543-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                        />
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                    </svg>
                 </div>
-
-                <!-- Card 2: Testing Controls -->
-                <div
-                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
-                >
-                    <div
-                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-accent/50 mb-6"
-                    >
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-10 w-10 text-accent"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                        >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                            />
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white">Testing Controls</h3>
-                        <p class="mt-2 text-gray-400">
-                            Use the
-                            <strong class="text-gray-200">"Keep Highlighted"</strong>
-                            toggle to track tested keys, and the
-                            <strong class="text-gray-200">"Clear"</strong> button to reset
-                            the board for a fresh test.
-                        </p>
-                    </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Testing Controls</h3>
+                    <p class="mt-2 text-gray-400">
+                        Toggle <strong class="text-gray-200">Keep Highlighted</strong> to track which keys you have already tested. Hit the <strong class="text-gray-200">Clear</strong> button to reset everything for a new round.
+                    </p>
                 </div>
+            </div>
 
-                <!-- Card 3: N-Key Rollover -->
+            <div
+                    class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+            >
                 <div
-                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                        class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary/50 mb-6"
                 >
-                    <div
-                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-primary/50 mb-6"
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-10 w-10 text-primary"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
                     >
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-10 w-10 text-primary"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                        >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h6l2-2h2l-2 2z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white">
-                            Max Keys Held (NKRO Test)
-                        </h3>
-                        <p class="mt-2 text-gray-400">
-                            This test, known as
-                            <strong class="text-gray-200">N-Key Rollover</strong>,
-                            measures how many keys your keyboard can register
-                            simultaneously—a critical feature for gaming and fast typing.
-                        </p>
-                    </div>
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h6l2-2h2l-2 2z"
+                        />
+                    </svg>
                 </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">
+                        NKRO Test
+                    </h3>
+                    <p class="mt-2 text-gray-400">
+                        N-Key Rollover measures how many keys you can press at once. This is a big deal for gamers and fast typists. Check your keyboard's limit with the <strong class="text-gray-200">Max Keys Held</strong> stat.
+                    </p>
+                </div>
+            </div>
 
-                <!-- Card 4: Chatter Test -->
+            <div
+                    class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+            >
                 <div
-                        class="feature-card bg-gray-800/50 p-8 rounded-lg border border-white/10 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300"
+                        class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-red-500/50 mb-6"
                 >
-                    <div
-                            class="flex-shrink-0 w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center border-2 border-red-500/50 mb-6"
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-10 w-10 text-red-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
                     >
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-10 w-10 text-red-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                stroke-width="2"
-                        >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white">Chatter Detected</h3>
-                        <p class="mt-2 text-gray-400">
-                            Our algorithm detects "chatter" or "double-typing," a common
-                            hardware fault where one key press is accidentally registered
-                            multiple times by a faulty switch.
-                        </p>
-                    </div>
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Chatter Detection</h3>
+                    <p class="mt-2 text-gray-400">
+                        Our algorithm spots "chatter" or double-typing. This is a common hardware fail where one press registers twice. It usually means a switch is dirty or dying.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="bg-gray-800 py-20" aria-labelledby="keyboard-guide-heading">
   <div class="container mx-auto px-4 max-w-5xl">
 
     <div class="text-center mb-12 ">
       <h2 id="keyboard-guide-heading" class="text-3xl lg:text-4xl font-bold text-amber-300">
-        Online Keyboard Test Guide
+        Everything you need to know about testing
       </h2>
       <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        Learn what an online keyboard tester does, how it detects input problems, and how you can diagnose faulty or unresponsive keys directly in your browser.
+        Hardware fails. Before you spend money on a replacement, here is how you can use this tool to figure out if your keyboard is actually dead or just acting up.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- What the tool is -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          What an Online Keyboard Tester Is
+          What is an online keyboard tester?
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          An online keyboard test is a browser-based input checker that verifies whether each key on your keyboard is working properly. When you press a key, the tester immediately detects the signal sent to the computer and highlights the corresponding key on the on-screen keyboard.
+          It is a browser-based utility that checks your inputs in real-time. When you hit a physical key, the virtual one on your screen lights up. It is the fastest way to verify your hardware without downloading sketchy software or opening your terminal.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          Because the test runs inside your browser, no software installation or downloads are required. It works on laptops, desktop keyboards, mechanical keyboards and external USB or wireless keyboards.
+          This works for everything from high-end mechanical boards and gaming laptops to basic USB or wireless office keyboards.
         </p>
       </div>
 
-      <!-- How it works -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          How the Keyboard Test Works
+          How it works
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Each time you press a key, your operating system sends a keyboard input event to the browser. The tester listens for these events and records which key was pressed, how many keys are pressed simultaneously, and whether repeated signals occur.
+          Your browser listens for "input events" sent by your operating system. Our tool records those signals to show you which keys are working, which ones are stuck, and how many you can hold down at once.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          If a key does not light up on the screen, the computer is not receiving the signal, indicating a possible hardware, connection, or driver issue.
+          If a key does not light up here, the signal is not reaching your PC. That usually points to a dead switch, a loose connection, or a driver that needs an update.
         </p>
       </div>
 
-      <!-- What problems it detects -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          Problems the Keyboard Test Can Detect
+          Common problems we find
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          The keyboard checker helps identify unresponsive keys, double typing, ghosting, and rollover limitations. It can also reveal dirt under keycaps, worn switches, or connection faults in USB and wireless keyboards.
+          Beyond just dead keys, this tool helps find ghosting issues and "chatter" (where one click turns into two). It is also great for finding crumbs or dirt trapped under a keycap that might be blocking a press.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          For mechanical keyboards, the test is useful to confirm whether a switch is failing or needs cleaning or replacement.
+          For mechanical keyboard fans, this is the easiest way to confirm if you just need to swap out a single faulty switch.
         </p>
       </div>
 
-      <!-- Why useful -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          Why You Should Test Your Keyboard
+          Why even bother testing?
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Keyboard issues often appear as missed letters, repeated characters, or keys that stop working randomly. Testing the keyboard helps confirm whether the problem is hardware, software, or configuration related before replacing the device.
+          Randomly missing letters or stuck keys can be software bugs too. Running a test here helps you isolate the problem. If it works here but fails in your game, the problem is likely your settings, not your hardware.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          The tool is especially helpful for gaming, typing work, and troubleshooting laptops after spills, dust buildup, or long-term wear.
+          This is especially helpful for checking laptop keyboards after a spill or troubleshooting a second-hand board you just bought.
         </p>
       </div>
 
@@ -958,95 +925,89 @@
   </div>
 </section>
 
-    <section class="bg-gray-800 py-20" aria-labelledby="keyboard-concepts-heading">
+    <section class="bg-gray-900 py-20" aria-labelledby="keyboard-concepts-heading">
   <div class="container mx-auto px-4 max-w-6xl">
 
     <div class="text-center mb-12">
       <h2 id="keyboard-concepts-heading" class="text-3xl lg:text-4xl font-bold text-amber-300">
-        Understanding Keyboard Tests & Input Issues
+        Decoding your test results
       </h2>
       <p class="mt-4 text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        These explanations help you understand what the keyboard tester is detecting and how to interpret the results shown on the screen.
+        Not sure what "NKRO" or "Chatter" means? Here is a quick breakdown of the technical stuff our tool is actually looking for.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- NKRO -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
           N-Key Rollover (NKRO)
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          N-Key Rollover describes how many keys a keyboard can register at the same time. A higher NKRO value is important for gaming and fast typing, where multiple keys are often pressed simultaneously.
+          This is just a fancy way of saying "how many keys can I mash at once?" Cheap keyboards usually give up after 3 or 6 keys. If you are a gamer or a fast typist, you want a higher number.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          The “Max Keys Held” counter shows how many keys your keyboard successfully reports at once.
+          Check the <strong>"Max Keys Held"</strong> counter while pressing down as many keys as you can.
         </p>
       </div>
 
-      <!-- Ghosting -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
           Keyboard Ghosting
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Ghosting occurs when a keyboard fails to register certain key combinations or registers unintended inputs. This is common on low-quality membrane keyboards without proper rollover support.
+          Ghosting is when your keyboard gets confused. You press three keys, but only two show up, or a fourth random key triggers. It is common on basic office keyboards.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          Testing multiple keys at once helps reveal ghosting limitations.
+          If you are hitting combinations and the screen does not match your fingers, your board has ghosting issues.
         </p>
       </div>
 
-      <!-- Chatter / Double Typing -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
           Chatter (Double Typing)
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Key chatter happens when a single key press is registered multiple times. This is usually caused by worn or dirty switches, especially on mechanical keyboards.
+          Is your keyboard stuttering? Chatter happens when a dirty or worn-out switch registers two or three hits for a single press. It is the number one reason people think their mechanical keyboard is haunted.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          The tester detects repeated signals and reports chatter so you can identify faulty keys.
+          Our tester flags this as <strong>"Chatter Detected"</strong> so you know which switch to clean or replace.
         </p>
       </div>
 
-      <!-- Unresponsive Keys -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          Unresponsive or Stuck Keys
+          The "Dead Key" Check
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          If a key does not light up when pressed, the input signal is not reaching the system. This may be due to hardware failure, debris under the keycap, or a connection issue.
+          If a key stays dark on the screen, the signal is dead. It could be a broken circuit, a loose USB cable, or just a big piece of dust blocking the contact.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          Testing each key individually helps confirm whether the problem is physical or software-related.
+          Try cleaning the switch with compressed air before you buy a new one. It works more often than you think.
         </p>
       </div>
 
-      <!-- Modifier Keys -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          Modifier & Lock Keys
+          Modifiers & Lock Keys
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Modifier keys like Shift, Ctrl, Alt, and system keys behave differently from regular keys. Lock keys such as Caps Lock and Num Lock toggle states instead of sending continuous input.
+          Keys like Shift, Ctrl, and Alt do not type characters, so they can be hard to test in a text editor. Our tool shows their "active" state immediately.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          The tester displays their current state so you can verify correct behavior.
+          This also lets you check if your Caps Lock or Num Lock lights are actually working the way they should.
         </p>
       </div>
 
-      <!-- Platform Compatibility -->
       <div class="bg-gray-700 border border-gray-600 rounded-xl p-6 shadow-lg">
         <h3 class="text-xl font-semibold text-amber-300 mb-3">
-          Platform Compatibility
+          Works on everything
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          This keyboard test works on Windows, macOS, and Linux systems using standard browser input events. It supports laptop keyboards, external USB keyboards, and wireless keyboards.
+          I built this to work on Windows, macOS, and Linux. As long as you have a modern browser, it supports USB boards, laptop keys, and wireless Bluetooth setups.
         </p>
         <p class="text-gray-300 leading-relaxed mt-3">
-          No drivers or special permissions are required to run the test.
+          You do not need to install drivers or give me any special permissions. Just open the page and start typing.
         </p>
       </div>
 
@@ -1055,143 +1016,81 @@
 </section>
 
     <section class="py-20 px-4 bg-gray-800" aria-labelledby="faq-heading">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center mb-12">
-                <h2
-                        id="faq-heading"
-                        class="text-4xl font-bold text-white tracking-tight"
-                >
-                    Frequently Asked Questions
-                </h2>
+    <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+            <h2 id="faq-heading" class="text-4xl font-bold text-white tracking-tight">
+                Common Questions
+            </h2>
+        </div>
+        <div class="space-y-6">
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    Why is my keyboard typing double letters?
+                </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        This is usually "keyboard chatter." It happens when a mechanical switch gets old or dirty and sends two signals for one press. Our chatter detector will flag these keys in red so you know exactly which ones to clean or swap out.
+                    </p>
+                </div>
             </div>
-            <div class="space-y-6">
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        Why is my keyboard typing double letters? (e.g., 'h' becomes
-                        'hh')
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            This is a classic sign of "keyboard chatter," a hardware fault
-                            usually caused by a failing mechanical switch. Our "Chatter
-                            Detected" feature is specifically designed to identify this
-                            problem. If a key is flagged, it likely needs to be cleaned or
-                            replaced.
-                        </p>
-                    </div>
-                </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        What is N-Key Rollover (NKRO) and why does it matter?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            N-Key Rollover refers to a keyboard's ability to correctly
-                            register multiple simultaneous key presses. Most standard
-                            keyboards can only handle about 6 keys at once (6KRO). For
-                            intense gaming or extremely fast typing, having "Full NKRO" is
-                            crucial to ensure every command is registered. Our "Max Keys
-                            Held" stat allows you to test your keyboard's limit.
-                        </p>
-                    </div>
-                </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        Is this test safe and private?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            Yes, 100%. This tool runs entirely within your browser
-                            (client-side). No key presses, logs, or any other data is ever
-                            sent to our servers. Your privacy is guaranteed.
-                        </p>
-                    </div>
-                </div>
 
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        What is keyboard ghosting?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            Keyboard ghosting is a hardware limitation where pressing
-                            multiple keys at once (especially in certain combinations)
-                            causes some of the pressed keys to not be registered at all.
-                            It's as if a "ghost" is preventing the key press. Our tool
-                            helps you identify this by showing you exactly which keys your
-                            computer "sees" when you press several keys together.
-                        </p>
-                    </div>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    What is N-Key Rollover (NKRO)?
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        How do I use this online keyboard test?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            It's simple: just start pressing keys on your keyboard. The
-                            virtual keyboard on the screen will light up instantly to show
-                            which key is being registered. You can use this to test
-                            individual keys, check your "Max Keys Held" for N-Key
-                            Rollover, and watch for "Chatter" warnings. No installation
-                            or setup is required.
-                        </p>
-                    </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        It is just a measure of how many keys your keyboard can handle at the same time. Most office keyboards stop working after 6 keys. Gaming boards often have "Full NKRO" so you can mash as many buttons as you want without the system freezing up.
+                    </p>
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        Why are some keys on my keyboard not working?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            This tool can help you diagnose the problem. If you press a
-                            key and it doesn't light up on our tester, it confirms the
-                            signal isn't reaching the computer. This could be due to a
-                            hardware fault (like a broken switch or circuit),
-                            dirt/debris under the keycap, or a driver issue. For
-                            mechanical keyboards, it often means the switch needs cleaning
-                            or replacing.
-                        </p>
-                    </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    Is this test private?
                 </div>
-                <div
-                        tabindex="0"
-                        class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box"
-                >
-                    <div class="collapse-title text-xl font-medium text-white">
-                        Is this tool compatible with Mac/Windows/Linux?
-                    </div>
-                    <div class="collapse-content">
-                        <p class="text-gray-300">
-                            Yes, absolutely. Our keyboard tester runs entirely in your web
-                            browser (like Chrome, Firefox, Safari, or Edge). It is
-                            fully compatible with any operating system, including Windows,
-                            macOS, and Linux, as well as on most laptops and external
-                            keyboards.
-                        </p>
-                    </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        Yes. I do not log your keys or send any data to a server. Everything runs locally in your browser. You can even check the source code if you are curious.
+                    </p>
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    What is keyboard ghosting?
+                </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        Ghosting is when you press a few keys and a random extra key "ghosts" into the input, or some keys do not show up at all. It is a hardware limitation of cheaper boards. Our visualizer shows you exactly what your computer is seeing so you can spot these errors.
+                    </p>
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    How do I start the test?
+                </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        Just start typing. There is no "Start" button or setup required. As soon as you hit a key, the virtual board on this page will light up.
+                    </p>
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-gray-900/50 rounded-box">
+                <div class="collapse-title text-xl font-medium text-white">
+                    Why is my key not lighting up?
+                </div>
+                <div class="collapse-content">
+                    <p class="text-gray-300">
+                        If you press a key and nothing happens on the screen, the signal is not reaching your PC. This usually means a dead switch, a broken PCB trace, or a lot of dust blocking the contact. Try cleaning it with some compressed air first.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </main>
 
 <script>
@@ -1444,6 +1343,6 @@
         </a>
     </nav>
 </footer>
-..
+
 </body>
 </html>
